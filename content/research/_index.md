@@ -11,6 +11,16 @@ My research focuses on institutional accountability and the mechanisms by which 
 
 ## Featured Investigations
 
+### [The Algorithmic Kill Chain](/research/algorithmic-kill-chain/)
+
+**Documenting AI-Driven Violence Against Palestinians**
+
+A six-part investigation into the integrated system of AI targeting and surveillance deployed by Israel in Gaza and the occupied territories. The series traces the complete kill chain: from Lavender's mass target generation to The Gospel's infrastructure targeting to Where's Daddy?'s home-tracking automation—and the corporate infrastructure from Google, Amazon, and Israeli tech firms that makes it all possible.
+
+**[Read the full series →](/research/algorithmic-kill-chain/)**
+
+---
+
 ### [The Pension Pipeline](/research/pension-pipeline/)
 
 **How Political Capture and Ideology Breached the Trust of Arkansas Teachers**
