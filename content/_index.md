@@ -1,22 +1,23 @@
----
-title: "Joshua Dunlap"
----
++++
+title = "Joshua Dunlap"
+description = "Research, writing, and FOIA work on information control systems, surveillance technology, and state complicity"
++++
 
-I investigate how public institutions fail the people they're meant to serve.
-
-My work combines FOIA research, policy analysis, and primary source documentation to trace the mechanisms of institutional capture—from Arkansas pension systems investing $157 million in foreign securities with documented procedural violations, to defense industry supply chains connecting local manufacturing to documented violations of international humanitarian law.
-
-I'm a member of Little Rock Peace for Palestine, where I conduct investigative research on state complicity and develop FOIA resources for activist organizations.
+I'm a FOIA researcher and policy analyst based in Arkansas. The work here focuses on institutional accountability—tracing money, documenting relationships, asking questions that can be answered with evidence.
 
 ## Featured Work
 
-**[The Cost of the Alliance](/research/cost-of-the-alliance/)** — How U.S.-Israel policy shapes American life: $16.3 billion in military aid since October 2023, defense industry entanglement, surveillance blowback, anti-BDS laws eroding First Amendment rights, and bodies used for foreign military training without consent.
+### [The Cost of the Alliance](/research/cost-of-the-alliance/)
+An analysis of how U.S.-Israel policy materializes in American communities: the domestic costs, political mechanisms, and local consequences that rarely make it into foreign policy discussions.
 
-**[The Algorithmic Kill Chain](/research/algorithmic-kill-chain/)** — A six-part investigation documenting Israeli AI targeting systems deployed in Gaza, from mass target generation (Lavender) to automated home tracking (Where's Daddy?) to the corporate infrastructure enabling it all.
+### [The Algorithmic Kill Chain](/research/algorithmic-kill-chain/)
+A six-part investigation into Israeli AI targeting systems—Lavender, Gospel, and Where's Daddy—examining how automation has reshaped warfare in Gaza.
 
-**[The Pension Pipeline](/research/pension-pipeline/)** — A forensic investigation into Arkansas state pension investments in Israel Bonds, documenting procedural violations and political capture of fiduciary institutions.
+### [The Pension Pipeline](/research/pension-pipeline/)
+Documenting Arkansas's $145 million investment in Israel Bonds, exploring how state pension systems create financial connections to foreign policy.
 
-**[The Arkansas Arsenal](/research/arkansas-arsenal/)** — Mapping the supply chain from Camden's defense manufacturing hub to documented civilian casualties, including $133,500 in defense PAC contributions to Arkansas's federal delegation.
+### [The Arkansas Arsenal](/research/arkansas-arsenal/)
+Tracing Camden's defense manufacturing hub and its supply chain connections to weapons documented in use in Gaza.
 
 ---
 
