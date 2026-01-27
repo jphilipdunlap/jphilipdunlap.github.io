@@ -5,7 +5,7 @@ title = 'The Cost of the Alliance'
 summary = "How U.S.-Israel policy shapes American life — from $16.3 billion in military aid to surveillance blowback to First Amendment restrictions"
 description = "A comprehensive investigation into the domestic impacts of U.S.-Israel military cooperation: financial costs, defense industry entanglement, policing transfers, anti-BDS laws, and ethical breaches"
 toc = true
-hidden = true
+hiddenInHomeList = true
 +++
 
 The U.S.-Israel relationship extracts a price far beyond foreign policy debates. Since October 7, 2023, American taxpayers have funded **$16.3 billion** in direct military aid to Israel—money that cycles through defense contractors, shapes domestic policing practices, and restricts constitutional speech rights. Cumulatively, the United States has provided **$310 billion** in inflation-adjusted assistance since 1948, making Israel the largest cumulative recipient of U.S. foreign aid in history. But the costs extend beyond dollars: from surveillance technologies tested on Palestinians now deployed in American cities, to anti-boycott laws that have become templates for silencing climate activists, to donated human bodies used for foreign military training without families' knowledge.
