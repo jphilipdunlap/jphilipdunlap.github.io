@@ -3,7 +3,7 @@ date = '2026-01-26'
 draft = false
 title = 'Lavender: The AI Kill List Generator'
 summary = 'How a machine learning system marked 37,000 Palestinians for assassination—with 20-second human review and a 10% error rate'
-description = 'Part 1 of The Algorithmic Kill Chain. Investigation into Lavender, the Israeli AI system that generated kill lists of tens of thousands of Palestinians, operating with minimal human oversight and an acknowledged error rate that implies thousands of potential misidentifications.'
+description = "How Israel's AI system marked 37,000 Palestinians for assassination with minimal human oversight"
 toc = true
 +++
 

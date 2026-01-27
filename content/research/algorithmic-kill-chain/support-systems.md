@@ -2,8 +2,7 @@
 date = '2026-01-26'
 draft = false
 title = 'The Machine Behind the Machine: Digital Infrastructure for Automated Killing'
-summary = 'Part 5: The cloud platforms, spyware, and decision support systems that power the algorithmic kill chain—from Google and Amazon data centers to NSO Group surveillance'
-description = 'An investigation into the supporting infrastructure enabling AI-driven warfare: Project Nimbus cloud computing, Fire Factory strike automation, Pegasus spyware targeting human rights defenders, and Unit 8200 language models trained on 100 billion words of intercepted Palestinian communications.'
+summary = "Project Nimbus, Pegasus spyware, and the corporate infrastructure enabling algorithmic violence"
 series = ['The Algorithmic Kill Chain']
 series_order = 5
 toc = true
