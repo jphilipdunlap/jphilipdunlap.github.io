@@ -6,6 +6,7 @@ summary = 'How Political Capture and Ideology Breached the Trust of Arkansas Tea
 description = 'A forensic investigation documenting how the Arkansas Teacher Retirement System Board breached its fiduciary duty through a politically-driven $50 million Israel Bond investment and the strategic hiring of an ideological proxy advisor.'
 toc = true
 hiddenInHomeList = true
+hidden = true
 +++
 
 ## A Trust Betrayed

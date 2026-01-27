@@ -24,8 +24,6 @@ I do this work because I believe rigorous documentation—the kind that would ho
 
 I'm a father, a partner, and a member of Little Rock Peace for Palestine.
 
-## Contact
+---
 
-Email: joshuaphilipdunlap@gmail.com  
-GitHub: [jphilipdunlap](https://github.com/jphilipdunlap)  
-Location: North Little Rock, Arkansas
+[Home](/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)

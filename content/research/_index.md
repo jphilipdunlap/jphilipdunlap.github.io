@@ -3,6 +3,7 @@ date = '2026-01-26'
 draft = false
 title = 'Research'
 description = 'FOIA-based investigations into institutional accountability, defense industry supply chains, and political capture of Arkansas state institutions.'
+layout = 'single'
 +++
 
 My research focuses on institutional accountability and the mechanisms by which public institutions become captured by interests that conflict with their stated missions. I build evidentiary records from primary sources—board documents, internal communications, campaign finance data, statutory frameworks—and translate complex systems into clear findings.
@@ -57,4 +58,4 @@ If you're working on related investigations—particularly around state pension 
 
 ---
 
-Contact: joshuaphilipdunlap@gmail.com
+[About me](/about/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)

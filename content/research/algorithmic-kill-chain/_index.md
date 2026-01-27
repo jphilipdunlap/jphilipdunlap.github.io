@@ -3,6 +3,7 @@ date = '2026-01-26'
 draft = false
 title = 'The Algorithmic Kill Chain'
 description = "Documenting Israeli AI targeting systems deployed against Palestinians in Gaza and the occupied territories"
+hidden = true
 +++
 
 ## The Automation of Mass Death

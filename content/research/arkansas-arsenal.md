@@ -6,6 +6,7 @@ summary = 'Mapping the supply chain from Arkansas weapons manufacturing to docum
 description = 'A comprehensive investigation into Arkansas defense manufacturing, the political architecture sustaining it, and the documented end-use of Arkansas-made weapons in attacks on civilian populations.'
 toc = true
 hiddenInHomeList = true
+hidden = true
 +++
 
 ## Executive Summary
