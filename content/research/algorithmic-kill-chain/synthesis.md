@@ -1,8 +1,8 @@
 +++
 date = '2026-01-26'
 draft = false
-title = 'Part 6: Algorithmic Occupation and the Imperative of Accountability'
-summary = "Synthesizing the complete kill chain: from mass target generation to automated apartheid, and what it means for the future of warfare"
+title = "Part 6: Algorithmic Occupation and the Imperative of Accountability"
+summary = "Synthesizing the complete kill chain and what it means for the future of warfare"
 description = "The cumulative impact of algorithmic warfare and paths toward accountability"
 series = ['The Algorithmic Kill Chain']
 series_order = 6

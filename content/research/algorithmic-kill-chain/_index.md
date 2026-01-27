@@ -2,9 +2,7 @@
 date = '2026-01-26'
 draft = false
 title = 'The Algorithmic Kill Chain'
-summary = 'How Israel automated mass killing in Gaza: An investigation into AI targeting systems, 37,000-person kill lists, and the architecture of algorithmic warfare'
 description = "Documenting Israeli AI targeting systems deployed against Palestinians in Gaza and the occupied territories"
-toc = true
 +++
 
 ## The Automation of Mass Death
@@ -63,32 +61,32 @@ The cumulative effect: a system designed to generate and execute targets at scal
 
 This multi-part investigation examines each component of Israel's AI warfare ecosystem, analyzing available evidence, assessing legal implications under international humanitarian law, and tracing connections to global corporate infrastructure.
 
-### [Part 1: Lavender](/research/algorithmic-kill-chain/lavender/)
+### [Part 1: Lavender](./lavender/)
 **The AI Kill List Generator**
 
 How a machine learning system marked 37,000 Palestinians for potential assassination based on behavioral patterns, operating with 20-second human review and a 10% error rate. Analysis of what it means to target people based on algorithmic probability rather than evidence of hostile acts.
 
-### [Part 2: The Gospel](/research/algorithmic-kill-chain/gospel/)
+### [Part 2: The Gospel](./gospel/)
 **The Mass Assassination Factory**
 
 How AI-driven structural targeting enabled the systematic destruction of Gaza's urban infrastructure at unprecedented speed and scale. Examination of the shift from 50 targets per year to hundreds per day, and the consequences for civilian protection.
 
-### [Part 3: Where's Daddy?](/research/algorithmic-kill-chain/wheres-daddy/)
+### [Part 3: Where's Daddy?](./wheres-daddy/)
 **Weaponizing the Domestic Sphere**
 
 How a tracking system transformed family homes into preferred kill zones, operationalizing a policy that routinely results in the deaths of entire families. Analysis of what it means to develop technology specifically designed to strike people surrounded by their children.
 
-### [Part 4: Facial Recognition and Control](/research/algorithmic-kill-chain/facial-recognition/)
+### [Part 4: Automated Apartheid](./facial-recognition/)
 **The Infrastructure of Automated Apartheid**
 
 How Red Wolf, Blue Wolf, and related systems create a biometric control apparatus in the occupied territories—and how surveillance data collected for "routine" population control feeds into lethal targeting systems.
 
-### [Part 5: Supporting Systems](/research/algorithmic-kill-chain/support-systems/)
+### [Part 5: Support Systems](./support-systems/)
 **The Corporate Architecture of Algorithmic Warfare**
 
 How Fire Factory optimizes strikes, Project Nimbus provides computational backbone, Pegasus enables deep surveillance, and Unit 8200's LLM processes intercepted communications. Tracing corporate complicity from Silicon Valley to Gaza.
 
-### [Part 6: Synthesis](/research/algorithmic-kill-chain/synthesis/)
+### [Part 6: Synthesis](./synthesis/)
 **Conclusions and Accountability**
 
 Cumulative assessment of AI's role in alleged war crimes, crimes against humanity, and genocide. Analysis of the accountability gap created by algorithmic decision-making and recommendations for international response.

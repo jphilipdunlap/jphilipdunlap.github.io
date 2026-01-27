@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Part 2: The Gospel — Automating Structural Destruction | Joshua Dunlap</title>
+<meta name="keywords" content="">
+<meta name="description" content="The automated infrastructure targeting system generating bombing sites faster than humans can verify">
+<meta name="author" content="Joshua Dunlap">
+<link rel="canonical" href="http://localhost:1313/research/algorithmic-kill-chain/gospel/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/research/algorithmic-kill-chain/gospel/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Joshua Dunlap (Alt + H)">Joshua Dunlap</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/">Research</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Part 2: The Gospel — Automating Structural Destruction
+    </h1>
+    <div class="post-description">
+      The automated infrastructure targeting system generating bombing sites faster than humans can verify
+    </div>
+    <div class="post-meta"><span title='2026-01-26 00:00:00 +0000 UTC'>January 26, 2026</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Joshua Dunlap</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>The numbers that define automated urbicide:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Metric</th>
+          <th style="text-align: right">Value</th>
+          <th style="text-align: left">Source</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Manual target generation (pre-AI)</td>
+          <td style="text-align: right">~50/year</td>
+          <td style="text-align: left">IDF historical baseline</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Habsora target generation (2021)</td>
+          <td style="text-align: right">100/day</td>
+          <td style="text-align: left">Former IDF Chief Aviv Kohavi</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Habsora target generation (post-Oct 7)</td>
+          <td style="text-align: right">100-250+/day</td>
+          <td style="text-align: left">Intelligence sources</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Targets struck in first 35 days</td>
+          <td style="text-align: right">~15,000</td>
+          <td style="text-align: left">IDF reporting</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Buildings destroyed across Gaza</td>
+          <td style="text-align: right">50%+</td>
+          <td style="text-align: left">UN/satellite analysis</td>
+      </tr>
+  </tbody>
+</table>
+<p>Before AI, identifying 50 targets took Israeli intelligence analysts a full year. Habsora now generates that volume before lunch.</p>
+<hr>
+<h2 id="what-habsora-does">What Habsora Does<a hidden class="anchor" aria-hidden="true" href="#what-habsora-does">#</a></h2>
+<p>While <a href="/research/algorithmic-kill-chain/lavender/">Lavender</a> marks individuals for assassination, Habsora marks structures for demolition. The Gospel is the IDF&rsquo;s AI system for automating the identification of buildings, infrastructure, tunnels, and homes deemed &ldquo;significant&rdquo; by algorithmic analysis.</p>
+<p>Developed by the IDF&rsquo;s Targets Administration Division (established 2019), the system processes surveillance data—drone footage, intercepted communications, cell phone tracking, geospatial intelligence—and outputs coordinates for bombing.</p>
+<p>The critical insight: Habsora doesn&rsquo;t merely <em>find</em> targets. It algorithmically <em>constructs</em> them. The system operates through pattern-matching, comparing new data against characteristics of structures previously designated as &ldquo;militant-affiliated.&rdquo; A building showing sufficient statistical correlation gets flagged for destruction.</p>
+<p>This is probabilistic inference, not causal evidence. As AI researchers consistently warn, such systems recommend targets based on correlations in training data—data gathered through decades of occupation surveillance, framed entirely by Israeli security paradigms. The algorithm inherits the colonial gaze that views Palestinian infrastructure as inherently suspect.</p>
+<hr>
+<h2 id="the-target-categories">The Target Categories<a hidden class="anchor" aria-hidden="true" href="#the-target-categories">#</a></h2>
+<p>Habsora generates recommendations across Gaza&rsquo;s entire built environment:</p>
+<h3 id="operatives-homes">&ldquo;Operatives&rsquo; Homes&rdquo;<a hidden class="anchor" aria-hidden="true" href="#operatives-homes">#</a></h3>
+<p>The private residences of individuals suspected of militant affiliation—extended under post-October 7 policies to include junior operatives previously considered off-limits. One source described the practice bluntly: &ldquo;So they mark the home and bomb the house and kill everyone there.&rdquo;</p>
+<p>The system reportedly calculates expected civilian casualties for each target. These calculations feed into &ldquo;proportionality&rdquo; decisions made under rules of engagement that were drastically loosened after October 7.</p>
+<h3 id="power-targets">&ldquo;Power Targets&rdquo;<a hidden class="anchor" aria-hidden="true" href="#power-targets">#</a></h3>
+<p>This category reveals the underlying doctrine most clearly. &ldquo;Power targets&rdquo; include:</p>
+<ul>
+<li>High-rise apartment buildings</li>
+<li>Residential towers</li>
+<li>Universities</li>
+<li>Banks</li>
+<li>Government ministry buildings</li>
+<li>Mosques</li>
+</ul>
+<p>Intelligence sources explicitly state the purpose: not immediate military advantage, but to inflict harm on Palestinian civil society, create &ldquo;shock,&rdquo; and exert &ldquo;civil pressure&rdquo; on Hamas. This is the <a href="https://en.wikipedia.org/wiki/Dahiya_doctrine">Dahiya Doctrine</a> encoded into software—disproportionate force against civilian infrastructure as deliberate strategy.</p>
+<p>The bombing of the Babel Building, Al-Taj tower, Al-Mohandseen tower, and the Islamic University of Gaza all fall within this category.</p>
+<h3 id="tactical-and-underground-targets">Tactical and Underground Targets<a hidden class="anchor" aria-hidden="true" href="#tactical-and-underground-targets">#</a></h3>
+<p>Alleged command posts, weapons storage, rocket launch sites, and tunnel infrastructure. These categories are presented as legitimate military objectives, though the speed of Habsora&rsquo;s generation and the minimal review process raise serious questions about verification.</p>
+<hr>
+<h2 id="the-integration-how-lavender-and-habsora-work-together">The Integration: How Lavender and Habsora Work Together<a hidden class="anchor" aria-hidden="true" href="#the-integration-how-lavender-and-habsora-work-together">#</a></h2>
+<p>The systems don&rsquo;t operate in isolation. They create a synergistic kill chain:</p>
+<ol>
+<li><strong>Habsora</strong> identifies a residential building as a potential target based on algorithmic analysis</li>
+<li><strong>Lavender</strong> flags an individual on its kill list as present in that building</li>
+<li><strong>&ldquo;Where&rsquo;s Daddy?&rdquo;</strong> tracks the individual until they return home—preferably at night, when family is gathered</li>
+<li>The home becomes the strike coordinates</li>
+</ol>
+<p>This convergence transforms Palestinian homes from potential sanctuaries into preferred kill zones. The operational logic appears calibrated not merely to eliminate the targeted individual, but to do so when and where family casualties are maximized.</p>
+<p>The integration is deliberate. The systems were designed to work together. The &ldquo;Where&rsquo;s Daddy?&rdquo; nickname—chosen by IDF personnel—indicates awareness of what the system does: it waits for fathers to come home to their children before triggering the strike.</p>
+<hr>
+<h2 id="the-velocity-problem">The Velocity Problem<a hidden class="anchor" aria-hidden="true" href="#the-velocity-problem">#</a></h2>
+<p>Former IDF Chief of Staff Aviv Kohavi publicly celebrated the transformation: where analysts once identified 50 targets across an entire year, Habsora generates 100 per day.</p>
+<p><strong>What this velocity enables:</strong></p>
+<ul>
+<li>First 35 days post-October 7: approximately 15,000 targets struck</li>
+<li>Comparison: 51-day 2014 assault struck 5,263 targets total</li>
+<li>The system produces recommendations faster than the Air Force can act on them</li>
+</ul>
+<p>Target scarcity is no longer a limiting factor. The pipeline is infinite.</p>
+<p><strong>What this velocity destroys:</strong></p>
+<p>The sheer volume creates &ldquo;infobesity&rdquo;—one source estimated that &ldquo;tens of thousands of intelligence officers could not process&rdquo; the data feeding the system. Human review becomes mathematically impossible at meaningful depth.</p>
+<p>This is not a bug. Speed itself is weaponized. The acceleration of the targeting cycle inherently degrades the conditions necessary for careful deliberation, thorough vetting, and implementation of legal precautions. When you generate targets faster than humans can think about them, you&rsquo;ve designed a system where thinking is structurally excluded.</p>
+<hr>
+<h2 id="the-human-in-the-loop-fiction">The &ldquo;Human in the Loop&rdquo; Fiction<a hidden class="anchor" aria-hidden="true" href="#the-human-in-the-loop-fiction">#</a></h2>
+<p>The IDF maintains that human oversight remains central—analysts review, commanders approve, international law is followed.</p>
+<p>The testimonies say otherwise:</p>
+<blockquote>
+<p>&ldquo;The emphasis is on quantity and not on quality.&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>&ldquo;No time to delve deep into the target.&rdquo;</p>
+</blockquote>
+<p>Sources describe human review as a &ldquo;rubber stamp&rdquo; on machine recommendations. The operational tempo since October 7 leaves no time for independent verification. For Lavender targets, review reportedly consists of confirming the target&rsquo;s gender—a process taking approximately 20 seconds. For Habsora&rsquo;s structural targets, the pressure is similar: approve the queue, maintain the tempo.</p>
+<p>This is automation bias at institutional scale. When operators face an overwhelming queue of machine-generated recommendations under intense time pressure, they&rsquo;re incentivized to trust the algorithm rather than engage in time-consuming critical assessment.</p>
+<p>The &ldquo;human in the loop&rdquo; becomes a legal fig leaf—a way to claim compliance while the system&rsquo;s design ensures meaningful judgment is impossible.</p>
+<hr>
+<h2 id="what-50-destruction-looks-like">What 50% Destruction Looks Like<a hidden class="anchor" aria-hidden="true" href="#what-50-destruction-looks-like">#</a></h2>
+<p>Over half of all buildings in Gaza have been destroyed. The sites include:</p>
+<ul>
+<li>Hospitals</li>
+<li>Schools</li>
+<li>Mosques</li>
+<li>Bakeries</li>
+<li>Water treatment facilities</li>
+<li>Refugee camps</li>
+<li>UN facilities</li>
+</ul>
+<p>While attributing each individual strike to Habsora is impossible given operational secrecy, the system&rsquo;s capacity for generating targets at industrial scale is undeniably what <em>enables</em> this destruction. No human analytical process could identify structures for demolition at the rate required to level a city.</p>
+<p>Achille Mbembe&rsquo;s concept of &ldquo;necropolitics&rdquo; applies precisely: sovereign power asserting itself by creating &ldquo;death-worlds&rdquo;—environments rendered fundamentally unlivable. The transformation of Gaza into vast expanses of rubble is not collateral damage but active political strategy.</p>
+<p>Habsora automates urbicide.</p>
+<hr>
+<h2 id="legal-analysis-the-three-violations">Legal Analysis: The Three Violations<a hidden class="anchor" aria-hidden="true" href="#legal-analysis-the-three-violations">#</a></h2>
+<h3 id="distinction">Distinction<a hidden class="anchor" aria-hidden="true" href="#distinction">#</a></h3>
+<p>International humanitarian law requires distinguishing between civilian objects and military objectives. The explicit targeting of &ldquo;power targets&rdquo; to create &ldquo;civil pressure&rdquo; directly violates this principle—it involves intentional destruction of civilian objects for psychological or political effect, not military advantage.</p>
+<p>The mass targeting of homes based on tenuous algorithmic connections stretches &ldquo;military objective&rdquo; beyond credible limits.</p>
+<h3 id="proportionality">Proportionality<a hidden class="anchor" aria-hidden="true" href="#proportionality">#</a></h3>
+<p>IHL prohibits attacks expected to cause civilian harm excessive to the anticipated military advantage. The evidence suggests systematic violation:</p>
+<ul>
+<li>The system calculates expected civilian casualties</li>
+<li>Post-October 7 rules permit strikes anticipated to kill dozens or hundreds of civilians to eliminate single targets (sometimes junior operatives)</li>
+<li>The scale of civilian death demonstrates that anticipated military gains routinely &ldquo;outweigh&rdquo; devastating, foreseeable harm</li>
+</ul>
+<p>This is not risk tolerance. This is policy.</p>
+<h3 id="precautions">Precautions<a hidden class="anchor" aria-hidden="true" href="#precautions">#</a></h3>
+<p>Parties must take feasible precautions to minimize civilian harm. Habsora&rsquo;s operational tempo directly undermines this obligation:</p>
+<ul>
+<li>Rapid target generation leaves insufficient time for verifying civilian absence</li>
+<li>Reports indicate residential buildings struck without prior warning</li>
+<li>The system&rsquo;s velocity is structurally incompatible with meaningful precautionary measures</li>
+</ul>
+<hr>
+<h2 id="the-accountability-void">The Accountability Void<a hidden class="anchor" aria-hidden="true" href="#the-accountability-void">#</a></h2>
+<p>When destruction is mediated through opaque algorithms, rapid queues, and perfunctory review, who bears responsibility for unlawful strikes?</p>
+<p>The algorithm&rsquo;s designers? The commanders who approve policies? The operators who rubber-stamp recommendations? The political leadership that deployed the system?</p>
+<p>Habsora&rsquo;s architecture distributes responsibility across so many nodes that no single point becomes accountable. This diffusion is not incidental—it&rsquo;s a feature that enables the commission of potential atrocity crimes while providing plausible deniability at every level.</p>
+<hr>
+<h2 id="the-broader-framework">The Broader Framework<a hidden class="anchor" aria-hidden="true" href="#the-broader-framework">#</a></h2>
+<p>Habsora cannot be understood solely through international humanitarian law. It functions within structures of:</p>
+<p><strong>Settler Colonialism:</strong> Mass destruction of homes (domicide) and urban landscapes (urbicide) directly facilitates displacement of indigenous population and seizure of land.</p>
+<p><strong>Apartheid:</strong> The system is part of a technologically advanced apparatus of surveillance, control, and violence deployed overwhelmingly against one racialized group—reinforcing segregation, domination, and differential rights.</p>
+<p><strong>Potential Genocide:</strong> Given inflammatory rhetoric from Israeli officials, the catastrophic civilian death toll, and systematic destruction of infrastructure essential for sustaining life, Habsora&rsquo;s role in facilitating these outcomes is deeply concerning. The system enables what the Genocide Convention prohibits: &ldquo;deliberately inflicting on the group conditions of life calculated to bring about its physical destruction.&rdquo;</p>
+<p>AI in this context is not a neutral force multiplier. It accelerates and scales state violence, making the commission of potential atrocity crimes technologically feasible and bureaucratically streamlined.</p>
+<hr>
+<h2 id="challenging-the-official-narrative">Challenging the Official Narrative<a hidden class="anchor" aria-hidden="true" href="#challenging-the-official-narrative">#</a></h2>
+<p>The IDF emphasizes precision, adherence to international law, robust human control, minimization of civilian harm.</p>
+<p>The evidence reveals: mass target generation, loosened casualty constraints, perfunctory review, and deliberate targeting of civilian infrastructure for &ldquo;civil pressure.&rdquo;</p>
+<p>Attempts to downplay AI&rsquo;s role—characterizing systems as mere &ldquo;databases&rdquo; or claiming AI <em>improves</em> accuracy—appear as strategic efforts to maintain plausible deniability. The deliberate opacity surrounding Habsora&rsquo;s algorithms, data inputs, and operational parameters serves a clear purpose: hinder independent scrutiny and deflect accountability while leveraging the perception of technological sophistication.</p>
+<hr>
+<h2 id="sources-and-evidence-assessment">Sources and Evidence Assessment<a hidden class="anchor" aria-hidden="true" href="#sources-and-evidence-assessment">#</a></h2>
+<p>This analysis draws primarily on:</p>
+<ul>
+<li><strong>+972 Magazine and Local Call investigations</strong> based on interviews with current and former Israeli intelligence personnel</li>
+<li><strong>The Guardian&rsquo;s</strong> independent corroboration of AI targeting systems</li>
+<li><strong>Public statements by IDF leadership</strong>, including former Chief of Staff Aviv Kohavi&rsquo;s explicit acknowledgment of AI-driven target generation rates</li>
+<li><strong>Palestinian testimonies</strong> documenting the scale of home and infrastructure destruction</li>
+<li><strong>Human Rights Watch, Amnesty International, and Access Now</strong> documentation and analysis</li>
+<li><strong>UN reporting</strong> on destruction levels and potential IHL violations</li>
+</ul>
+<p>The insider accounts are weighted heavily because they provide operational detail unavailable through official channels. Their consistency across multiple sources, corroboration by observable destruction patterns, and alignment with public official statements (like Kohavi&rsquo;s) support their credibility.</p>
+<p>Official IDF denials are noted but assessed skeptically given the documented gap between public claims and insider testimony.</p>
+<hr>
+<h2 id="what-comes-next">What Comes Next<a hidden class="anchor" aria-hidden="true" href="#what-comes-next">#</a></h2>
+<p>Habsora marks structures. <a href="/research/algorithmic-kill-chain/lavender/">Lavender</a> marks people. The next section examines how <a href="/research/algorithmic-kill-chain/wheres-daddy/">&ldquo;Where&rsquo;s Daddy?&rdquo;</a> tracks individuals to their homes for precisely-timed strikes designed to maximize family casualties.</p>
+<hr>
+<p><strong><a href="/research/algorithmic-kill-chain/">← Back to Series Index</a></strong></p>
+<hr>
+<p><em>This investigation is part of <a href="/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a> series documenting AI-enabled targeting systems. For questions or additional documentation, contact <a href="mailto:joshuaphilipdunlap@gmail.com">joshuaphilipdunlap@gmail.com</a>.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/research/algorithmic-kill-chain/lavender/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Part 1: Lavender — The AI Kill List Generator</span>
+  </a>
+  <a class="next" href="http://localhost:1313/research/algorithmic-kill-chain/wheres-daddy/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Part 3: Where&#39;s Daddy? — Engineering Familicide</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Joshua Dunlap</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

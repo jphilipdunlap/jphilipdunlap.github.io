@@ -2,11 +2,11 @@
 date = '2026-01-26'
 draft = false
 title = "Part 3: Where's Daddy? — Engineering Familicide"
-summary = 'The system that tracks Palestinians to their homes and waits for family to gather before triggering airstrikes'
+summary = "The system that tracks Palestinians to their homes and waits for family to gather"
 description = "Tracking Palestinian men to their family homes for strikes designed to maximize casualties"
-toc = true
 series = ['The Algorithmic Kill Chain']
 series_order = 3
+toc = true
 +++
 
 **The system's name tells you what it does.**

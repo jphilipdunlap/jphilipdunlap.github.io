@@ -1,8 +1,8 @@
 +++
 date = '2026-01-26'
 draft = false
-title = 'Automated Apartheid: The Wolf Pack'
-summary = 'Part 4: How Israel built a facial recognition infrastructure that surveys Palestinians exclusively—turning checkpoints into biometric dragnet and gamifying soldiers into data collectors'
+title = "Part 4: Automated Apartheid — The Wolf Pack"
+summary = "Facial recognition infrastructure surveilling Palestinians exclusively"
 description = "How biometric surveillance and predictive profiling enforce racial control across historic Palestine"
 series = ['The Algorithmic Kill Chain']
 series_order = 4

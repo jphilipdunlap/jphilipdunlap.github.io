@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Part 3: Where&#39;s Daddy? — Engineering Familicide | Joshua Dunlap</title>
+<meta name="keywords" content="">
+<meta name="description" content="Tracking Palestinian men to their family homes for strikes designed to maximize casualties">
+<meta name="author" content="Joshua Dunlap">
+<link rel="canonical" href="http://localhost:1313/research/algorithmic-kill-chain/wheres-daddy/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/research/algorithmic-kill-chain/wheres-daddy/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Joshua Dunlap (Alt + H)">Joshua Dunlap</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/">Research</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Part 3: Where&#39;s Daddy? — Engineering Familicide
+    </h1>
+    <div class="post-description">
+      Tracking Palestinian men to their family homes for strikes designed to maximize casualties
+    </div>
+    <div class="post-meta"><span title='2026-01-26 00:00:00 +0000 UTC'>January 26, 2026</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Joshua Dunlap</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>The system&rsquo;s name tells you what it does.</strong></p>
+<p>&ldquo;Where&rsquo;s Daddy?&rdquo; tracks Palestinians marked for assassination and alerts the Israeli military the moment they enter their family homes. The home becomes the strike location. The moment of arrival—when family is gathered—becomes the trigger.</p>
+<p>IDF personnel chose this name. They knew what the system was for.</p>
+<hr>
+<h2 id="the-kill-chain-complete">The Kill Chain Complete<a hidden class="anchor" aria-hidden="true" href="#the-kill-chain-complete">#</a></h2>
+<p><a href="/research/algorithmic-kill-chain/lavender/">Lavender</a> generates 37,000 names. <a href="/research/algorithmic-kill-chain/gospel/">Habsora</a> marks 100+ buildings daily. &ldquo;Where&rsquo;s Daddy?&rdquo; answers the operational question: <em>when and where do we strike the individuals on the list?</em></p>
+<p>The answer, according to intelligence sources: at home, preferably at night, when families are present.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">System</th>
+          <th style="text-align: left">Function</th>
+          <th style="text-align: left">Output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Lavender</td>
+          <td style="text-align: left">Mass target generation</td>
+          <td style="text-align: left">37,000 individuals marked</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Habsora</td>
+          <td style="text-align: left">Infrastructure targeting</td>
+          <td style="text-align: left">100+ building targets/day</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Where&rsquo;s Daddy?</td>
+          <td style="text-align: left">Location tracking</td>
+          <td style="text-align: left">Home strike timing</td>
+      </tr>
+  </tbody>
+</table>
+<p>&ldquo;Where&rsquo;s Daddy?&rdquo; transforms abstract data points on a kill list into concrete lethal actions against families in their homes.</p>
+<hr>
+<h2 id="how-it-works">How It Works<a hidden class="anchor" aria-hidden="true" href="#how-it-works">#</a></h2>
+<p>The system operates through mobile phone location tracking, leveraging the Israeli state&rsquo;s pervasive surveillance infrastructure over Gaza&rsquo;s 2.3 million residents. Data sources include cell signals, location data, movement patterns, social network connections, and intelligence processed by Unit 8200.</p>
+<p>The core mechanism:</p>
+<ol>
+<li>An individual appears on Lavender&rsquo;s kill list</li>
+<li>&ldquo;Where&rsquo;s Daddy?&rdquo; automatically links that individual to their family residence</li>
+<li>The system monitors phone location data</li>
+<li>When the target&rsquo;s phone enters the home, the system alerts operators</li>
+<li>The home becomes strike coordinates</li>
+</ol>
+<p>The phone&rsquo;s presence at the home is treated as sufficient confirmation of identity to authorize a strike. No additional verification required.</p>
+<hr>
+<h2 id="the-policy-shift-homes-as-first-option">The Policy Shift: Homes as &ldquo;First Option&rdquo;<a hidden class="anchor" aria-hidden="true" href="#the-policy-shift-homes-as-first-option">#</a></h2>
+<p>The critical context: &ldquo;Where&rsquo;s Daddy?&rdquo; operates within a deliberate post-October 7 policy change. Whistleblower accounts reveal that bombing alleged militants inside their family homes became not merely an option but the <strong>&ldquo;first option.&rdquo;</strong></p>
+<p>The stated rationale, from intelligence sources:</p>
+<blockquote>
+<p>&ldquo;It&rsquo;s much easier to bomb a family&rsquo;s home. The system is built to look for them in these situations.&rdquo;</p>
+</blockquote>
+<p>This marks a stark departure from previous practice. Prior to October 7, targeting individuals in homes was reportedly considered &ldquo;especially brutal&rdquo;—restricted to senior commanders, requiring higher-level authorization, sometimes contingent on the home being empty.</p>
+<p>The policy change extended home targeting to junior alleged operatives. Lavender identified tens of thousands of such individuals. Each became eligible for home strikes.</p>
+<hr>
+<h2 id="what-easier-means">What &ldquo;Easier&rdquo; Means<a hidden class="anchor" aria-hidden="true" href="#what-easier-means">#</a></h2>
+<p>When intelligence sources say bombing homes is &ldquo;easier,&rdquo; they&rsquo;re acknowledging a calculation:</p>
+<p><strong>Operationally convenient:</strong> No need to track targets through unpredictable movements. Wait for them to go home.</p>
+<p><strong>Lower risk to attackers:</strong> No engagement with militants in the field. Strike from the air while targets are sleeping.</p>
+<p><strong>Maximized lethality:</strong> Family members, neighbors, and anyone in the building die alongside the target.</p>
+<p>The word &ldquo;easier&rdquo; is code for prioritizing operational convenience over the legal obligation to distinguish between combatants and civilians, between military objectives and civilian objects like homes.</p>
+<hr>
+<h2 id="the-scale-of-familicide">The Scale of Familicide<a hidden class="anchor" aria-hidden="true" href="#the-scale-of-familicide">#</a></h2>
+<p>The consequences are quantifiable:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Metric</th>
+          <th style="text-align: right">Value</th>
+          <th style="text-align: left">Comparison</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Families losing 10+ members (first 2 months)</td>
+          <td style="text-align: right">300+</td>
+          <td style="text-align: left">15× the rate from 2014 assault</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pre-authorized civilian deaths per junior target</td>
+          <td style="text-align: right">15-20</td>
+          <td style="text-align: left">Per strike authorization</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pre-authorized civilian deaths per senior target</td>
+          <td style="text-align: right">100+</td>
+          <td style="text-align: left">Per strike authorization</td>
+      </tr>
+  </tbody>
+</table>
+<p>In the first two months after October 7, over 300 Palestinian families lost ten or more members to Israeli airstrikes. This rate is fifteen times higher than during the 2014 assault—previously the deadliest in Gaza&rsquo;s history.</p>
+<p>These numbers reflect bureaucratically sanctioned killing. The military command pre-authorized specific civilian casualty ratios: up to 15-20 civilians per junior operative, over 100 per senior commander. The mass killing of families was not merely anticipated but quantified and approved within the targeting process.</p>
+<hr>
+<h2 id="the-name-as-confession">The Name as Confession<a hidden class="anchor" aria-hidden="true" href="#the-name-as-confession">#</a></h2>
+<p>&ldquo;Where&rsquo;s Daddy?&rdquo; is not a neutral technical designation. The name:</p>
+<ul>
+<li>Explicitly references a paternal figure (&ldquo;Daddy&rdquo;)</li>
+<li>Acknowledges the family unit as the targeting context</li>
+<li>Reduces family members to incidental obstacles in the kill zone</li>
+<li>Reflects awareness among creators and users of what the system does</li>
+</ul>
+<p>The name functions as psychological warfare. Its public revelation communicates to Palestinians: we see into your homes, we know when you gather as families, and we&rsquo;ve built a system specifically to exploit that vulnerability.</p>
+<hr>
+<h2 id="the-technical-failures">The Technical Failures<a hidden class="anchor" aria-hidden="true" href="#the-technical-failures">#</a></h2>
+<p>The system&rsquo;s reliance on mobile phone tracking introduces multiple failure points:</p>
+<p><strong>Infrastructure degradation:</strong> Cellular towers damaged by bombing. Frequent blackouts prevent phone charging. The system depends on infrastructure it&rsquo;s actively destroying.</p>
+<p><strong>Identity assumptions:</strong> A phone may be carried by someone other than the target—a son, a brother, another family member. Intelligence sources acknowledged this as a frequent cause of &ldquo;mistakes.&rdquo;</p>
+<p><strong>Location precision:</strong> Standard GPS and cellular triangulation errors in dense urban environments compound targeting inaccuracy.</p>
+<p><strong>Time lags:</strong> Reports indicate delays between the &ldquo;Where&rsquo;s Daddy?&rdquo; alert and actual strike execution. The target may leave; the family remains. The strike proceeds.</p>
+<hr>
+<h2 id="compounded-errors">Compounded Errors<a hidden class="anchor" aria-hidden="true" href="#compounded-errors">#</a></h2>
+<p>These tracking failures layer onto Lavender&rsquo;s 10% error rate. Consider the error cascade:</p>
+<ol>
+<li><strong>Lavender misidentifies targets</strong> — ~10% of 37,000 individuals may have no meaningful militant connection</li>
+<li><strong>Phone tracking mislocates</strong> — GPS errors, infrastructure damage, someone else carrying the phone</li>
+<li><strong>Time lag shifts presence</strong> — Target leaves, family stays</li>
+<li><strong>Strike executes anyway</strong> — Building destroyed, occupants killed</li>
+</ol>
+<p>The system generates catastrophic errors at every stage. Minimal human oversight—the &ldquo;20-second rubber stamp&rdquo;—provides no meaningful correction.</p>
+<p>A disturbing possibility: these flaws may be implicitly tolerated. If the operational goal is destruction of designated locations within pre-approved casualty limits rather than precise targeting of individuals, accuracy becomes functionally irrelevant.</p>
+<hr>
+<h2 id="legal-analysis-systematic-violations">Legal Analysis: Systematic Violations<a hidden class="anchor" aria-hidden="true" href="#legal-analysis-systematic-violations">#</a></h2>
+<h3 id="distinction">Distinction<a hidden class="anchor" aria-hidden="true" href="#distinction">#</a></h3>
+<p>Systematically targeting individuals within their homes—civilian objects—as a &ldquo;first option&rdquo; breaches the fundamental requirement to distinguish between military objectives and protected civilian sites. The home retains protected status unless proven to make an effective contribution to military action. That burden rests with the attacker.</p>
+<h3 id="proportionality">Proportionality<a hidden class="anchor" aria-hidden="true" href="#proportionality">#</a></h3>
+<p>Pre-authorizing 15-20 civilian deaths per junior operative represents a calculus where anticipated civilian harm is grossly excessive relative to military advantage. The use of unguided &ldquo;dumb&rdquo; bombs on residential buildings—weapons known for wide-area effects—ensures maximum collateral destruction.</p>
+<h3 id="precautions">Precautions<a hidden class="anchor" aria-hidden="true" href="#precautions">#</a></h3>
+<p>Relying on AI systems with known error rates, potentially inaccurate tracking data, and minimal human verification constitutes failure to take feasible precautions. The reported reduction of warning measures (like &ldquo;roof knocks&rdquo;) removes even inadequate safeguards.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">IHL Principle</th>
+          <th style="text-align: left">Violation Mechanism</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Distinction</strong></td>
+          <td style="text-align: left">Homes (civilian objects) targeted as &ldquo;first option&rdquo;; strikes based on flawed AI identification</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Proportionality</strong></td>
+          <td style="text-align: left">15-20 civilians pre-authorized per junior target; 100+ per senior target; dumb bombs on residential buildings</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Precautions</strong></td>
+          <td style="text-align: left">10% AI error rate; unreliable tracking data; 20-second review; time lags; reduced warnings</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="the-weaponization-of-home">The Weaponization of Home<a hidden class="anchor" aria-hidden="true" href="#the-weaponization-of-home">#</a></h2>
+<p>&ldquo;Where&rsquo;s Daddy?&rdquo; transforms the Palestinian home—universally understood as sanctuary—into the primary locus of state-sanctioned killing.</p>
+<p>This must be understood within settler-colonial context. The destruction of Palestinian homes, forced displacement, and erasure of Palestinian presence from the land are foundational strategies of Israeli domination. By deliberately targeting individuals within their homes, the military attacks the fabric of Palestinian social life, kinship networks, and the possibility of refuge.</p>
+<p>The system doesn&rsquo;t merely kill individuals. It kills families. It destroys homes. It renders domestic space uninhabitable as concept.</p>
+<hr>
+<h2 id="the-accountability-void">The Accountability Void<a hidden class="anchor" aria-hidden="true" href="#the-accountability-void">#</a></h2>
+<p>When killing is mediated through algorithmic identification, automated tracking, pre-authorized casualty ratios, and perfunctory human review, responsibility diffuses across multiple nodes:</p>
+<ul>
+<li>Algorithm designers</li>
+<li>Policy makers who set casualty thresholds</li>
+<li>Commanders who approve operational parameters</li>
+<li>Operators who rubber-stamp recommendations</li>
+</ul>
+<p>Each actor can point to others. The system&rsquo;s architecture distributes responsibility precisely to prevent its assignment. This diffusion is not incidental—it enables potential atrocity crimes while providing plausible deniability.</p>
+<p>Yet legal and moral responsibility remains with the humans who design, deploy, and oversee these systems. Human decisions are central at every stage. The algorithm provides no absolution.</p>
+<hr>
+<h2 id="resistance-through-exposure">Resistance Through Exposure<a hidden class="anchor" aria-hidden="true" href="#resistance-through-exposure">#</a></h2>
+<p>The primary resistance documented thus far comes from within the Israeli military itself: the intelligence officers who spoke to +972 Magazine and Local Call. Their decision to reveal classified information about these systems—driven by conscience or shock at the scale of killing they participated in—represents a significant breach in state information control.</p>
+<p>Palestinian steadfastness (<em>sumud</em>) constitutes another form of resistance. Survivors who lost entire families continue to testify. Human rights organizations operating under bombardment continue to document. The testimonies of the bereaved stand against the erasure attempted by the violence.</p>
+<p>International legal pressure mounts: ICC investigations, ICJ proceedings, and human rights documentation all build the evidentiary record for eventual accountability.</p>
+<hr>
+<h2 id="what-the-name-reveals">What the Name Reveals<a hidden class="anchor" aria-hidden="true" href="#what-the-name-reveals">#</a></h2>
+<p>They called it &ldquo;Where&rsquo;s Daddy?&rdquo; They knew what it did. They built it anyway.</p>
+<p>The system tracks fathers to their homes. It waits for families to gather. It triggers airstrikes timed to maximize the presence of women and children.</p>
+<p>This is not collateral damage. This is not unfortunate byproduct. This is familicide by design—engineered, automated, and scaled.</p>
+<hr>
+<h2 id="sources-and-evidence-assessment">Sources and Evidence Assessment<a hidden class="anchor" aria-hidden="true" href="#sources-and-evidence-assessment">#</a></h2>
+<p>This analysis draws on:</p>
+<ul>
+<li><strong>+972 Magazine/Local Call investigations</strong> based on interviews with six Israeli intelligence officers with direct involvement in these systems</li>
+<li><strong>Human Rights Watch and Amnesty International</strong> documentation of residential attacks and mass civilian casualties</li>
+<li><strong>New York Times reporting</strong> on loosened post-October 7 rules of engagement</li>
+<li><strong>UN Commission of Inquiry</strong> reports on potential IHL violations</li>
+<li><strong>Palestinian human rights organizations</strong> tracking home destruction under bombardment</li>
+</ul>
+<p>The whistleblower accounts provide operational detail unavailable through official channels. Their consistency across sources, corroboration by observable destruction patterns, and alignment with the scale of documented familicide support their credibility.</p>
+<p>Official IDF denials are noted but assessed against the evidence: claims of robust human oversight and IHL compliance are directly contradicted by insider descriptions of 20-second reviews, pre-authorized mass civilian casualties, and the deliberate policy of home targeting as &ldquo;first option.&rdquo;</p>
+<hr>
+<h2 id="what-comes-next">What Comes Next<a hidden class="anchor" aria-hidden="true" href="#what-comes-next">#</a></h2>
+<p>&ldquo;Where&rsquo;s Daddy?&rdquo; tracks individuals to their homes. But the kill chain extends further. The next section examines <a href="/research/algorithmic-kill-chain/facial-recognition/">facial recognition and surveillance systems</a> that identify and monitor Palestinians across Gaza—the technological infrastructure enabling this entire apparatus.</p>
+<hr>
+<p><strong><a href="/research/algorithmic-kill-chain/gospel/">← Previous: The Gospel</a></strong> · <strong><a href="/research/algorithmic-kill-chain/">Series Index</a></strong> · <strong><a href="/research/algorithmic-kill-chain/facial-recognition/">Next: Facial Recognition →</a></strong></p>
+<hr>
+<p><em>This investigation is part of <a href="/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a> series documenting AI-enabled targeting systems. For questions or additional documentation, contact <a href="mailto:joshuaphilipdunlap@gmail.com">joshuaphilipdunlap@gmail.com</a>.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/research/algorithmic-kill-chain/gospel/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Part 2: The Gospel — Automating Structural Destruction</span>
+  </a>
+  <a class="next" href="http://localhost:1313/research/algorithmic-kill-chain/facial-recognition/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Part 4: Automated Apartheid — The Wolf Pack</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Joshua Dunlap</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

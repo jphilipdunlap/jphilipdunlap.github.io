@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Part 5: The Machine Behind the Machine | Joshua Dunlap</title>
+<meta name="keywords" content="">
+<meta name="description" content="Project Nimbus, Pegasus spyware, and the corporate infrastructure enabling algorithmic violence">
+<meta name="author" content="Joshua Dunlap">
+<link rel="canonical" href="http://localhost:1313/research/algorithmic-kill-chain/support-systems/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/research/algorithmic-kill-chain/support-systems/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Joshua Dunlap (Alt + H)">Joshua Dunlap</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/">Research</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Part 5: The Machine Behind the Machine
+    </h1>
+    <div class="post-description">
+      Project Nimbus, Pegasus spyware, and the corporate infrastructure enabling algorithmic violence
+    </div>
+    <div class="post-meta"><span title='2026-01-26 00:00:00 +0000 UTC'>January 26, 2026</span>&nbsp;·&nbsp;<span>19 min</span>&nbsp;·&nbsp;<span>Joshua Dunlap</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="the-numbers">The Numbers<a hidden class="anchor" aria-hidden="true" href="#the-numbers">#</a></h2>
+<p><strong>$1.2 billion</strong> — Value of Project Nimbus, the Google-Amazon cloud contract providing AI infrastructure to the Israeli military</p>
+<p><strong>100 billion words</strong> — Volume of intercepted Palestinian communications used to train Unit 8200&rsquo;s surveillance language model</p>
+<p><strong>6</strong> — Palestinian human rights defenders confirmed hacked by Pegasus spyware before Israel designated their organizations as &ldquo;terrorist&rdquo;</p>
+<p><strong>28+</strong> — Google and Amazon workers fired for protesting Project Nimbus</p>
+<p><strong>&ldquo;Seconds rather than minutes&rdquo;</strong> — Fire Weaver&rsquo;s sensor-to-shooter acceleration, per Rafael marketing materials</p>
+<p><strong>$33 million</strong> — RTX-Rafael facility in Camden, Arkansas producing Iron Dome missiles</p>
+<hr>
+<p>The targeting systems documented in this series—<a href="/research/algorithmic-kill-chain/gospel/">Gospel</a>, <a href="/research/algorithmic-kill-chain/lavender/">Lavender</a>, and <a href="/research/algorithmic-kill-chain/wheres-daddy/">Where&rsquo;s Daddy?</a>—do not operate in isolation. They depend on a vast supporting infrastructure: cloud computing platforms that process surveillance data, decision support systems that translate AI recommendations into bombing raids, spyware that penetrates the devices of human rights defenders, and language models trained on the intercepted conversations of an occupied population.</p>
+<p>This infrastructure is not incidental. It is the foundation upon which automated warfare operates. Without Google and Amazon cloud services, the machine learning systems identifying targets could not function at scale. Without Fire Factory, AI-generated target lists would remain abstractions rather than scheduled airstrikes. Without Pegasus, the intelligence apparatus would lose its capacity to monitor those documenting its crimes.</p>
+<p>The corporations and state agencies building this infrastructure are not passive contractors. They are architects of a system designed to surveil, target, and eliminate.</p>
+<hr>
+<h2 id="the-support-ecosystem">The Support Ecosystem<a hidden class="anchor" aria-hidden="true" href="#the-support-ecosystem">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">System</th>
+          <th style="text-align: left">Function</th>
+          <th style="text-align: left">Developer</th>
+          <th style="text-align: left">Kill Chain Role</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Fire Factory</strong></td>
+          <td style="text-align: left">Automated strike planning</td>
+          <td style="text-align: left">IDF/Israeli contractors</td>
+          <td style="text-align: left">Converts Lavender/Gospel target lists into bombing schedules</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Fire Weaver</strong></td>
+          <td style="text-align: left">Sensor-to-shooter network</td>
+          <td style="text-align: left">Rafael</td>
+          <td style="text-align: left">Accelerates engagement from identification to strike</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Alchemist</strong></td>
+          <td style="text-align: left">Real-time threat alerting</td>
+          <td style="text-align: left">IDF</td>
+          <td style="text-align: left">Feeds intelligence to Fire Factory and field commanders</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Depth of Wisdom</strong></td>
+          <td style="text-align: left">Tunnel network mapping</td>
+          <td style="text-align: left">IDF</td>
+          <td style="text-align: left">Provides targeting data for subterranean infrastructure</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Edge 360</strong></td>
+          <td style="text-align: left">Vehicle threat detection</td>
+          <td style="text-align: left">Elbit Systems</td>
+          <td style="text-align: left">Platform-level AI for armored vehicles</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Project Nimbus</strong></td>
+          <td style="text-align: left">Cloud infrastructure/AI</td>
+          <td style="text-align: left">Google, Amazon</td>
+          <td style="text-align: left">Powers Gospel, Lavender, and mass data processing</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pegasus</strong></td>
+          <td style="text-align: left">Device infiltration spyware</td>
+          <td style="text-align: left">NSO Group</td>
+          <td style="text-align: left">Targets human rights defenders monitoring abuses</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Unit 8200 LLM</strong></td>
+          <td style="text-align: left">Surveillance language model</td>
+          <td style="text-align: left">IDF Unit 8200</td>
+          <td style="text-align: left">Analyzes intercepted communications for &ldquo;incrimination&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="fire-factory-the-mass-assassination-scheduler">Fire Factory: The Mass Assassination Scheduler<a hidden class="anchor" aria-hidden="true" href="#fire-factory-the-mass-assassination-scheduler">#</a></h2>
+<p>Fire Factory transforms AI-generated target lists into operational bombing campaigns. Taking outputs from systems like Gospel (structural targets) and Lavender (individual targets), it calculates required munition loads, prioritizes targets, assigns specific targets to aircraft and drones, and proposes attack schedules.</p>
+<p>The system functions as logistical infrastructure for aerial bombardment at industrial scale. As one intelligence source described the Gaza operations: a &ldquo;mass assassination factory.&rdquo;</p>
+<p>Dr. Tal Mimran, a legal scholar who has studied these systems, describes the operational flow:</p>
+<blockquote>
+<p>&ldquo;Fire Factory evaluates and categorizes information into possible threats or targets, acting as a bridge between data collection [Alchemist] and target selection [Gospel].&rdquo;</p>
+</blockquote>
+<p>The system reportedly processes &ldquo;military-approved targets&rdquo;—but the nature of AI target generation means Fire Factory schedules strikes based on data from systems like Lavender, which intelligence sources say operated with a documented error rate and permissive rules of engagement accepting up to 20 civilian casualties per junior militant.</p>
+<p>Fire Factory may incorporate automated Rules of Engagement and Collateral Damage Estimation calculations. The reliability and ethical thresholds embedded within these assessments remain opaque. What is observable is output: the systematic bombardment of residential buildings, the destruction of entire neighborhoods, the &ldquo;where&rsquo;s daddy?&rdquo; timing of strikes to maximize deaths when families gather.</p>
+<p>The system&rsquo;s lack of direct connection to deployed weapons does not insulate it from responsibility. It is the crucial node translating algorithmic recommendations into kinetic action—the scheduler that turns probability scores into scheduled destruction.</p>
+<hr>
+<h2 id="fire-weaver-killing-in-seconds">Fire Weaver: Killing in Seconds<a hidden class="anchor" aria-hidden="true" href="#fire-weaver-killing-in-seconds">#</a></h2>
+<p>Developed by Rafael in collaboration with the Israeli Ministry of Defense, Fire Weaver is a networked &ldquo;sensor-to-shooter&rdquo; system designed for battalion-level operations and below. It connects sensors—drone feeds, observation posts, targeting systems—directly to weapons platforms using AI algorithms that process battlefield data in real-time.</p>
+<p>The purpose is explicit: drastically shorten the time between target identification and engagement.</p>
+<p>Rafael&rsquo;s marketing materials promise attacks &ldquo;in seconds, rather than minutes.&rdquo;</p>
+<p>Fire Weaver analyzes targets shared across its network, calculating the &ldquo;optimal shooter&rdquo; based on location, line-of-sight, weapon effectiveness, and ammunition status. It uses a GPS-independent &ldquo;geo-pixel&rdquo; coordinate system ensuring all networked units view identical target data, displaying targets and friendly forces through augmented reality overlays on weapon sights and battle management systems.</p>
+<p>The system&rsquo;s integration with Gospel and Lavender extends automation down to the tactical level. Where Fire Factory schedules bombing campaigns, Fire Weaver accelerates individual engagements—reducing the time available for human deliberation, collapsing the distance between algorithmic identification and lethal force.</p>
+<p>Rafael has signed agreements to integrate Fire Weaver with Safran&rsquo;s Moskito TI target locators, embedding the system deeper into international military hardware ecosystems. The company markets these capabilities globally, using Gaza as a proving ground for technologies sold to militaries worldwide.</p>
+<hr>
+<h2 id="alchemist-and-depth-of-wisdom-the-intelligence-layer">Alchemist and Depth of Wisdom: The Intelligence Layer<a hidden class="anchor" aria-hidden="true" href="#alchemist-and-depth-of-wisdom-the-intelligence-layer">#</a></h2>
+<p>These AI systems were deployed alongside Gospel during Israel&rsquo;s 2021 assault on Gaza—what military officials dubbed the &ldquo;first AI war.&rdquo;</p>
+<p><strong>Alchemist</strong> analyzes incoming data streams and alerts troops to possible threats in real-time, feeding information directly to field commanders via handheld devices. It functions as the collection component in the kill chain, processing signals intelligence, surveillance feeds, and geospatial data into actionable intelligence that flows to Fire Factory for evaluation and targeting.</p>
+<p><strong>Depth of Wisdom</strong> maps Gaza&rsquo;s tunnel network, analyzing data to determine tunnel depths, routes, and structural characteristics. This provides targeting intelligence for infrastructure that Israel claims serves military purposes—but which also includes tunnels used for civilian movement and commerce under a 17-year blockade that restricts surface transit.</p>
+<p>These systems exemplify AI&rsquo;s role in processing vast intelligence streams to provide battlefield awareness. They convert raw surveillance into the structured data that targeting systems consume, contributing to the IDF&rsquo;s claimed situational awareness within Gaza&rsquo;s dense urban environment.</p>
+<hr>
+<h2 id="edge-360-platform-level-automation">Edge 360: Platform-Level Automation<a hidden class="anchor" aria-hidden="true" href="#edge-360-platform-level-automation">#</a></h2>
+<p>Edge 360, associated with Elbit Systems, provides algorithmic threat detection for armored vehicles including the Namer and Eitan APCs. Operating in urban environments, it uses sensors to automatically identify potential threats—anti-tank teams, RPG positions—augmenting crew situational awareness and potentially cueing defensive systems.</p>
+<p>The system represents AI integration at the platform level: individual combat vehicles carrying their own automated threat assessment. Edge 360 contributes to the survivability of Israeli military assets operating within Palestinian territory while extending algorithmic decision-making to the granular level of individual vehicle operations.</p>
+<p>Elbit Systems markets Edge 360 alongside its drone systems, electronic warfare capabilities, and the Hermes UAVs documented in strikes across Gaza. The company&rsquo;s products form a substantial portion of the hardware infrastructure through which Israeli military operations execute.</p>
+<hr>
+<h2 id="project-nimbus-the-cloud-powering-the-kill-chain">Project Nimbus: The Cloud Powering the Kill Chain<a hidden class="anchor" aria-hidden="true" href="#project-nimbus-the-cloud-powering-the-kill-chain">#</a></h2>
+<p>Project Nimbus is a $1.2 billion contract awarded in 2021, establishing a strategic partnership between the Israeli state—including its military and &ldquo;defense establishment&rdquo;—and two of the world&rsquo;s largest technology corporations: Google (Alphabet) and Amazon (AWS).</p>
+<p>The contract provides comprehensive cloud computing infrastructure, data storage, and advanced AI/ML capabilities. This is not abstract &ldquo;cloud services.&rdquo; It is the computational foundation enabling the systems documented throughout this series.</p>
+<h3 id="what-nimbus-provides">What Nimbus Provides<a hidden class="anchor" aria-hidden="true" href="#what-nimbus-provides">#</a></h3>
+<p>Leaked documents and investigative reporting indicate Google and Amazon are supplying:</p>
+<ul>
+<li>Advanced AI/ML suites and data analysis tools</li>
+<li>Facial recognition capabilities</li>
+<li>Object tracking systems</li>
+<li>Potentially emotion recognition and biometric analysis</li>
+<li>Secure, localized cloud instances within Israel&rsquo;s borders</li>
+</ul>
+<p>These capabilities allow Israeli authorities to process the vast surveillance data collected on Palestinians—the inputs that feed Gospel, Lavender, and the Unit 8200 language model. Israeli intelligence has reportedly integrated Google Photos into facial recognition systems used for surveillance and arrests in Gaza.</p>
+<p>The cloud infrastructure enables large-scale data analysis, AI model training, and database hosting with minimal oversight from the companies themselves. Beyond direct military applications, Nimbus services are used by entities like the Israel Land Authority and the state-owned water company Mekorot—institutions implicated in discriminatory practices regarding land confiscation, settlement expansion, and resource control.</p>
+<h3 id="corporate-complicity-and-worker-resistance">Corporate Complicity and Worker Resistance<a hidden class="anchor" aria-hidden="true" href="#corporate-complicity-and-worker-resistance">#</a></h3>
+<p>The #NoTechForApartheid campaign, comprised of workers within Google and Amazon, has centered Project Nimbus in demands for corporate accountability. Their argument aligns with findings from Human Rights Watch and Amnesty International: by providing these tools, the corporations directly aid Israel&rsquo;s commission of international crimes.</p>
+<p>Worker actions have included:</p>
+<ul>
+<li>Protests and sit-ins occupying executive offices</li>
+<li>Petitions signed by thousands of employees</li>
+<li>Public denunciation of corporate complicity</li>
+<li>Whistleblowing about contract details</li>
+</ul>
+<p>Corporate response has been dismissive and punitive. Google maintains the contract is not directed at &ldquo;highly sensitive, classified, or military workloads relevant to weapons or intelligence services&rdquo;—a claim contradicted by Israeli government statements and documented military use of cloud services.</p>
+<p>Both companies have retaliated against protesting workers. <strong>Twenty-eight employees were fired</strong> following sit-ins and demonstrations organized by No Tech For Apartheid. The firings demonstrate a deliberate choice to protect contracts over ethical responsibility, prioritizing profit from a regime engaged in systematic violence.</p>
+<hr>
+<h2 id="pegasus-surveillance-as-counter-accountability">Pegasus: Surveillance as Counter-Accountability<a hidden class="anchor" aria-hidden="true" href="#pegasus-surveillance-as-counter-accountability">#</a></h2>
+<p>Pegasus, developed by Israeli cyber-arms firm NSO Group, represents the surveillance apparatus&rsquo;s reach into the most private digital spaces of those documenting its crimes. Marketed for fighting crime and terrorism, it has been systematically deployed against Palestinian human rights defenders, journalists, lawyers, and activists.</p>
+<h3 id="technical-capabilities">Technical Capabilities<a hidden class="anchor" aria-hidden="true" href="#technical-capabilities">#</a></h3>
+<p>Pegasus is designed for covert, remote installation on iOS and Android devices using sophisticated &ldquo;zero-click&rdquo; exploits requiring no target interaction. Exploits like FORCEDENTRY leveraged vulnerabilities in iMessage to gain complete device control simply by sending a message.</p>
+<p>Once installed, Pegasus grants attackers:</p>
+<ul>
+<li>Access to all messages, including encrypted communications</li>
+<li>Email, photos, contacts, call logs, browsing history</li>
+<li>Precise location data</li>
+<li>Remote activation of microphone and camera</li>
+</ul>
+<p>The device becomes a surveillance tool monitoring not only the target but everyone they communicate with—creating a chilling effect on activism, journalism, and legal defense work.</p>
+<h3 id="targeting-palestinian-human-rights-defenders">Targeting Palestinian Human Rights Defenders<a hidden class="anchor" aria-hidden="true" href="#targeting-palestinian-human-rights-defenders">#</a></h3>
+<p>In late 2021, Front Line Defenders, Citizen Lab, and Amnesty International&rsquo;s Security Lab documented Pegasus infections on phones belonging to six prominent Palestinian human rights defenders:</p>
+<ul>
+<li><strong>Ghassan Halaika</strong> — Field researcher for Al-Haq (hacked July 2020)</li>
+<li><strong>Ubai Al-Aboudi</strong> — U.S. citizen, Executive Director of Bisan Center for Research and Development (hacked February 2021)</li>
+<li><strong>Salah Hammouri</strong> — French-Palestinian lawyer for Addameer Prisoner Support and Human Rights Association (hacked April 2021)</li>
+<li>Three additional defenders who chose to remain anonymous</li>
+</ul>
+<p>These hacks occurred before and around the time Israel designated these same six civil society organizations—Al-Haq, Addameer, Bisan Center, Defense for Children International-Palestine, Union of Agricultural Work Committees, Union of Palestinian Women&rsquo;s Committees—as &ldquo;terrorist organizations&rdquo; in October 2021.</p>
+<p>The timing is not coincidental. Surveillance was used to gather information supporting the designations—a move widely condemned as an attack on Palestinian civil society and an attempt to suppress human rights monitoring.</p>
+<p>Subsequent investigations revealed Pegasus targeting of Palestinian-American journalist Daoud Kuttab multiple times between 2022 and 2023.</p>
+<h3 id="state-licensing">State Licensing<a hidden class="anchor" aria-hidden="true" href="#state-licensing">#</a></h3>
+<p>Pegasus export is explicitly subject to licensing by the Israeli Ministry of Defense, establishing a direct link between the state and proliferation of this repressive technology. The licensing regime underscores the strategic use of cyber-surveillance as an instrument of Israeli statecraft.</p>
+<p>The U.S. government blacklisted NSO Group in November 2021 for facilitating transnational repression. Israel continues to oversee its operations. Pegasus is not merely a private company&rsquo;s product—it is an extension of the Israeli state&rsquo;s surveillance apparatus, deployed against Palestinians and exported globally as a tool of control.</p>
+<hr>
+<h2 id="unit-8200-llm-training-ai-on-the-language-of-the-occupied">Unit 8200 LLM: Training AI on the Language of the Occupied<a hidden class="anchor" aria-hidden="true" href="#unit-8200-llm-training-ai-on-the-language-of-the-occupied">#</a></h2>
+<p>The Israeli military&rsquo;s intelligence apparatus—specifically the elite cyber warfare Unit 8200—is developing an AI tool based on Large Language Model technology, similar to ChatGPT. This represents a significant escalation: moving beyond target identification toward analyzing and potentially manipulating the language and communication of the Palestinian population.</p>
+<h3 id="training-data-100-billion-words-of-intercepted-conversations">Training Data: 100 Billion Words of Intercepted Conversations<a hidden class="anchor" aria-hidden="true" href="#training-data-100-billion-words-of-intercepted-conversations">#</a></h3>
+<p>Unlike publicly available LLMs trained on internet data, Unit 8200&rsquo;s model is being fed vast quantities of intercepted Palestinian communications—millions of telephone conversations and text messages captured through Israel&rsquo;s pervasive surveillance infrastructure.</p>
+<blockquote>
+<p>Sources indicate the model was trained on as much as <strong>100 billion words of Arabic</strong>, including everyday, personal conversations with no inherent intelligence value, harvested specifically because they provide rich data on spoken dialects unavailable elsewhere.</p>
+</blockquote>
+<p>This mass interception and instrumentalization of private communications from an occupied population—not suspected of any crime—constitutes a severe violation of fundamental privacy and digital rights.</p>
+<h3 id="applications-prediction-incrimination-control">Applications: Prediction, Incrimination, Control<a hidden class="anchor" aria-hidden="true" href="#applications-prediction-incrimination-control">#</a></h3>
+<p>The Unit 8200 LLM is designed to:</p>
+<ul>
+<li>Rapidly process surveillance data to &ldquo;answer questions&rdquo; about individuals</li>
+<li>Generate summaries of relationships, activities, and sentiments from private communications</li>
+<li>Identify keywords or expressions of dissent (&ldquo;troublemaking&rdquo; words)</li>
+<li>Accelerate identification of individuals for incrimination and arrest</li>
+</ul>
+<p>Intelligence sources explicitly state that such AI tools amplify state power, enabling broader population control by facilitating the tracking of human rights activists, monitoring construction in Area C, and providing deeper insight into the lives of Palestinians under occupation.</p>
+<p>Unit 8200 already utilizes smaller language models for classification, transcription, and translation—systems that sources say have deepened control and increased arrests by allowing commanders access to translated intelligence without Arabic language skills. The new, larger LLM scales these capabilities dramatically.</p>
+<h3 id="corporate-expertise">Corporate Expertise<a hidden class="anchor" aria-hidden="true" href="#corporate-expertise">#</a></h3>
+<p>The involvement of Israeli military reservists possessing expertise gained at <strong>Google, Meta, and Microsoft</strong> in developing this LLM raises serious questions about tech industry complicity in building surveillance tools. These companies have employed individuals who subsequently contribute specialized knowledge to systems designed for population control and incrimination.</p>
+<p>An LLM trained predominantly on the language of a population living under decades of military occupation is likely to internalize and reproduce biases, misinterpreting cultural expressions, frustration, or political dissent as indicators of threat. As Human Rights Watch notes, LLMs function like &ldquo;guessing machines&rdquo;—and their inherent errors, coupled with user over-trust, create significant risks of misidentification and wrongful incrimination.</p>
+<hr>
+<h2 id="the-integrated-architecture">The Integrated Architecture<a hidden class="anchor" aria-hidden="true" href="#the-integrated-architecture">#</a></h2>
+<p>These systems do not operate independently. They form an integrated, mutually reinforcing ecosystem designed to maximize surveillance, control, and the application of lethal force.</p>
+<p><strong>Project Nimbus</strong> serves as the foundational layer—providing computational power, data storage, and AI/ML tools. The massive datasets generated by surveillance infrastructure require scalable cloud services for storage, processing, and analysis. This infrastructure enables Gospel, Lavender, and the Unit 8200 LLM.</p>
+<p><strong>Intelligence gathering</strong>—through Pegasus compromising individual devices, mass interception feeding the Unit 8200 LLM, and conventional surveillance—flows into the broader intelligence pool.</p>
+<p><strong>AI systems</strong> (Alchemist, Gospel, Lavender) process this intelligence, identifying threats, generating targets, and detecting patterns.</p>
+<p><strong>Fire Factory</strong> takes AI-generated target lists and automates bombardment logistics—calculating munitions, scheduling strikes.</p>
+<p><strong>Fire Weaver</strong> connects sensors directly to shooters at the tactical level, accelerating engagement based on real-time data.</p>
+<p><strong>Edge 360</strong> provides platform-level threat detection for vehicles operating within this environment.</p>
+<p>The result is a cycle: surveillance feeds AI analysis, which directs and accelerates military action, enabled by corporate cloud infrastructure. The components are interdependent. Remove the cloud computing and the AI systems cannot operate at scale. Remove the targeting systems and the decision support tools have nothing to schedule. Remove the surveillance and the entire apparatus loses its inputs.</p>
+<p>This is not a collection of tools. It is an architecture—a designed system where each component reinforces the others, creating a machine for automated control and killing.</p>
+<hr>
+<h2 id="human-rights-framework">Human Rights Framework<a hidden class="anchor" aria-hidden="true" href="#human-rights-framework">#</a></h2>
+<p>The systems documented here raise fundamental questions under international humanitarian and human rights law.</p>
+<h3 id="privacy-and-digital-rights">Privacy and Digital Rights<a hidden class="anchor" aria-hidden="true" href="#privacy-and-digital-rights">#</a></h3>
+<p>The mass interception of Palestinian communications—feeding both the Unit 8200 LLM and broader intelligence systems—violates the International Covenant on Civil and Political Rights (ICCPR) Article 17, which prohibits arbitrary interference with privacy, family, home, and correspondence.</p>
+<p>Pegasus targeting of human rights defenders violates protections for freedom of expression (ICCPR Article 19) and association (Article 22), creating surveillance that chills legitimate civil society activity.</p>
+<h3 id="civilian-distinction-and-proportionality">Civilian Distinction and Proportionality<a hidden class="anchor" aria-hidden="true" href="#civilian-distinction-and-proportionality">#</a></h3>
+<p>The decision support systems that accelerate targeting—Fire Factory scheduling strikes, Fire Weaver reducing engagement time to seconds—operate within a framework where documented error rates and permissive collateral damage thresholds suggest systematic failure to distinguish combatants from civilians.</p>
+<p>When Fire Factory schedules strikes based on Lavender&rsquo;s outputs—a system sources say accepted error rates and civilian casualty ratios that permitted killing uninvolved family members—the automation does not remove responsibility. It distributes it across a system designed to minimize deliberation.</p>
+<h3 id="corporate-complicity">Corporate Complicity<a hidden class="anchor" aria-hidden="true" href="#corporate-complicity">#</a></h3>
+<p>Under the UN Guiding Principles on Business and Human Rights, corporations have a responsibility to respect human rights, including conducting due diligence to identify and address adverse impacts.</p>
+<p>Google and Amazon&rsquo;s provision of cloud infrastructure enabling these systems—despite documented military use, worker protests, and human rights organization warnings—constitutes a failure of due diligence. The retaliatory firing of workers who raised these concerns demonstrates active resistance to accountability.</p>
+<p>NSO Group&rsquo;s licensing by the Israeli Ministry of Defense and documented use of Pegasus against human rights defenders establishes corporate complicity in surveillance that facilitates persecution of civil society.</p>
+<hr>
+<h2 id="sources-and-evidence-assessment">Sources and Evidence Assessment<a hidden class="anchor" aria-hidden="true" href="#sources-and-evidence-assessment">#</a></h2>
+<p>The evidence for these systems comes from several categories of sources with varying levels of verification:</p>
+<h3 id="intelligence-source-testimony-high-credibility-limited-verifiability">Intelligence Source Testimony (High Credibility, Limited Verifiability)<a hidden class="anchor" aria-hidden="true" href="#intelligence-source-testimony-high-credibility-limited-verifiability">#</a></h3>
+<p>Investigations by +972 Magazine and Local Call rely on testimonies from current and former Israeli intelligence and military personnel. These sources provide operational details unavailable through other means but cannot be independently verified. The consistency of accounts across multiple sources and their alignment with observable outcomes (documented strike patterns, system capabilities marketed by manufacturers) supports their credibility.</p>
+<h3 id="forensic-technical-analysis-high-credibility-high-verifiability">Forensic Technical Analysis (High Credibility, High Verifiability)<a hidden class="anchor" aria-hidden="true" href="#forensic-technical-analysis-high-credibility-high-verifiability">#</a></h3>
+<p>Citizen Lab and Amnesty International&rsquo;s Security Lab provide technical forensics documenting Pegasus infections. These findings are verifiable through independent analysis and have been confirmed across multiple investigations.</p>
+<h3 id="corporate-disclosures-and-marketing-materials-high-credibility-for-capabilities">Corporate Disclosures and Marketing Materials (High Credibility for Capabilities)<a hidden class="anchor" aria-hidden="true" href="#corporate-disclosures-and-marketing-materials-high-credibility-for-capabilities">#</a></h3>
+<p>Rafael, Elbit Systems, and other contractors publish marketing materials describing system capabilities. These sources are self-interested but reliable for understanding what systems are designed to do.</p>
+<h3 id="human-rights-documentation-high-credibility">Human Rights Documentation (High Credibility)<a hidden class="anchor" aria-hidden="true" href="#human-rights-documentation-high-credibility">#</a></h3>
+<p>Reports from Human Rights Watch, Amnesty International, Front Line Defenders, Al-Haq, Addameer, Bisan Center, and 7amleh document impacts on Palestinian populations. These organizations maintain rigorous documentation standards and are subject to peer scrutiny.</p>
+<h3 id="government-and-contract-documentation-variable">Government and Contract Documentation (Variable)<a hidden class="anchor" aria-hidden="true" href="#government-and-contract-documentation-variable">#</a></h3>
+<p>Project Nimbus contract details have been partially revealed through worker whistleblowing and investigative journalism. Official Israeli government statements about system capabilities should be treated as self-serving but useful for understanding official narratives.</p>
+<hr>
+<p><em><a href="/research/algorithmic-kill-chain/facial-recognition/">← Part 4: The Wolf Pack</a></em> | <em><a href="/research/algorithmic-kill-chain/">Series Index</a></em></p>
+<hr>
+<h2 id="works-cited">Works Cited<a hidden class="anchor" aria-hidden="true" href="#works-cited">#</a></h2>
+<h3 id="human-rights-documentation">Human Rights Documentation<a hidden class="anchor" aria-hidden="true" href="#human-rights-documentation">#</a></h3>
+<ul>
+<li>Amnesty International. &ldquo;Pegasus Spyware Surveillance Continues.&rdquo; 2023. <a href="https://amnesty.ca/human-rights-news/pegasus-spyware-surveillance-continues/">https://amnesty.ca/human-rights-news/pegasus-spyware-surveillance-continues/</a></li>
+<li>Amnesty International. &ldquo;Stand with the Six: End Israeli Apartheid.&rdquo; 2022. <a href="https://amnesty.ca/activism-guide/crisis-and-tactical-round-up-stand-with-the-six-end-israeli-apartheid-pegasus-targeted-surveillance-of-human-rights-defenders/">https://amnesty.ca/activism-guide/crisis-and-tactical-round-up-stand-with-the-six-end-israeli-apartheid-pegasus-targeted-surveillance-of-human-rights-defenders/</a></li>
+<li>Front Line Defenders. &ldquo;Statement on Targeting of Palestinian HRDs with Pegasus.&rdquo; 2021. <a href="https://www.frontlinedefenders.org/en/statement-report/statement-targeting-palestinian-hrds-pegasus">https://www.frontlinedefenders.org/en/statement-report/statement-targeting-palestinian-hrds-pegasus</a></li>
+<li>Front Line Defenders. &ldquo;Action Needed to Address Targeted Surveillance of Human Rights Defenders.&rdquo; 2022. <a href="https://www.frontlinedefenders.org/en/statement-report/action-needed-address-targeted-surveillance-human-rights-defenders">https://www.frontlinedefenders.org/en/statement-report/action-needed-address-targeted-surveillance-human-rights-defenders</a></li>
+<li>Human Rights Watch. &ldquo;Among Pegasus Spyware Targets.&rdquo; January 2022. <a href="https://www.hrw.org/news/2022/01/26/human-rights-watch-among-pegasus-spyware-targets">https://www.hrw.org/news/2022/01/26/human-rights-watch-among-pegasus-spyware-targets</a></li>
+<li>Human Rights Watch. &ldquo;Questions and Answers: Israeli Military&rsquo;s Use of Digital Tools in Gaza.&rdquo; September 2024. <a href="https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza">https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza</a></li>
+<li>7amleh - Arab Center for Social Media Advancement. &ldquo;7 Human Rights Organizations Condemn Use of NSO Group&rsquo;s Pegasus Against Palestinian Activists.&rdquo; 2021. <a href="https://7amleh.org/post/7-human-rights-organizations-condemn-use-of-nso-group-s-pegasus-against-palestinian-activists">https://7amleh.org/post/7-human-rights-organizations-condemn-use-of-nso-group-s-pegasus-against-palestinian-activists</a></li>
+<li>7amleh. &ldquo;Joint NGO Letter Urging EU Targeted Sanctions Against NSO Group.&rdquo; December 2021. <a href="https://7amleh.org/2021/12/03/joint-ngo-letter-urging-eu-targeted-sanctions-against-nso-group">https://7amleh.org/2021/12/03/joint-ngo-letter-urging-eu-targeted-sanctions-against-nso-group</a></li>
+<li>7amleh. Digital Violence: Gaza Report. 2024. <a href="https://7amleh.org/storage/genocide/English%20new%20(1).pdf">https://7amleh.org/storage/genocide/English%20new%20(1).pdf</a></li>
+</ul>
+<h3 id="investigative-journalism">Investigative Journalism<a hidden class="anchor" aria-hidden="true" href="#investigative-journalism">#</a></h3>
+<ul>
+<li>+972 Magazine. &ldquo;Israeli Intelligence is Building a ChatGPT-like Surveillance Tool.&rdquo; 2024. <a href="https://www.972mag.com/israeli-intelligence-chatgpt-8200-surveillance-ai/">https://www.972mag.com/israeli-intelligence-chatgpt-8200-surveillance-ai/</a></li>
+<li>+972 Magazine. &ldquo;Armed Drones and Automated Killing of Palestinians.&rdquo; 2024. <a href="https://www.972mag.com/armed-drones-automated-killing-palestinians/">https://www.972mag.com/armed-drones-automated-killing-palestinians/</a></li>
+<li>Al Jazeera. &ldquo;AI-Assisted Genocide: Israel Reportedly Used Database for Gaza Kill Lists.&rdquo; April 2024. <a href="https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists">https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists</a></li>
+<li>Al Jazeera. &ldquo;What is Project Nimbus and Why Are Google Workers Protesting?&rdquo; April 2024. <a href="https://www.aljazeera.com/news/2024/4/23/what-is-project-nimbus-and-why-are-google-workers-protesting-israel-deal">https://www.aljazeera.com/news/2024/4/23/what-is-project-nimbus-and-why-are-google-workers-protesting-israel-deal</a></li>
+<li>Anadolu Agency. &ldquo;How is Israel Using Artificial Intelligence in Its Deadly Attacks on Gaza?&rdquo; 2024. <a href="https://www.aa.com.tr/en/middle-east/how-is-israel-using-artificial-intelligence-in-its-deadly-attacks-on-gaza/3088949">https://www.aa.com.tr/en/middle-east/how-is-israel-using-artificial-intelligence-in-its-deadly-attacks-on-gaza/3088949</a></li>
+<li>Anadolu Agency. &ldquo;Israel&rsquo;s AI System Used in Gaza Attacks Has Decades of History.&rdquo; 2024. <a href="https://www.aa.com.tr/en/middle-east/israels-ai-system-used-in-gaza-attacks-has-decades-of-history-report/3438296">https://www.aa.com.tr/en/middle-east/israels-ai-system-used-in-gaza-attacks-has-decades-of-history-report/3438296</a></li>
+<li>Electronic Intifada. &ldquo;Campaign Against Project Nimbus Gathers Steam and Supporters.&rdquo; 2024. <a href="https://electronicintifada.net/content/campaign-against-project-nimbus-gathers-steam-and-supporters/48471">https://electronicintifada.net/content/campaign-against-project-nimbus-gathers-steam-and-supporters/48471</a></li>
+<li>Middle East Eye. &ldquo;Israel&rsquo;s Use of AI in Gaza: A Terrifying Model Coming to a Country Near You.&rdquo; 2024. <a href="https://www.middleeasteye.net/opinion/israel-use-ai-gaza-terrifying-model-coming-country-near-you">https://www.middleeasteye.net/opinion/israel-use-ai-gaza-terrifying-model-coming-country-near-you</a></li>
+<li>Middle East Eye. &ldquo;Pegasus: Why Israel and Saudi Arabia Targeted Spyware.&rdquo; 2021. <a href="https://www.middleeasteye.net/opinion/pegasus-israel-saudi-arabia-why-targeted-spyware">https://www.middleeasteye.net/opinion/pegasus-israel-saudi-arabia-why-targeted-spyware</a></li>
+<li>New Arab. &ldquo;Gospel: Israel&rsquo;s Controversial AI Used in Gaza War.&rdquo; 2024. <a href="https://www.newarab.com/analysis/gospel-israels-controversial-ai-used-gaza-war">https://www.newarab.com/analysis/gospel-israels-controversial-ai-used-gaza-war</a></li>
+<li>NDTV. &ldquo;How AI is Leading Israel&rsquo;s Bombing Campaign in Gaza.&rdquo; 2024. <a href="https://www.ndtv.com/world-news/israel-gaza-war-explained-how-ai-is-leading-israels-bombing-campaign-in-gaza-6448734">https://www.ndtv.com/world-news/israel-gaza-war-explained-how-ai-is-leading-israels-bombing-campaign-in-gaza-6448734</a></li>
+<li>OPB. &ldquo;Israel AI Warfare Gaza Gospel.&rdquo; December 2023. <a href="https://www.opb.org/article/2023/12/14/israel-ai-warfare-gaza-gospel/">https://www.opb.org/article/2023/12/14/israel-ai-warfare-gaza-gospel/</a></li>
+<li>PBS Frontline. &ldquo;Global Spyware Scandal: Exposing Pegasus.&rdquo; Transcript. <a href="https://www.pbs.org/wgbh/frontline/documentary/global-spyware-scandal-exposing-pegasus/transcript/">https://www.pbs.org/wgbh/frontline/documentary/global-spyware-scandal-exposing-pegasus/transcript/</a></li>
+<li>Seattle Times. &ldquo;Report: 6 Palestinian Rights Activists Hacked by NSO Spyware.&rdquo; 2021. <a href="https://www.seattletimes.com/business/report-6-palestinian-rights-activists-hacked-by-nso-spyware/">https://www.seattletimes.com/business/report-6-palestinian-rights-activists-hacked-by-nso-spyware/</a></li>
+<li>Time. &ldquo;Exclusive: No Tech for Apartheid Google Workers Protest Project Nimbus.&rdquo; 2024. <a href="https://time.com/6964364/exclusive-no-tech-for-apartheid-google-workers-protest-project-nimbus-1-2-billion-contract-with-israel/">https://time.com/6964364/exclusive-no-tech-for-apartheid-google-workers-protest-project-nimbus-1-2-billion-contract-with-israel/</a></li>
+<li>Time. &ldquo;Google Fires Workers Protesting Israeli Contract Project Nimbus.&rdquo; 2024. <a href="https://time.com/6968385/google-fires-workers-protesting-israeli-contract-project-nimbus/">https://time.com/6968385/google-fires-workers-protesting-israeli-contract-project-nimbus/</a></li>
+<li>Transnational Institute. &ldquo;All Roads Lead to Jerusalem.&rdquo; 2024. <a href="https://www.tni.org/en/article/all-roads-lead-to-jerusalem">https://www.tni.org/en/article/all-roads-lead-to-jerusalem</a></li>
+<li>Transnational Institute. &ldquo;Seeing the World Like a Palestinian.&rdquo; 2024. <a href="https://www.tni.org/en/article/seeing-the-world-like-a-palestinian">https://www.tni.org/en/article/seeing-the-world-like-a-palestinian</a></li>
+<li>TRT World. &ldquo;How Israel&rsquo;s AI Use is Resulting in Indiscriminate Civilian Deaths in Gaza.&rdquo; 2024. <a href="https://www.trtworld.com/middle-east/how-israels-ai-use-is-resulting-in-indiscriminate-civilian-deaths-in-gaza-16057601">https://www.trtworld.com/middle-east/how-israels-ai-use-is-resulting-in-indiscriminate-civilian-deaths-in-gaza-16057601</a></li>
+<li>Truthout. &ldquo;Report: Israeli Army Uses AI to Produce Palestinian Targets for Assassination.&rdquo; 2024. <a href="https://truthout.org/articles/report-israeli-army-uses-ai-to-produce-palestinian-targets-for-assassination/">https://truthout.org/articles/report-israeli-army-uses-ai-to-produce-palestinian-targets-for-assassination/</a></li>
+</ul>
+<h3 id="corporate-and-defense-industry-sources">Corporate and Defense Industry Sources<a hidden class="anchor" aria-hidden="true" href="#corporate-and-defense-industry-sources">#</a></h3>
+<ul>
+<li>C4ISRNET. Israel coverage. <a href="https://www.c4isrnet.com/tags/israel/">https://www.c4isrnet.com/tags/israel/</a></li>
+<li>Defense Update. &ldquo;Fire Weaver.&rdquo; February 2020. <a href="https://defense-update.com/20200203_fireweaver.html">https://defense-update.com/20200203_fireweaver.html</a></li>
+<li>Defense Update. &ldquo;AFV Situational Awareness in the Urban Battlespace.&rdquo; June 2024. <a href="https://defense-update.com/20240620_afv-situational-awareness-in-the-urban-battlespace.html">https://defense-update.com/20240620_afv-situational-awareness-in-the-urban-battlespace.html</a></li>
+<li>Military Periscope. &ldquo;Rafael.&rdquo; <a href="https://www.militaryperiscope.com/defense-companies/rafael/">https://www.militaryperiscope.com/defense-companies/rafael/</a></li>
+<li>Business &amp; Human Rights Resource Centre. &ldquo;USA: Google Fires 28 Employees Who Protested Its Project Nimbus Contract with Israel.&rdquo; 2024. <a href="https://www.business-humanrights.org/my/news/usa-google-fires-28-employees-who-protested-its-project-nimbus-contract-with-israel-incl-co-comments/">https://www.business-humanrights.org/my/news/usa-google-fires-28-employees-who-protested-its-project-nimbus-contract-with-israel-incl-co-comments/</a></li>
+<li>Business &amp; Human Rights Resource Centre. &ldquo;Israel/OPT: Israeli Military Reservists Using Expertise Gained at Google, Meta, and Microsoft to Create Vast AI Surveillance Tool.&rdquo; 2024. <a href="https://www.business-humanrights.org/it/ultime-notizie/israelopt-israeli-military-reservists-using-expertise-gained-at-google-meta-and-microsoft-to-create-vast-ai-surveillance-tool/">https://www.business-humanrights.org/it/ultime-notizie/israelopt-israeli-military-reservists-using-expertise-gained-at-google-meta-and-microsoft-to-create-vast-ai-surveillance-tool/</a></li>
+<li>Courthouse News. &ldquo;Google Employees Claim They Were Unlawfully Fired After Palestine Demonstration.&rdquo; 2024. <a href="https://www.courthousenews.com/google-employees-claim-they-were-unlawfully-fired-after-palestine-demonstration/">https://www.courthousenews.com/google-employees-claim-they-were-unlawfully-fired-after-palestine-demonstration/</a></li>
+<li>Fox 13 Seattle. &ldquo;Seattle Google Workers Protest Israeli Military Contracts.&rdquo; 2024. <a href="https://www.fox13seattle.com/news/seattle-google-workers-protest-israeli-military-contracts">https://www.fox13seattle.com/news/seattle-google-workers-protest-israeli-military-contracts</a></li>
+<li>InfluenceWatch. &ldquo;No Tech for Apartheid.&rdquo; <a href="https://www.influencewatch.org/organization/no-tech-for-apartheid/">https://www.influencewatch.org/organization/no-tech-for-apartheid/</a></li>
+</ul>
+<h3 id="academic-and-policy-analysis">Academic and Policy Analysis<a hidden class="anchor" aria-hidden="true" href="#academic-and-policy-analysis">#</a></h3>
+<ul>
+<li>Georgetown Security Studies Review. &ldquo;The Dehumanization of ISR: Israel&rsquo;s Use of Artificial Intelligence in Warfare.&rdquo; January 2025. <a href="https://georgetownsecuritystudiesreview.org/2025/01/09/the-dehumanization-of-isr-israels-use-of-artificial-intelligence-in-warfare/">https://georgetownsecuritystudiesreview.org/2025/01/09/the-dehumanization-of-isr-israels-use-of-artificial-intelligence-in-warfare/</a></li>
+<li>ICRC Law and Policy Blog. &ldquo;The Problem of Algorithmic Bias in AI-Based Military Decision Support Systems.&rdquo; September 2024. <a href="https://blogs.icrc.org/law-and-policy/2024/09/03/the-problem-of-algorithmic-bias-in-ai-based-military-decision-support-systems/">https://blogs.icrc.org/law-and-policy/2024/09/03/the-problem-of-algorithmic-bias-in-ai-based-military-decision-support-systems/</a></li>
+<li>ICRC Law and Policy Blog. &ldquo;The Risks and Inefficacies of AI Systems in Military Targeting Support.&rdquo; September 2024. <a href="https://blogs.icrc.org/law-and-policy/2024/09/04/the-risks-and-inefficacies-of-ai-systems-in-military-targeting-support/">https://blogs.icrc.org/law-and-policy/2024/09/04/the-risks-and-inefficacies-of-ai-systems-in-military-targeting-support/</a></li>
+<li>Impact Policies. &ldquo;Occupied Palestine: AI and Indiscriminate Targeting.&rdquo; 2024. <a href="https://impactpolicies.org/news/359/occupied-palestine-ai-and-indiscriminate-targeting">https://impactpolicies.org/news/359/occupied-palestine-ai-and-indiscriminate-targeting</a></li>
+<li>Institute for Advanced International Studies. &ldquo;Defense AI and Arms Control Network.&rdquo; 2024. <a href="http://www.defense-ai-and-arms-control.network/article?article_id=1680&amp;article_language=en">http://www.defense-ai-and-arms-control.network/article?article_id=1680&amp;article_language=en</a></li>
+<li>Italian Institute for International Affairs. IAI Paper 21/15. 2021. <a href="https://www.iai.it/sites/default/files/iai2115.pdf">https://www.iai.it/sites/default/files/iai2115.pdf</a></li>
+<li>Jacobin. &ldquo;Israel Gaza AI War Crimes.&rdquo; July 2024. <a href="https://jacobin.com/2024/07/israel-gaza-ai-war-crimes">https://jacobin.com/2024/07/israel-gaza-ai-war-crimes</a></li>
+<li>JINSA. &ldquo;Israel Built an AI Factory for War. It Unleashed It in Gaza.&rdquo; 2024. <a href="https://jinsa.org/israel-built-an-ai-factory-for-war-it-unleashed-it-in-gaza/">https://jinsa.org/israel-built-an-ai-factory-for-war-it-unleashed-it-in-gaza/</a></li>
+<li>JINSA. &ldquo;Man Replaced by Machine: Is the Use of AI Undermining the IDF&rsquo;s Intelligence Capabilities?&rdquo; 2024. <a href="https://jinsa.org/man-replaced-by-machine-is-the-use-of-ai-undermining-the-idfs-intelligence-capabilities/">https://jinsa.org/man-replaced-by-machine-is-the-use-of-ai-undermining-the-idfs-intelligence-capabilities/</a></li>
+<li>Lieber Institute, West Point. &ldquo;Algorithms at War: Military AI in the War in Gaza.&rdquo; 2024. <a href="https://lieber.westpoint.edu/algorithms-war-military-ai-war-gaza/">https://lieber.westpoint.edu/algorithms-war-military-ai-war-gaza/</a></li>
+<li>Lieber Institute, West Point. &ldquo;Gospel, Lavender, and the Law of Armed Conflict.&rdquo; 2024. <a href="https://lieber.westpoint.edu/gospel-lavender-law-armed-conflict/">https://lieber.westpoint.edu/gospel-lavender-law-armed-conflict/</a></li>
+<li>Opinio Juris. &ldquo;Symposium on Military AI: The Need for Speed—The Cost of Unregulated AI Decision Support Systems to Civilians.&rdquo; April 2024. <a href="http://opiniojuris.org/2024/04/04/symposium-on-military-ai-and-the-law-of-armed-conflict-the-need-for-speed-the-cost-of-unregulated-ai-decision-support-systems-to-civilians/">http://opiniojuris.org/2024/04/04/symposium-on-military-ai-and-the-law-of-armed-conflict-the-need-for-speed-the-cost-of-unregulated-ai-decision-support-systems-to-civilians/</a></li>
+<li>Palestine Studies. Digital edition. 2024. <a href="https://www.palestine-studies.org/en/node/1656285">https://www.palestine-studies.org/en/node/1656285</a></li>
+<li>Ploughshares. &ldquo;AI Targeting in Gaza and Beyond.&rdquo; 2024. <a href="https://www.ploughshares.ca/publications/ai-targeting-in-gaza-and-beyond">https://www.ploughshares.ca/publications/ai-targeting-in-gaza-and-beyond</a></li>
+<li>Politics &amp; Rights Review. &ldquo;Sacred Violence: Military AI, Israel, Palestine.&rdquo; 2024. <a href="https://politicsrights.com/sacred-violence-military-ai-israel-palestine/">https://politicsrights.com/sacred-violence-military-ai-israel-palestine/</a></li>
+<li>RSIS Singapore. &ldquo;IP24063: The Case for AI-Based Decision Support Systems Oversight.&rdquo; 2024. <a href="https://rsis.edu.sg/rsis-publication/idss/ip24063-the-case-for-ai-based-decision-support-systems-oversight/">https://rsis.edu.sg/rsis-publication/idss/ip24063-the-case-for-ai-based-decision-support-systems-oversight/</a></li>
+<li>RUSI. &ldquo;Israel Defense Forces&rsquo; Use of AI in Gaza: A Case of Misplaced Purpose.&rdquo; 2024. <a href="https://rusi.org/explore-our-research/publications/commentary/israel-defense-forces-use-ai-gaza-case-misplaced-purpose">https://rusi.org/explore-our-research/publications/commentary/israel-defense-forces-use-ai-gaza-case-misplaced-purpose</a></li>
+<li>Signal Magazine/AFCEA. &ldquo;Targeting Tomorrow: The Intersection of AI and Military Operations.&rdquo; 2024. <a href="https://www.afcea.org/signal-media/international/targeting-tomorrow-intersection-ai-and-military-operations">https://www.afcea.org/signal-media/international/targeting-tomorrow-intersection-ai-and-military-operations</a></li>
+<li>University of Edinburgh. &ldquo;Rights to Privacy and Data Protection in Armed Conflict.&rdquo; 2022. <a href="https://www.pure.ed.ac.uk/ws/files/328308242/01708406221131938.pdf">https://www.pure.ed.ac.uk/ws/files/328308242/01708406221131938.pdf</a></li>
+</ul>
+<h3 id="legal-and-government-sources">Legal and Government Sources<a hidden class="anchor" aria-hidden="true" href="#legal-and-government-sources">#</a></h3>
+<ul>
+<li>Abolitionist Law Center. &ldquo;Submission to UN Special Rapporteur on the Situation of Palestine.&rdquo; December 2024. <a href="https://abolitionistlawcenter.org/wp-content/uploads/2024/12/Abolitionist-Law-Center-Submission-to-UN-Special-Rapporteur-on-the-Situation-of-Palestine.pdf">https://abolitionistlawcenter.org/wp-content/uploads/2024/12/Abolitionist-Law-Center-Submission-to-UN-Special-Rapporteur-on-the-Situation-of-Palestine.pdf</a></li>
+<li>AP News. &ldquo;Jordan Hacking Pegasus Spyware NSO Group.&rdquo; 2022. <a href="https://apnews.com/article/jordan-hacking-pegasus-spyware-nso-group-99b0b1e4ee256e0b4df055f926349a43">https://apnews.com/article/jordan-hacking-pegasus-spyware-nso-group-99b0b1e4ee256e0b4df055f926349a43</a></li>
+<li>Arab Center Washington DC. &ldquo;The Full Story Behind the NSO Hack: The Israeli Military-Allied Surveillance Industry and Transnational Repression.&rdquo; 2021. <a href="https://arabcenterdc.org/resource/the-full-story-behind-the-nso-hack-the-israeli-military-allied-surveillance-industry-and-transnational-repression/">https://arabcenterdc.org/resource/the-full-story-behind-the-nso-hack-the-israeli-military-allied-surveillance-industry-and-transnational-repression/</a></li>
+<li>Citizen Lab. &ldquo;Litigation and Other Formal Complaints Concerning Targeted Digital Surveillance and the Digital Surveillance Industry.&rdquo; December 2018. <a href="https://citizenlab.ca/2018/12/litigation-and-other-formal-complaints-concerning-targeted-digital-surveillance-and-the-digital-surveillance-industry/">https://citizenlab.ca/2018/12/litigation-and-other-formal-complaints-concerning-targeted-digital-surveillance-and-the-digital-surveillance-industry/</a></li>
+<li>CCDCOE. &ldquo;The Rights to Privacy and Data Protection in Armed Conflict.&rdquo; 2022. <a href="https://ccdcoe.org/uploads/2022/06/The-Rights-to-Privacy-and-Data-Protection-in-Armed-Conflict.pdf">https://ccdcoe.org/uploads/2022/06/The-Rights-to-Privacy-and-Data-Protection-in-Armed-Conflict.pdf</a></li>
+<li>European Parliament. EXPO_IDA(2024)754450. 2024. <a href="https://www.europarl.europa.eu/RegData/etudes/IDAN/2024/754450/EXPO_IDA(2024)754450_EN.pdf">https://www.europarl.europa.eu/RegData/etudes/IDAN/2024/754450/EXPO_IDA(2024)754450_EN.pdf</a></li>
+<li>FMEP. &ldquo;Top News on Israel-Palestine.&rdquo; 2024. <a href="https://fmep.org/blog/resourcecat/top-news-on-israel-palestine/">https://fmep.org/blog/resourcecat/top-news-on-israel-palestine/</a></li>
+<li>George Washington University. Scholarly paper on military AI. <a href="https://scholarspace.library.gwu.edu/downloads/sq87bv679?disposition=inline&amp;locale=en">https://scholarspace.library.gwu.edu/downloads/sq87bv679?disposition=inline&amp;locale=en</a></li>
+<li>Wikipedia. &ldquo;AI-Assisted Targeting in the Gaza Strip.&rdquo; <a href="https://en.wikipedia.org/wiki/AI-assisted_targeting_in_the_Gaza_Strip">https://en.wikipedia.org/wiki/AI-assisted_targeting_in_the_Gaza_Strip</a></li>
+<li>Wikipedia. &ldquo;Pegasus (spyware).&rdquo; <a href="https://en.wikipedia.org/wiki/Pegasus_(spyware)">https://en.wikipedia.org/wiki/Pegasus_(spyware)</a></li>
+</ul>
+<h3 id="additional-industry-documentation">Additional Industry Documentation<a hidden class="anchor" aria-hidden="true" href="#additional-industry-documentation">#</a></h3>
+<ul>
+<li>Digital Rosh. &ldquo;Embracing the Organized Mess: DAI Israel.&rdquo; June 2023. <a href="https://digitalrosh.com/wp-content/uploads/2023/06/Embracing-the-Organized-Mess-DAI-Israel.pdf">https://digitalrosh.com/wp-content/uploads/2023/06/Embracing-the-Organized-Mess-DAI-Israel.pdf</a></li>
+</ul>
+<hr>
+<p><em>This research is part of <a href="/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a> series documenting AI systems used in Israeli military operations. For questions or to request additional documentation, contact <a href="mailto:joshuaphilipdunlap@gmail.com">joshuaphilipdunlap@gmail.com</a>.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/research/algorithmic-kill-chain/facial-recognition/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Part 4: Automated Apartheid — The Wolf Pack</span>
+  </a>
+  <a class="next" href="http://localhost:1313/research/algorithmic-kill-chain/synthesis/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Part 6: Algorithmic Occupation and the Imperative of Accountability</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Joshua Dunlap</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

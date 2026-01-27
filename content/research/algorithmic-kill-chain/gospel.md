@@ -1,12 +1,12 @@
 +++
 date = '2026-01-26'
 draft = false
-title = 'Part 2: The Gospel — Automating Structural Destruction'
-summary = 'How Habsora generates 100+ building targets daily, transforming Gaza into an algorithmically-designated kill zone'
+title = "Part 2: The Gospel — Automating Structural Destruction"
+summary = "How Habsora generates 100+ building targets daily"
 description = "The automated infrastructure targeting system generating bombing sites faster than humans can verify"
-toc = true
 series = ['The Algorithmic Kill Chain']
 series_order = 2
+toc = true
 +++
 
 **The numbers that define automated urbicide:**

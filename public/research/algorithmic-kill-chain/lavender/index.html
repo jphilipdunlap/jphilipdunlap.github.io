@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Part 1: Lavender — The AI Kill List Generator | Joshua Dunlap</title>
+<meta name="keywords" content="">
+<meta name="description" content="How Israel&#39;s AI system marked 37,000 Palestinians for assassination with minimal human oversight">
+<meta name="author" content="Joshua Dunlap">
+<link rel="canonical" href="http://localhost:1313/research/algorithmic-kill-chain/lavender/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/research/algorithmic-kill-chain/lavender/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Joshua Dunlap (Alt + H)">Joshua Dunlap</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/">Research</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Part 1: Lavender — The AI Kill List Generator
+    </h1>
+    <div class="post-description">
+      How Israel&#39;s AI system marked 37,000 Palestinians for assassination with minimal human oversight
+    </div>
+    <div class="post-meta"><span title='2026-01-26 00:00:00 +0000 UTC'>January 26, 2026</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Joshua Dunlap</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><em>Part 1 of <a href="/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a> investigation</em></p>
+<hr>
+<h2 id="the-numbers">The Numbers<a hidden class="anchor" aria-hidden="true" href="#the-numbers">#</a></h2>
+<p><strong>37,000</strong> — Palestinians marked by Lavender as potential assassination targets</p>
+<p><strong>20 seconds</strong> — Reported time human reviewers spent on each target before authorizing strikes</p>
+<p><strong>10%</strong> — Acknowledged error rate, implying approximately <strong>3,700</strong> potential misidentifications</p>
+<p><strong>Gender check</strong> — The primary verification reportedly performed during human review: confirming the target was male</p>
+<p>These figures come from multiple Israeli intelligence sources who operated the system, speaking to +972 Magazine and Local Call. The consistency of their accounts, corroborated by Human Rights Watch analysis and observable outcomes in Gaza, forms the evidentiary foundation for this investigation.</p>
+<hr>
+<h2 id="how-lavender-works">How Lavender Works<a hidden class="anchor" aria-hidden="true" href="#how-lavender-works">#</a></h2>
+<p>Lavender is a machine learning system reportedly developed by Unit 8200, the Israeli military&rsquo;s elite signals intelligence division. Its function: mass identification of individuals for assassination, primarily suspected lower-ranking members of Hamas or Palestinian Islamic Jihad.</p>
+<h3 id="the-training-process">The Training Process<a hidden class="anchor" aria-hidden="true" href="#the-training-process">#</a></h3>
+<p>The system was trained by identifying behavioral characteristics of known militants—individuals whose status was previously verified through traditional intelligence methods. These characteristics include:</p>
+<ul>
+<li>Communication patterns (WhatsApp group membership, call frequency with flagged individuals)</li>
+<li>Movement patterns within Gaza</li>
+<li>Social connections and associations</li>
+<li>Presence in certain photographs</li>
+<li>Frequency of changing mobile phones or addresses</li>
+</ul>
+<p>Lavender then scans the general population for individuals exhibiting similar patterns.</p>
+<h3 id="probabilistic-scoring">Probabilistic Scoring<a hidden class="anchor" aria-hidden="true" href="#probabilistic-scoring">#</a></h3>
+<p>Each individual receives a score from 1 to 100, indicating the algorithm&rsquo;s confidence that they fit the militant profile. This methodology relies on <strong>correlation rather than causation</strong>—Lavender identifies people who <em>resemble</em> militants according to its parameters, not people confirmed to have participated in hostile acts.</p>
+<p>The distinction matters: everyday activities in Gaza&rsquo;s densely interconnected society—communicating with neighbors, moving through the strip, being in a WhatsApp group with someone already flagged—can contribute to a &ldquo;suspicion score&rdquo; sufficient to place someone on a kill list.</p>
+<hr>
+<h2 id="operational-deployment-before-and-after-october-7">Operational Deployment: Before and After October 7<a hidden class="anchor" aria-hidden="true" href="#operational-deployment-before-and-after-october-7">#</a></h2>
+<p>Sources describe a significant shift in Lavender&rsquo;s role following October 7, 2023.</p>
+<h3 id="before-auxiliary-tool">Before: Auxiliary Tool<a hidden class="anchor" aria-hidden="true" href="#before-auxiliary-tool">#</a></h3>
+<p>Prior to October 7, Lavender reportedly functioned as one tool among many, assisting human intelligence analysts in their work. The final determination of targets remained a human-driven process with meaningful verification.</p>
+<h3 id="after-central-targeting-engine">After: Central Targeting Engine<a hidden class="anchor" aria-hidden="true" href="#after-central-targeting-engine">#</a></h3>
+<p>In the assault on Gaza following October 7, Lavender became the primary mechanism for generating assassination targets. The system transitioned from supporting human analysts to driving the targeting process, with human review reduced to a formality.</p>
+<p>Sources describe the result as a <strong>&ldquo;mass assassination factory&rdquo;</strong>—the AI generating targets faster than traditional processes could ever achieve, with the military adopting its outputs with minimal scrutiny.</p>
+<h3 id="scale-of-output">Scale of Output<a hidden class="anchor" aria-hidden="true" href="#scale-of-output">#</a></h3>
+<p>The 37,000 individuals marked by Lavender were primarily designated as low-ranking militants. These individuals became potential targets for airstrikes, often executed when they were located in their family homes—a practice facilitated by the companion system known as <a href="/research/algorithmic-kill-chain/wheres-daddy/">&ldquo;Where&rsquo;s Daddy?&rdquo;</a>.</p>
+<p>This scale—tens of thousands of assassination targets generated by AI—moves far beyond traditional counter-terrorism operations focused on specific, verified threats.</p>
+<hr>
+<h2 id="the-collapse-of-human-oversight">The Collapse of Human Oversight<a hidden class="anchor" aria-hidden="true" href="#the-collapse-of-human-oversight">#</a></h2>
+<p>The Israeli military officially maintains that human operators retain meaningful control over targeting decisions, with AI serving merely as a decision-support tool. Accounts from intelligence personnel describe a different reality.</p>
+<h3 id="the-20-second-review">The 20-Second Review<a hidden class="anchor" aria-hidden="true" href="#the-20-second-review">#</a></h3>
+<p>Sources report that human intelligence officers often spent approximately 20 seconds reviewing each target dossier produced by Lavender before authorizing a strike. This cursory review was insufficient for independent verification of the AI&rsquo;s assessment.</p>
+<h3 id="the-gender-check">The Gender Check<a hidden class="anchor" aria-hidden="true" href="#the-gender-check">#</a></h3>
+<p>More disturbing: sources claim the primary function of this brief review was often reduced to confirming that the AI-selected target was male. No substantive assessment of the individual&rsquo;s actual status or actions—just verification of gender.</p>
+<p>One source described the human role as providing a &ldquo;rubber stamp&rdquo; on the machine&rsquo;s recommendation.</p>
+<h3 id="operational-pressure">Operational Pressure<a hidden class="anchor" aria-hidden="true" href="#operational-pressure">#</a></h3>
+<p>The erosion of oversight was driven by operational pressure. Sources describe an environment where:</p>
+<ul>
+<li>Personnel felt pressure to approve AI outputs quickly</li>
+<li>Trust in the technology&rsquo;s efficiency superseded rigorous verification</li>
+<li>The military&rsquo;s stated goal was maximizing target output</li>
+<li>Lavender&rsquo;s recommendations were treated &ldquo;as if it were a human decision&rdquo;</li>
+</ul>
+<p>This last point—treating machine output as equivalent to human judgment—represents a critical conceptual shift with profound implications for accountability.</p>
+<h3 id="human-in-the-loop-as-procedural-alibi">&ldquo;Human-in-the-Loop&rdquo; as Procedural Alibi<a hidden class="anchor" aria-hidden="true" href="#human-in-the-loop-as-procedural-alibi">#</a></h3>
+<p>The concept of &ldquo;human-in-the-loop&rdquo; oversight is frequently presented as a safeguard in discussions of AI in warfare. In Lavender&rsquo;s case, this appears to function as procedural alibi rather than substantive check.</p>
+<p>A 20-second review, focused primarily on gender confirmation, cannot constitute meaningful human control over life-and-death decisions based on probabilistic AI assessments. The practice maintains the appearance of compliance with oversight protocols while functionally automating target selection.</p>
+<hr>
+<h2 id="the-10-error-rate">The 10% Error Rate<a hidden class="anchor" aria-hidden="true" href="#the-10-error-rate">#</a></h2>
+<p>Sources acknowledge that Lavender operates with an error rate of approximately 10%. This figure was reportedly deemed acceptable by the Israeli military during operational deployment.</p>
+<h3 id="what-10-means-at-scale">What 10% Means at Scale<a hidden class="anchor" aria-hidden="true" href="#what-10-means-at-scale">#</a></h3>
+<p>Applied to 37,000 individuals, a 10% error rate implies that approximately <strong>3,700 people</strong> may have been wrongly identified as militants and marked for assassination.</p>
+<p>This is not a rounding error. This is thousands of potential misidentifications in a system generating kill lists.</p>
+<h3 id="documented-types-of-errors">Documented Types of Errors<a hidden class="anchor" aria-hidden="true" href="#documented-types-of-errors">#</a></h3>
+<p>The error rate reflects fundamental limitations in pattern-matching approaches to human targeting:</p>
+<p><strong>Association errors</strong>: Individuals flagged due to loose connections—being in the same WhatsApp group as a known militant, having a similar name or nickname to someone on a watchlist, or simply having communication patterns that statistically resemble targeted individuals.</p>
+<p><strong>Categorical errors</strong>: Reports indicate Lavender mistakenly identified members of Palestinian civil defense units and police officers as Hamas operatives. These personnel are protected under international law—their targeting constitutes a clear violation.</p>
+<p><strong>Correlation failures</strong>: The system identifies individuals based on characteristics correlated with militancy in its training data, not direct evidence of hostile acts. In Gaza&rsquo;s densely interconnected society, many civilians share communication and social patterns with targeted individuals.</p>
+<h3 id="a-policy-choice-not-a-technical-limitation">A Policy Choice, Not a Technical Limitation<a hidden class="anchor" aria-hidden="true" href="#a-policy-choice-not-a-technical-limitation">#</a></h3>
+<p>The acceptance of a 10% error rate in a kill-list-generating system is not merely a technical limitation requiring improvement. It represents a deliberate policy choice that externalizes the risk of error entirely onto the targeted population.</p>
+<p>The lives of those potentially misidentified are treated as acceptable cost in pursuit of operational efficiency.</p>
+<hr>
+<h2 id="legal-analysis-violations-of-international-humanitarian-law">Legal Analysis: Violations of International Humanitarian Law<a hidden class="anchor" aria-hidden="true" href="#legal-analysis-violations-of-international-humanitarian-law">#</a></h2>
+<p>Lavender&rsquo;s operational characteristics—probabilistic targeting, minimal oversight, acknowledged error rate—raise serious questions under International Humanitarian Law.</p>
+<h3 id="principle-of-distinction">Principle of Distinction<a hidden class="anchor" aria-hidden="true" href="#principle-of-distinction">#</a></h3>
+<p>IHL requires belligerents to distinguish between combatants and civilians. Lavender&rsquo;s methodology systematically undermines this requirement:</p>
+<ul>
+<li>A 10% error rate means foreseeable targeting of civilians</li>
+<li>Targeting based on behavioral patterns rather than confirmed hostile acts blurs combatant/civilian distinction</li>
+<li>Misidentification of civil defense personnel and police demonstrates categorical failures</li>
+</ul>
+<p>Marking individuals for death based on probabilistic scores—rather than direct evidence of participation in hostilities—inverts the evidentiary standard required by distinction.</p>
+<h3 id="principle-of-proportionality">Principle of Proportionality<a hidden class="anchor" aria-hidden="true" href="#principle-of-proportionality">#</a></h3>
+<p>Proportionality prohibits attacks where expected civilian harm would be excessive relative to anticipated military advantage.</p>
+<p>Lavender targets primarily low-ranking militants. The military advantage of eliminating a single individual identified via probabilistic algorithm—particularly using unguided munitions while they&rsquo;re in family homes—appears grossly disproportionate to foreseeable civilian casualties.</p>
+<p>Sources describe pre-authorized collateral damage allowances: dozens or even hundreds of civilian deaths deemed acceptable to assassinate a single Hamas commander, with even looser constraints applied to junior militants targeted via Lavender.</p>
+<h3 id="principle-of-precautions">Principle of Precautions<a hidden class="anchor" aria-hidden="true" href="#principle-of-precautions">#</a></h3>
+<p>Belligerents must take all feasible precautions to minimize civilian harm.</p>
+<p>The 20-second review process, focus on speed over accuracy, and explicit acceptance of a 10% error rate demonstrate systematic disregard for precautionary obligations. Meaningful target verification was bypassed in favor of operational tempo.</p>
+<hr>
+<h2 id="the-accountability-gap">The Accountability Gap<a hidden class="anchor" aria-hidden="true" href="#the-accountability-gap">#</a></h2>
+<p>Lavender creates profound challenges for accountability when targeting errors result in civilian deaths.</p>
+<h3 id="algorithmic-opacity">Algorithmic Opacity<a hidden class="anchor" aria-hidden="true" href="#algorithmic-opacity">#</a></h3>
+<p>The system&rsquo;s decision-making process is opaque. Even operators may not fully understand why a specific individual received a particular probability score. This opacity makes it difficult to assess whether targeting decisions were lawful or to identify responsibility for errors.</p>
+<h3 id="diffused-responsibility">Diffused Responsibility<a hidden class="anchor" aria-hidden="true" href="#diffused-responsibility">#</a></h3>
+<p>Responsibility is distributed across:</p>
+<ul>
+<li>The algorithm and its training data</li>
+<li>The human reviewer who spent 20 seconds on verification</li>
+<li>The commander who authorized the strike</li>
+<li>The personnel who executed it</li>
+<li>The developers who created the system</li>
+</ul>
+<p>This diffusion makes it difficult to assign responsibility for unlawful killings. Each actor in the chain can point to others.</p>
+<h3 id="official-denials-vs-operational-reality">Official Denials vs. Operational Reality<a hidden class="anchor" aria-hidden="true" href="#official-denials-vs-operational-reality">#</a></h3>
+<p>The Israeli military officially denies operating an autonomous kill list system, emphasizing that AI tools merely assist human decision-makers and that all targeting complies with IHL.</p>
+<p>These official claims lack the granular detail provided by whistleblower accounts and contradict specific operational realities described by sources: the 20-second review times, the gender-check-only verification, the acceptance of significant error rates.</p>
+<hr>
+<h2 id="evidence-assessment">Evidence Assessment<a hidden class="anchor" aria-hidden="true" href="#evidence-assessment">#</a></h2>
+<h3 id="primary-sources">Primary Sources<a hidden class="anchor" aria-hidden="true" href="#primary-sources">#</a></h3>
+<p>Understanding of Lavender derives primarily from investigative journalism by +972 Magazine and Local Call, based on testimony from multiple Israeli intelligence personnel directly involved with AI targeting systems during the Gaza assault.</p>
+<p>The consistency across independent whistleblower accounts—regarding functionality, scale, minimal oversight, and error rates—lends significant credibility to these claims.</p>
+<h3 id="corroboration">Corroboration<a hidden class="anchor" aria-hidden="true" href="#corroboration">#</a></h3>
+<p>This primary evidence is corroborated by:</p>
+<ul>
+<li>Human Rights Watch analysis of AI targeting in Gaza</li>
+<li>Academic researchers specializing in military technology and IHL</li>
+<li>UN officials expressing alarm over AI use in targeting</li>
+<li>Previous reporting on Israel&rsquo;s &ldquo;Gospel&rdquo; system, indicating a trajectory toward automation</li>
+</ul>
+<h3 id="observable-outcomes">Observable Outcomes<a hidden class="anchor" aria-hidden="true" href="#observable-outcomes">#</a></h3>
+<p>Whistleblower testimony aligns with observable outcomes in Gaza: unprecedented levels of destruction and civilian casualties consistent with a high-volume, low-verification targeting process.</p>
+<hr>
+<h2 id="implications">Implications<a hidden class="anchor" aria-hidden="true" href="#implications">#</a></h2>
+<p>Lavender represents something beyond a controversial weapon system or problematic targeting methodology. It embodies a qualitative shift in how states can wage war.</p>
+<p>The system enables killing at industrial scale while abstracting the decision-making process. It reduces individuals to probability scores derived from surveillance data. It compresses the timeline for deliberation while expanding the scope of who can be designated for death.</p>
+<p>When a 10% error rate on a 37,000-person kill list is deemed acceptable—when 20 seconds of human review suffices to authorize lethal force—the calculus governing violence has fundamentally changed.</p>
+<p>The existence and documented use of Lavender underscores the urgent need for:</p>
+<ul>
+<li>International investigation into AI-assisted targeting in Gaza</li>
+<li>Accountability for targeting decisions that violate IHL</li>
+<li>Legal frameworks governing autonomous and AI-enabled weapon systems</li>
+<li>Meaningful requirements for human control over lethal decisions</li>
+</ul>
+<hr>
+<p><em>Next: <a href="/research/algorithmic-kill-chain/gospel/">Part 2: The Gospel</a> — How AI-driven structural targeting enabled the systematic destruction of Gaza&rsquo;s urban infrastructure</em></p>
+<hr>
+<p><em>This investigation is part of <a href="/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a> series. For questions or documentation requests, contact <a href="mailto:joshuaphilipdunlap@gmail.com">joshuaphilipdunlap@gmail.com</a>.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/research/algorithmic-kill-chain/gospel/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Part 2: The Gospel — Automating Structural Destruction</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Joshua Dunlap</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

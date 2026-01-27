@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Joshua Dunlap</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Joshua Dunlap</description>
+    <title>The Algorithmic Kill Chain on Joshua Dunlap</title>
+    <link>http://localhost:1313/research/algorithmic-kill-chain/</link>
+    <description>Recent content in The Algorithmic Kill Chain on Joshua Dunlap</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m Joshua Dunlap, an independent researcher based in North Little Rock, Arkansas. I investigate institutional accountability failures through FOIA research, policy analysis, and primary source documentation.&lt;/p&gt;
-&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;
-&lt;p&gt;My primary focus is documenting how public institutions—pension systems, state agencies, legislative bodies—become captured by interests that conflict with their stated missions. This work requires handling voluminous records, identifying procedural violations, and translating complex regulatory frameworks into clear findings.&lt;/p&gt;
-&lt;p&gt;My flagship investigation, &amp;ldquo;The Pension Pipeline,&amp;rdquo; documents how Arkansas pension systems invested $157 million in Israel Bonds while appearing to violate their own investment policies. The research draws on FOIA requests, board meeting minutes, statutory analysis, and financial disclosures to build a comprehensive evidentiary record.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/research/algorithmic-kill-chain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Part 1: Lavender — The AI Kill List Generator</title>
       <link>http://localhost:1313/research/algorithmic-kill-chain/lavender/</link>
@@ -59,20 +49,6 @@
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/algorithmic-kill-chain/synthesis/</guid>
       <description>The cumulative impact of algorithmic warfare and paths toward accountability</description>
-    </item>
-    <item>
-      <title>The Arkansas Arsenal</title>
-      <link>http://localhost:1313/research/arkansas-arsenal/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/arkansas-arsenal/</guid>
-      <description>A comprehensive investigation into Arkansas defense manufacturing, the political architecture sustaining it, and the documented end-use of Arkansas-made weapons in attacks on civilian populations.</description>
-    </item>
-    <item>
-      <title>The Pension Pipeline</title>
-      <link>http://localhost:1313/research/pension-pipeline/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/pension-pipeline/</guid>
-      <description>A forensic investigation documenting how the Arkansas Teacher Retirement System Board breached its fiduciary duty through a politically-driven $50 million Israel Bond investment and the strategic hiring of an ideological proxy advisor.</description>
     </item>
   </channel>
 </rss>

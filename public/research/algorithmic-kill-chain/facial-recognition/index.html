@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Part 4: Automated Apartheid — The Wolf Pack | Joshua Dunlap</title>
+<meta name="keywords" content="">
+<meta name="description" content="How biometric surveillance and predictive profiling enforce racial control across historic Palestine">
+<meta name="author" content="Joshua Dunlap">
+<link rel="canonical" href="http://localhost:1313/research/algorithmic-kill-chain/facial-recognition/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/research/algorithmic-kill-chain/facial-recognition/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Joshua Dunlap (Alt + H)">Joshua Dunlap</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/">Research</a>&nbsp;»&nbsp;<a href="http://localhost:1313/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Part 4: Automated Apartheid — The Wolf Pack
+    </h1>
+    <div class="post-description">
+      How biometric surveillance and predictive profiling enforce racial control across historic Palestine
+    </div>
+    <div class="post-meta"><span title='2026-01-26 00:00:00 +0000 UTC'>January 26, 2026</span>&nbsp;·&nbsp;<span>10 min</span>&nbsp;·&nbsp;<span>Joshua Dunlap</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="the-numbers">The Numbers<a hidden class="anchor" aria-hidden="true" href="#the-numbers">#</a></h2>
+<p><strong>33,000</strong> Palestinians in Hebron&rsquo;s H2 sector must pass through biometric checkpoints. <strong>850</strong> Israeli settlers bypass them entirely.</p>
+<p><strong>24+</strong> cameras at a single checkpoint scan faces without consent.</p>
+<p><strong>One camera every five meters</strong> in parts of occupied East Jerusalem.</p>
+<p><strong>&ldquo;I want at least twenty matches&rdquo;</strong>—quota given to Israeli soldiers before a shift.</p>
+<p><strong>95%</strong> identification rate boasted by a Jerusalem police commander: &ldquo;There&rsquo;s nothing like it anywhere else.&rdquo;</p>
+<p>This is automated apartheid: facial recognition systems designed exclusively to track Palestinians, enforced by soldiers competing for prizes, feeding databases that may power the kill chains documented in <a href="/research/algorithmic-kill-chain/">Parts 1-3</a> of this series.</p>
+<hr>
+<h2 id="the-wolf-pack-five-systems-one-database">The Wolf Pack: Five Systems, One Database<a hidden class="anchor" aria-hidden="true" href="#the-wolf-pack-five-systems-one-database">#</a></h2>
+<p>Israel operates an interconnected surveillance network targeting Palestinians across the occupied territories. The systems have names—Red Wolf, Blue Wolf, White Wolf, Mabat 2000—but they share a common backbone: <strong>Wolf Pack</strong>, a centralized database containing biometric and personal information on Palestinians alone.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">System</th>
+          <th style="text-align: left">Function</th>
+          <th style="text-align: left">Location</th>
+          <th style="text-align: left">Operator</th>
+          <th style="text-align: left">Database Role</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Red Wolf</strong></td>
+          <td style="text-align: left">Automated checkpoint control</td>
+          <td style="text-align: left">Hebron checkpoints</td>
+          <td style="text-align: left">IDF</td>
+          <td style="text-align: left">Queries Wolf Pack</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Blue Wolf</strong></td>
+          <td style="text-align: left">Mobile biometric collection</td>
+          <td style="text-align: left">West Bank-wide</td>
+          <td style="text-align: left">IDF soldiers</td>
+          <td style="text-align: left">Populates Wolf Pack</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Wolf Pack</strong></td>
+          <td style="text-align: left">Central biometric database</td>
+          <td style="text-align: left">OPT-wide coverage</td>
+          <td style="text-align: left">IDF/Shin Bet</td>
+          <td style="text-align: left">The database itself</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Mabat 2000</strong></td>
+          <td style="text-align: left">City-wide CCTV with FRT</td>
+          <td style="text-align: left">Occupied East Jerusalem</td>
+          <td style="text-align: left">Israeli Police</td>
+          <td style="text-align: left">Cross-references</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>White Wolf</strong></td>
+          <td style="text-align: left">Palestinian ID verification</td>
+          <td style="text-align: left">West Bank settlements</td>
+          <td style="text-align: left">Israeli settlers</td>
+          <td style="text-align: left">Queries Wolf Pack</td>
+      </tr>
+  </tbody>
+</table>
+<p>The significance: Israeli settlers can query the database to screen Palestinian laborers before allowing them onto settlement property. Soldiers compete for prizes based on how many Palestinian faces they photograph. The systems are designed from inception to apply exclusively to one population.</p>
+<hr>
+<h2 id="red-wolf-the-automated-gatekeeper">Red Wolf: The Automated Gatekeeper<a hidden class="anchor" aria-hidden="true" href="#red-wolf-the-automated-gatekeeper">#</a></h2>
+<p>At Checkpoint 56 in Hebron, Red Wolf cameras scan every Palestinian face that approaches. The system makes automated decisions using a color-coded interface:</p>
+<ul>
+<li><strong>Green</strong>: Passage allowed</li>
+<li><strong>Yellow</strong>: Unknown—requires further checks</li>
+<li><strong>Red</strong>: Wanted for arrest—checkpoint locks down</li>
+</ul>
+<p>Soldiers have described the system&rsquo;s expansion logic to investigators from Breaking the Silence and Amnesty International:</p>
+<blockquote>
+<p>&ldquo;The goal is for the system to learn the faces of frequent passersby to the point where it can grant passage based solely on facial recognition, even before an ID is presented.&rdquo;</p>
+</blockquote>
+<p>If a Palestinian&rsquo;s face isn&rsquo;t already in the database, Red Wolf automatically enrolls it—capturing biometric data without consent. Palestinians can be denied passage simply because they haven&rsquo;t been surveilled before. The system punishes people for not already being under surveillance.</p>
+<p>The discriminatory architecture is embedded in the checkpoint itself. Palestinian residents must pass through biometric screening. Israeli settlers living illegally in the same city move freely.</p>
+<hr>
+<h2 id="blue-wolf-gamified-extraction">Blue Wolf: Gamified Extraction<a hidden class="anchor" aria-hidden="true" href="#blue-wolf-gamified-extraction">#</a></h2>
+<p>Blue Wolf is a smartphone app carried by Israeli soldiers throughout the West Bank. Its function: photograph Palestinians and upload their biometric data to Wolf Pack.</p>
+<p>Soldiers gave it a nickname: <strong>&ldquo;Facebook for Palestinians.&rdquo;</strong></p>
+<p>Testimony from Breaking the Silence reveals the gamification structure:</p>
+<blockquote>
+<p>&ldquo;Whoever I feel like. Whoever you want you can stop and ask for ID. We don&rsquo;t need suspicious signs in order to take photos—the point was to take photos.&rdquo;</p>
+</blockquote>
+<p>Military units were ranked by how many faces they collected. Commanders offered prizes—paid time off—for battalions hitting quotas or achieving the highest scores. One soldier reported being told before a shift: &ldquo;I want at least twenty matches.&rdquo;</p>
+<p>The targets include children and the elderly, photographed during patrols, at checkpoints, and during night raids into homes. The official justification—&ldquo;demonstrating presence&rdquo; or preventing attacks—contrasts sharply with the arbitrary, competition-driven reality.</p>
+<p>This is <strong>biometric extractivism</strong>: treating Palestinian bodies as raw material from which valuable data is mined. Facial geometry, family connections, movement patterns—all harvested without consent, then weaponized for control.</p>
+<hr>
+<h2 id="mabat-2000-the-surveilled-city">Mabat 2000: The Surveilled City<a hidden class="anchor" aria-hidden="true" href="#mabat-2000-the-surveilled-city">#</a></h2>
+<p>In occupied East Jerusalem, the Israeli police operate <strong>Mabat 2000</strong> (Hebrew for &ldquo;Gaze&rdquo;)—a networked CCTV system blanketing the Old City and Palestinian neighborhoods.</p>
+<p>The density is staggering. Reports document one or two cameras every five meters in some areas, creating an environment of near-constant observation. Since 2017, the system has integrated facial recognition, object recognition, individual tracking (&ldquo;watchlisting&rdquo;), and potentially predictive policing algorithms.</p>
+<p>A Jerusalem police commander&rsquo;s boast captures the system&rsquo;s ambition:</p>
+<blockquote>
+<p>&ldquo;We have a 95 percent identification rate, there&rsquo;s nothing like it anywhere else. I think any police commander would dream of something like this.&rdquo;</p>
+</blockquote>
+<p>Mabat 2000 enables authorities to monitor Palestinian life, track movements, identify protesters, and control public space around the clock. The neighborhoods under heaviest surveillance—Silwan, Sheikh Jarrah—are also sites of ongoing displacement efforts and resistance.</p>
+<hr>
+<h2 id="white-wolf-deputizing-settlers">White Wolf: Deputizing Settlers<a hidden class="anchor" aria-hidden="true" href="#white-wolf-deputizing-settlers">#</a></h2>
+<p>The <strong>White Wolf</strong> application grants Israeli settlers access to the Wolf Pack database. A settler can scan a Palestinian laborer&rsquo;s ID before permitting entry to settlement property.</p>
+<p>This deputizes the civilian settler population as extensions of the surveillance state. Data collected by the military feeds decisions made by settlers living illegally on occupied land. The same systems that fail to capture or prevent settler violence against Palestinians are made available for settlers to surveil Palestinians.</p>
+<hr>
+<h2 id="life-under-the-algorithmic-gaze">Life Under the Algorithmic Gaze<a hidden class="anchor" aria-hidden="true" href="#life-under-the-algorithmic-gaze">#</a></h2>
+<p>The psychological toll is documented consistently across testimonies. Issa Amro, a Palestinian activist in Hebron:</p>
+<blockquote>
+<p>&ldquo;I feel watched all the time&hellip; We have become objects.&rdquo;</p>
+</blockquote>
+<p>Another resident, Neda:</p>
+<blockquote>
+<p>&ldquo;Every time I see a camera, I feel anxious. Like you are always being treated as if you are a target.&rdquo;</p>
+</blockquote>
+<p>The surveillance penetrates private spaces. Reports document cameras directed into homes and bedrooms. Some women report sleeping in their hijabs out of fear of being watched.</p>
+<p>Access to work, education, healthcare, and family connections is constantly mediated by surveillance systems. Some families have left heavily monitored areas of Hebron for neighborhoods perceived as less surveilled. The systems create what security studies call a <strong>panopticon</strong>—control through the knowledge of potential observation rather than constant direct intervention.</p>
+<hr>
+<h2 id="the-surveillance-to-violence-pipeline">The Surveillance-to-Violence Pipeline<a hidden class="anchor" aria-hidden="true" href="#the-surveillance-to-violence-pipeline">#</a></h2>
+<p>Parts <a href="/research/algorithmic-kill-chain/lavender/">1</a>, <a href="/research/algorithmic-kill-chain/gospel/">2</a>, and <a href="/research/algorithmic-kill-chain/wheres-daddy/">3</a> of this series documented AI targeting systems—Lavender, Gospel, Where&rsquo;s Daddy—that generate kill lists in Gaza. A critical question: where does the data come from?</p>
+<p>The vast biometric repositories collected by Blue Wolf and stored in Wolf Pack represent exactly the type of mass surveillance data that feeds AI targeting platforms. Social connections, family relationships, movement patterns, facial identities, residence locations—all harvested under the guise of checkpoint management and &ldquo;presence demonstration.&rdquo;</p>
+<p>The architecture built for daily control provides the raw material for lethal targeting. Surveillance for occupation and surveillance for elimination operate on the same infrastructure. The data collected to manage Palestinian movement becomes input for systems that designate Palestinians for assassination.</p>
+<hr>
+<h2 id="corporate-complicity">Corporate Complicity<a hidden class="anchor" aria-hidden="true" href="#corporate-complicity">#</a></h2>
+<p>The surveillance apparatus relies on international suppliers:</p>
+<p><strong>Hardware</strong>: Dutch company <strong>TKH Security</strong> and Chinese firm <strong>Hikvision</strong> have been identified supplying cameras for Mabat 2000. TKH stated it no longer has a &ldquo;direct relationship&rdquo; with Israeli security forces but avoided commitments on future sales. Hikvision reportedly did not respond to inquiries.</p>
+<p><strong>Facial Recognition Software</strong>: Israeli-founded <strong>Anyvision</strong> (now <strong>Oosto</strong>) provides FRT at West Bank checkpoints. <strong>Corsight</strong> reportedly supplied FRT for mass surveillance in Gaza.</p>
+<p><strong>Cloud Infrastructure</strong>: <strong>Google</strong> and <strong>Amazon</strong> secured the $1.2 billion <strong>Project Nimbus</strong> contract providing cloud computing and AI capabilities to the Israeli government and military. Employee protests under the banner &ldquo;No Tech for Apartheid&rdquo; continue.</p>
+<p>The physical cameras, the algorithms, and the cloud platforms are often sourced internationally. Business decisions in corporate headquarters far from Palestine directly enable surveillance and control on the ground.</p>
+<hr>
+<h2 id="the-palestine-laboratory">The Palestine Laboratory<a hidden class="anchor" aria-hidden="true" href="#the-palestine-laboratory">#</a></h2>
+<p>The occupied territories function as a testing ground. FRT systems are optimized on a captive population, generating operational data that cannot be replicated in simulations.</p>
+<p>This &ldquo;field-testing&rdquo; provides commercial advantage. Israeli technology companies—often founded by former military and intelligence personnel—market surveillance products globally, advertising effectiveness proven in the &ldquo;demanding environment&rdquo; of the occupation.</p>
+<p>The occupation itself becomes a site of research and development. Technologies honed through Palestinian oppression are exported to other states, potentially enabling similar abuses elsewhere. Palestinian suffering is instrumentalized and commodified—a marketable asset in the global surveillance industry.</p>
+<hr>
+<h2 id="human-rights-framework">Human Rights Framework<a hidden class="anchor" aria-hidden="true" href="#human-rights-framework">#</a></h2>
+<h3 id="privacy-iccpr-article-17">Privacy (ICCPR Article 17)<a hidden class="anchor" aria-hidden="true" href="#privacy-iccpr-article-17">#</a></h3>
+<p>Mass non-consensual collection of biometric data constitutes arbitrary interference with privacy. Red Wolf scans faces without consent. Blue Wolf enables arbitrary photography. Mabat 2000 conducts blanket surveillance. Cameras directed into homes exacerbate the violation.</p>
+<h3 id="freedom-of-movement-iccpr-article-12">Freedom of Movement (ICCPR Article 12)<a hidden class="anchor" aria-hidden="true" href="#freedom-of-movement-iccpr-article-12">#</a></h3>
+<p>Red Wolf&rsquo;s automated decisions deny passage for work, education, healthcare, and family. Mabat 2000 restricts free movement within East Jerusalem. Technological barriers compound physical checkpoints and closures that fragment Palestinian territory.</p>
+<h3 id="freedom-of-assembly-and-expression-iccpr-articles-19--21">Freedom of Assembly and Expression (ICCPR Articles 19 &amp; 21)<a hidden class="anchor" aria-hidden="true" href="#freedom-of-assembly-and-expression-iccpr-articles-19--21">#</a></h3>
+<p>The knowledge that FRT can identify protest participants creates a chilling effect. Palestinians are aware that participation could lead to identification and subsequent arrest—potentially long after the event. This suppresses legitimate political expression and resistance.</p>
+<h3 id="non-discrimination-cerd-iccpr-article-26">Non-Discrimination (CERD, ICCPR Article 26)<a hidden class="anchor" aria-hidden="true" href="#non-discrimination-cerd-iccpr-article-26">#</a></h3>
+<p>The systems target Palestinians exclusively based on national origin and ethnicity. Wolf Pack contains only Palestinian data. Surveillance infrastructure disproportionately impacts Palestinian rights compared to Jewish Israelis, including settlers. This constitutes the discriminatory foundation of apartheid.</p>
+<hr>
+<h2 id="apartheid-determinations">Apartheid Determinations<a hidden class="anchor" aria-hidden="true" href="#apartheid-determinations">#</a></h2>
+<p>Major human rights organizations have concluded that Israel operates an apartheid system:</p>
+<p><strong>Amnesty International (2023)</strong>: &ldquo;Automated Apartheid: How facial recognition fragments, segregates and controls Palestinians in the OPT&rdquo; documents FRT as instrumental in enforcing movement restrictions, discriminatory policing, and coercive environments designed to minimize Palestinian presence.</p>
+<p><strong>Human Rights Watch (2021)</strong>: &ldquo;A Threshold Crossed&rdquo; determined Israeli authorities commit the crimes against humanity of apartheid and persecution based on policies designed to maintain Jewish Israeli domination.</p>
+<p><strong>B&rsquo;Tselem (2021)</strong>: Declared Israel operates &ldquo;A regime of Jewish supremacy from the Jordan River to the Mediterranean Sea: This is apartheid.&rdquo;</p>
+<p>The Rome Statute defines apartheid as inhumane acts committed within an institutionalized regime of systematic oppression by one racial group over another. FRT systems targeting Palestinians exclusively to control movement, collect data without consent, and enforce segregation fit this definition.</p>
+<hr>
+<h2 id="sources-and-evidence-assessment">Sources and Evidence Assessment<a hidden class="anchor" aria-hidden="true" href="#sources-and-evidence-assessment">#</a></h2>
+<h3 id="primary-documentation">Primary Documentation<a hidden class="anchor" aria-hidden="true" href="#primary-documentation">#</a></h3>
+<p>The core evidence comes from <strong>Amnesty International&rsquo;s &ldquo;Automated Apartheid&rdquo; report (2023)</strong>, which integrates field research, open-source intelligence, and testimonies from both Palestinians and former Israeli soldiers.</p>
+<p><strong>Breaking the Silence</strong> provides soldier testimonies on Blue Wolf gamification, Red Wolf operations, and the arbitrary nature of data collection.</p>
+<h3 id="corroborating-sources">Corroborating Sources<a hidden class="anchor" aria-hidden="true" href="#corroborating-sources">#</a></h3>
+<p><strong>+972 Magazine</strong>, <strong>Al Jazeera</strong>, <strong>Middle East Eye</strong>, <strong>The Washington Post</strong>, and <strong>The Electronic Intifada</strong> have published investigations amplifying Palestinian voices and providing operational details.</p>
+<p><strong>7amleh - The Arab Center for the Advancement of Social Media</strong> systematically documents surveillance impacts and digital rights violations, with UN ECOSOC consultative status.</p>
+<h3 id="corporate-disclosures">Corporate Disclosures<a hidden class="anchor" aria-hidden="true" href="#corporate-disclosures">#</a></h3>
+<p>Camera suppliers (TKH, Hikvision) and infrastructure providers (Google, Amazon via Project Nimbus) have been identified through supply chain research. Investor pressure campaigns have extracted partial disclosures.</p>
+<h3 id="assessment">Assessment<a hidden class="anchor" aria-hidden="true" href="#assessment">#</a></h3>
+<p>The convergence of human rights documentation, soldier testimony, Palestinian lived experience, and corporate supply chain analysis creates a robust evidentiary foundation. The consistency across sources—soldiers confirming what Palestinians report, corporate records corroborating infrastructure—strengthens confidence in the documented reality.</p>
+<hr>
+<h2 id="from-control-to-elimination">From Control to Elimination<a hidden class="anchor" aria-hidden="true" href="#from-control-to-elimination">#</a></h2>
+<p>These facial recognition systems represent the control layer of Israel&rsquo;s algorithmic infrastructure—the data-harvesting apparatus that feeds the targeting systems examined elsewhere in this series.</p>
+<p>Red Wolf, Blue Wolf, Wolf Pack, and Mabat 2000 are not neutral security tools. They are instruments of automated apartheid: designed exclusively to track Palestinians, operated through gamified soldier competition, and potentially integrated with systems that designate Palestinians for killing.</p>
+<p>The architecture of daily control and the machinery of elimination share the same database.</p>
+<hr>
+<p><em><a href="/research/algorithmic-kill-chain/wheres-daddy/">← Part 3: Where&rsquo;s Daddy</a></em> | <em><a href="/research/algorithmic-kill-chain/">Series Index</a></em> | <em>Part 5: The Kill Chain Assembled →</em></p>
+<hr>
+<h2 id="works-cited">Works Cited<a hidden class="anchor" aria-hidden="true" href="#works-cited">#</a></h2>
+<h3 id="human-rights-documentation">Human Rights Documentation<a hidden class="anchor" aria-hidden="true" href="#human-rights-documentation">#</a></h3>
+<ol>
+<li>
+<p>Amnesty International. <a href="https://www.amnesty.org/en/documents/mde15/6701/2023/en/">&ldquo;Automated Apartheid: How facial recognition fragments, segregates and controls Palestinians in the OPT.&rdquo;</a> May 2023.</p>
+</li>
+<li>
+<p>Human Rights Watch. <a href="https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid-and-persecution">&ldquo;A Threshold Crossed: Israeli Authorities and the Crimes of Apartheid and Persecution.&rdquo;</a> April 2021.</p>
+</li>
+<li>
+<p>B&rsquo;Tselem. <a href="https://www.btselem.org/publications/fulltext/202101_this_is_apartheid">&ldquo;A regime of Jewish supremacy from the Jordan River to the Mediterranean Sea: This is apartheid.&rdquo;</a> January 2021.</p>
+</li>
+<li>
+<p>7amleh. <a href="https://7amleh.org/2024/12/09/surveillance-and-digital-rights-violations-in-east-jerusalem-en">&ldquo;Surveillance and Digital Rights Violations in East Jerusalem.&rdquo;</a> December 2024.</p>
+</li>
+</ol>
+<h3 id="soldier-testimony">Soldier Testimony<a hidden class="anchor" aria-hidden="true" href="#soldier-testimony">#</a></h3>
+<ol start="5">
+<li>
+<p>Breaking the Silence. <a href="https://www.breakingthesilence.org.il/testimonies/database/280983">&ldquo;The point was to take photos.&rdquo;</a> Testimony Database.</p>
+</li>
+<li>
+<p>New Israel Fund. <a href="https://www.nif.org/stories/human-rights-democracy/breaking-the-silence-on-facial-recognition/">&ldquo;Breaking the Silence on Facial Recognition Technology.&rdquo;</a></p>
+</li>
+</ol>
+<h3 id="investigative-journalism">Investigative Journalism<a hidden class="anchor" aria-hidden="true" href="#investigative-journalism">#</a></h3>
+<ol start="7">
+<li>
+<p>Middle East Eye. <a href="https://www.middleeasteye.net/news/wolf-pack-israel-accelerated-use-facial-recognition-automated-apartheid">&ldquo;Wolf Pack: Israel&rsquo;s accelerated use of facial recognition is &lsquo;automated apartheid.&rsquo;&rdquo;</a></p>
+</li>
+<li>
+<p>+972 Magazine. <a href="https://www.972mag.com/israel-surveillance-facial-recognition/">&ldquo;The watchful eye of Israel&rsquo;s surveillance empire.&rdquo;</a></p>
+</li>
+<li>
+<p>Al Jazeera. <a href="https://www.aljazeera.com/news/2023/5/7/chilling-effect-israels-ongoing-surveillance-of-palestinians">&quot;&lsquo;Chilling effect&rsquo;: Israel&rsquo;s ongoing surveillance of Palestinians.&quot;</a></p>
+</li>
+</ol>
+<h3 id="corporate-complicity-1">Corporate Complicity<a hidden class="anchor" aria-hidden="true" href="#corporate-complicity-1">#</a></h3>
+<ol start="10">
+<li>
+<p>Global Voices Advox. <a href="https://advox.globalvoices.org/2024/10/11/israel-is-using-surveillance-technology-to-subjugate-and-target-palestinians/">&ldquo;Israel is using surveillance technology to subjugate and target Palestinians.&rdquo;</a></p>
+</li>
+<li>
+<p>Amnesty International Canada. <a href="https://amnesty.ca/human-rights-news/israel-opt-human-rights-safeguards-surveillance-technology-against-palestinians/">&ldquo;Dutch Investor pushes for human rights safeguards.&rdquo;</a></p>
+</li>
+</ol>
+<h3 id="academic-analysis">Academic Analysis<a hidden class="anchor" aria-hidden="true" href="#academic-analysis">#</a></h3>
+<ol start="12">
+<li>Cambridge University Press. <a href="https://www.cambridge.org/core/journals/international-journal-of-middle-east-studies/article/algorithmic-state-violence-automated-surveillance-and-palestinian-dispossession-in-hebrons-old-city/80B9C5192057ACEA17089E488CFC1486">&ldquo;Algorithmic State Violence: Automated Surveillance and Palestinian Dispossession in Hebron&rsquo;s Old City.&rdquo;</a> International Journal of Middle East Studies.</li>
+</ol>
+<hr>
+<p><em>This research is part of <a href="/research/algorithmic-kill-chain/">The Algorithmic Kill Chain</a> series documenting AI systems used in Israeli military operations. For questions or additional documentation, contact <a href="mailto:joshuaphilipdunlap@gmail.com">joshuaphilipdunlap@gmail.com</a>.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/research/algorithmic-kill-chain/wheres-daddy/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Part 3: Where&#39;s Daddy? — Engineering Familicide</span>
+  </a>
+  <a class="next" href="http://localhost:1313/research/algorithmic-kill-chain/support-systems/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Part 5: The Machine Behind the Machine</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Joshua Dunlap</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

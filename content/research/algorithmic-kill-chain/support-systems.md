@@ -1,8 +1,9 @@
 +++
 date = '2026-01-26'
 draft = false
-title = 'The Machine Behind the Machine: Digital Infrastructure for Automated Killing'
-summary = "Project Nimbus, Pegasus spyware, and the corporate infrastructure enabling algorithmic violence"
+title = "Part 5: The Machine Behind the Machine"
+summary = "Project Nimbus, Pegasus spyware, and corporate infrastructure"
+description = "Project Nimbus, Pegasus spyware, and the corporate infrastructure enabling algorithmic violence"
 series = ['The Algorithmic Kill Chain']
 series_order = 5
 toc = true
