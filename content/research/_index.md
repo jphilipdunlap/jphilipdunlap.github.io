@@ -16,7 +16,7 @@ My research focuses on institutional accountability and the mechanisms by which 
 
 **How U.S.-Israel Policy Shapes American Life**
 
-A comprehensive investigation into the domestic impacts of the U.S.-Israel alliance: $16.3 billion in military aid since October 2023, the iron triangle of defense contractors and revolving-door lobbyists, surveillance technologies transferred from occupied Palestine to American cities, anti-BDS laws eroding First Amendment protections, and human bodies used for foreign military training without informed consent.
+A comprehensive investigation into the domestic impacts of U.S.-Israel military cooperation: $16.3 billion in military aid since October 2023, defense industry entanglement, surveillance technology transfers, policing exchanges, anti-BDS laws restricting First Amendment rights, and the use of donated human remains for foreign military training.
 
 **[Read the full investigation →](/research/cost-of-the-alliance/)**
 
@@ -24,11 +24,11 @@ A comprehensive investigation into the domestic impacts of the U.S.-Israel allia
 
 ### [The Algorithmic Kill Chain](/research/algorithmic-kill-chain/)
 
-**Documenting AI-Driven Violence Against Palestinians**
+**Documenting Israeli AI Targeting Systems**
 
-A six-part investigation into the integrated system of AI targeting and surveillance deployed by Israel in Gaza and the occupied territories. The series traces the complete kill chain: from Lavender's mass target generation to The Gospel's infrastructure targeting to Where's Daddy?'s home-tracking automation—and the corporate infrastructure from Google, Amazon, and Israeli tech firms that makes it all possible.
+A six-part investigation into Israeli AI targeting systems—Lavender, Gospel, and Where's Daddy—examining how automation has reshaped warfare in Gaza and the occupied territories.
 
-**[Read the full series →](/research/algorithmic-kill-chain/)**
+**[Read the full investigation →](/research/algorithmic-kill-chain/)**
 
 ---
 
@@ -36,7 +36,7 @@ A six-part investigation into the integrated system of AI targeting and surveill
 
 **How Political Capture and Ideology Breached the Trust of Arkansas Teachers**
 
-A forensic investigation into how the Arkansas Teacher Retirement System Board breached its fiduciary duty through a politically-driven $50 million Israel Bond investment and the strategic hiring of an ideological proxy advisor. Based on hundreds of pages of internal documents obtained through FOIA requests.
+Documenting Arkansas's $157 million investment in Israel Bonds, exploring how state pension systems create financial connections to foreign policy through a forensic investigation based on hundreds of pages of internal documents obtained through FOIA requests.
 
 **[Read the full investigation →](/research/pension-pipeline/)**
 

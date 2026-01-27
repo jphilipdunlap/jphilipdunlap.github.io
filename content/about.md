@@ -2,6 +2,11 @@
 title = "About"
 date = 2026-01-26
 hiddenInHomeList = true
+
+[cover]
+image = "/images/headshot.jpg"
+alt = "Joshua Dunlap"
+relative = false
 +++
 
 I'm Joshua Dunlap. I live in North Little Rock, Arkansas, and I work in customer care—benefits administration, helping people navigate disability claims and medical leave. It's not glamorous, but it's honest work, and I'm good at it.
