@@ -7,6 +7,7 @@ description = "How Israel's AI system marked 37,000 Palestinians for assassinati
 series = ['The Algorithmic Kill Chain']
 series_order = 1
 toc = true
+hiddenInHomeList = true
 +++
 
 *Part 1 of [The Algorithmic Kill Chain](/research/algorithmic-kill-chain/) investigation*

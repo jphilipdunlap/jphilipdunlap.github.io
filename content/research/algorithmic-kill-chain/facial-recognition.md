@@ -7,6 +7,7 @@ description = "How biometric surveillance and predictive profiling enforce racia
 series = ['The Algorithmic Kill Chain']
 series_order = 4
 toc = true
+hiddenInHomeList = true
 +++
 
 ## The Numbers

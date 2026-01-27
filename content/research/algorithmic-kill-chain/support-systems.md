@@ -7,6 +7,7 @@ description = "Project Nimbus, Pegasus spyware, and the corporate infrastructure
 series = ['The Algorithmic Kill Chain']
 series_order = 5
 toc = true
+hiddenInHomeList = true
 +++
 
 ## The Numbers

@@ -7,6 +7,7 @@ description = "Tracking Palestinian men to their family homes for strikes design
 series = ['The Algorithmic Kill Chain']
 series_order = 3
 toc = true
+hiddenInHomeList = true
 +++
 
 **The system's name tells you what it does.**

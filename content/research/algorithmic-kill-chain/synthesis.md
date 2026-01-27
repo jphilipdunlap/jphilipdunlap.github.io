@@ -7,6 +7,7 @@ description = "The cumulative impact of algorithmic warfare and paths toward acc
 series = ['The Algorithmic Kill Chain']
 series_order = 6
 toc = true
+hiddenInHomeList = true
 +++
 
 This investigation began with a simple question: How does an algorithm decide who dies?

@@ -7,6 +7,7 @@ description = "The automated infrastructure targeting system generating bombing 
 series = ['The Algorithmic Kill Chain']
 series_order = 2
 toc = true
+hiddenInHomeList = true
 +++
 
 **The numbers that define automated urbicide:**
