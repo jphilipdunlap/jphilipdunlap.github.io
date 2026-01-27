@@ -120,4 +120,4 @@ Where official Israeli sources have acknowledged or disputed specific claims, th
 
 ---
 
-*This investigation was conducted as part of my work with Little Rock Peace for Palestine. For questions, additional documentation, or collaboration inquiries, contact joshuaphilipdunlap@gmail.com.*
+[Home](/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
