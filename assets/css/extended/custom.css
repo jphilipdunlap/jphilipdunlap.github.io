@@ -1,0 +1,22 @@
+/* About page headshot styling */
+.about-headshot {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin: 0 0 1.5rem 2rem;
+    border: 3px solid var(--tertiary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive: center on mobile */
+@media (max-width: 600px) {
+    .about-headshot {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem auto;
+        width: 150px;
+        height: 150px;
+    }
+}
