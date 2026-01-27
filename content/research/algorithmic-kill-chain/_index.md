@@ -3,7 +3,7 @@ date = '2026-01-26'
 draft = false
 title = 'The Algorithmic Kill Chain'
 summary = 'How Israel automated mass killing in Gaza: An investigation into AI targeting systems, 37,000-person kill lists, and the architecture of algorithmic warfare'
-description = 'A multi-part investigation documenting Israel's AI-driven targeting systems—Lavender, Gospel, Where's Daddy?—their role in Gaza's destruction, and the corporate infrastructure enabling algorithmic warfare.'
+description = "A multi-part investigation documenting Israel's AI-driven targeting systems—Lavender, Gospel, Where's Daddy?—their role in Gaza's destruction, and the corporate infrastructure enabling algorithmic warfare."
 toc = true
 +++
 
