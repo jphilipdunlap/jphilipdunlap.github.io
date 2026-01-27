@@ -10,6 +10,8 @@ I'm a member of Little Rock Peace for Palestine, where I conduct investigative r
 
 ## Featured Work
 
+**[The Cost of the Alliance](/research/cost-of-the-alliance/)** — How U.S.-Israel policy shapes American life: $16.3 billion in military aid since October 2023, defense industry entanglement, surveillance blowback, anti-BDS laws eroding First Amendment rights, and bodies used for foreign military training without consent.
+
 **[The Algorithmic Kill Chain](/research/algorithmic-kill-chain/)** — A six-part investigation documenting Israeli AI targeting systems deployed in Gaza, from mass target generation (Lavender) to automated home tracking (Where's Daddy?) to the corporate infrastructure enabling it all.
 
 **[The Pension Pipeline](/research/pension-pipeline/)** — A forensic investigation into Arkansas state pension investments in Israel Bonds, documenting procedural violations and political capture of fiduciary institutions.
@@ -18,4 +20,4 @@ I'm a member of Little Rock Peace for Palestine, where I conduct investigative r
 
 ---
 
-[About me](/about/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
+[Home](/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)

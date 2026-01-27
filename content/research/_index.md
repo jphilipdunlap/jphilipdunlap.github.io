@@ -12,6 +12,16 @@ My research focuses on institutional accountability and the mechanisms by which 
 
 ## Featured Investigations
 
+### [The Cost of the Alliance](/research/cost-of-the-alliance/)
+
+**How U.S.-Israel Policy Shapes American Life**
+
+A comprehensive investigation into the domestic impacts of the U.S.-Israel alliance: $16.3 billion in military aid since October 2023, the iron triangle of defense contractors and revolving-door lobbyists, surveillance technologies transferred from occupied Palestine to American cities, anti-BDS laws eroding First Amendment protections, and human bodies used for foreign military training without informed consent.
+
+**[Read the full investigation →](/research/cost-of-the-alliance/)**
+
+---
+
 ### [The Algorithmic Kill Chain](/research/algorithmic-kill-chain/)
 
 **Documenting AI-Driven Violence Against Palestinians**
@@ -58,4 +68,4 @@ If you're working on related investigations—particularly around state pension 
 
 ---
 
-[About me](/about/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
+[Home](/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
