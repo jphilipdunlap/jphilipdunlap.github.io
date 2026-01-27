@@ -1,0 +1,28 @@
+baseURL = 'https://jphilipdunlap.github.io/'
+languageCode = 'en-us'
+title = 'Joshua Dunlap'
+theme = 'PaperMod'
+
+[params]
+  description = "Research, writing, and FOIA work on information control systems, surveillance technology, and state complicity"
+  author = "Joshua Dunlap"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 3
