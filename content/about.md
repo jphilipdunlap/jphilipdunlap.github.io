@@ -1,10 +1,12 @@
 +++
-title = "About"
+title = 'About'
 date = 2026-01-26
+author = 'Joshua Dunlap'
+description = 'FOIA researcher and policy analyst based in Arkansas'
 hiddenInHomeList = true
 +++
 
-<img src="/images/headshot.jpg" alt="Joshua Dunlap" class="about-headshot">
+![Late night research](/images/study.jpg)
 
 I'm Joshua Dunlap. I live in North Little Rock, Arkansas, and I work in customer care—benefits administration, helping people navigate disability claims and medical leave. It's not glamorous, but it's honest work, and I'm good at it.
 
