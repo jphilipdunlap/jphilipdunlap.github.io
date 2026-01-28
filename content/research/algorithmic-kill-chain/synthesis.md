@@ -27,47 +27,10 @@ The following table synthesizes what this investigation has documented—not ind
 | **[Lavender](/research/algorithmic-kill-chain/lavender/)** | AI-driven generation of human targets for assassination | ~10% error rate; minimal human oversight ("rubber stamping"); opaque criteria; targeting low-ranking individuals | Generated ~37,000 targets post-October 7; enabled mass bombing; key component of "mass assassination factory" |
 | **[The Gospel](/research/algorithmic-kill-chain/gospel/)** | AI-driven generation of structural targets (buildings, infrastructure) | Accelerates targeting beyond human capacity; potential misidentification of civilian structures | Enabled rapid, large-scale bombing including residential buildings |
 | **[Where's Daddy?](/research/algorithmic-kill-chain/wheres-daddy/)** | Automated tracking of Lavender-marked individuals to their homes | Facilitates strikes when families are present; automates final stage of kill chain | Systematic targeting of individuals in residences, contributing to mass familicide |
-| **[Facial Recognition](/research/algorithmic-kill-chain/facial-recognition/)** (Red Wolf, Blue Wolf, etc.) | Mass surveillance, biometric collection, movement control | Non-consensual data collection; discriminatory databases; automation of segregation | Extensive West Bank deployment enforcing "Automated Apartheid"; Gaza deployment for identification/detention |
-| **[Project Nimbus](/research/algorithmic-kill-chain/support-systems/)** | Cloud computing and AI services to Israeli government and military | Corporate complicity; suppression of worker dissent; enables mass data processing | $1.2B contract providing critical infrastructure for military/intelligence operations |
-| **[Pegasus](/research/algorithmic-kill-chain/support-systems/)** | Covert mobile device surveillance | Used against human rights defenders and journalists; enables state repression | Deployed against Palestinian activists; exported globally to authoritarian regimes |
-
-What emerges from this synthesis is not a collection of discrete tools but an integrated system. Mass surveillance feeds AI target generation. Target generation feeds home-tracking automation. Corporate cloud infrastructure stores and processes the data flows connecting every component. Each system amplifies the others.
-
----
-
-## Systemic Failures: Beyond Individual Technologies
-
-The individual systems documented in this series reveal four structural problems that transcend any single technology.
-
-### The Erosion of Meaningful Human Control
-
-Reports from Israeli intelligence sources indicate that soldiers treated Lavender's outputs "as if it were a human decision," dedicating mere seconds to review AI-generated targets before authorization. This reduces human oversight to what one source called a "rubber stamp"—a perfunctory formality that preserves the appearance of human control while ceding actual decision-making to algorithms.
-
-The scale compounds the problem. When AI systems generate hundreds of targets daily—compared to perhaps fifty annually under previous methods—human cognitive capacity for deliberation becomes fundamentally inadequate. The kill chain moves faster than careful judgment allows.
-
-### Automation Bias and Digital Dehumanization
-
-Intelligence sources acknowledged awareness of Lavender's approximately 10% error rate—and accepted it anyway. This willingness to kill one innocent person for every nine legitimate targets reflects automation bias: an institutional tendency to trust machine outputs regardless of known limitations.
-
-More fundamentally, these systems reduce complex human lives to data points and probability scores. Palestinians become entries in a database, their existence evaluated through algorithmic calculations that strip them of individuality, context, and dignity. This is dehumanization encoded in software.
-
-### The Collapse of International Humanitarian Law
-
-The AI systems documented in this series pose fundamental challenges to the laws of armed conflict:
-
-**Distinction**: The principle requiring differentiation between combatants and civilians cannot function when targeting relies on probabilistic assessments with known error rates. Algorithmic misidentification transforms legitimate military operations into indiscriminate attacks by design.
-
-**Proportionality**: When rules of engagement reportedly permit 15-20 civilian deaths per low-ranking target—and over 100 for senior commanders—the legal requirement to balance military advantage against civilian harm becomes meaningless. Automation bias and targeting volume prevent the careful, context-specific analysis that proportionality demands.
-
-**Precaution**: The obligation to take feasible measures minimizing civilian harm requires time and attention. Twenty-second review periods for Lavender targets—striking individuals in their homes—provide neither. The speed that makes AI valuable militarily is precisely what makes precautionary compliance impossible.
-
-### The Accountability Gap
-
-When an unlawful strike kills civilians, who bears responsibility?
-
-The opacity of algorithmic decision-making—the "black box" problem—makes attribution nearly impossible. Was the error in the algorithm itself? The training data? The inadequate human oversight? The command decision to deploy such systems? Responsibility diffuses across machines, data sources, programmers, and operators until no one can be held accountable.
-
-This ambiguity is not accidental. It provides institutional cover for systematic violations while maintaining the appearance of lawful conduct.
+| **[Facial Recognition](/research/algorithmic-kill-chain/facial-recognition/)** (Red Wolf, Blue Wolf, etc.) | Mass biometric surveillance and identification | Operates without consent; integrated with targeting; automates apartheid | Comprehensive surveillance infrastructure enabling population control and potential targeting |
+| **[Fire Factory](/research/algorithmic-kill-chain/support-systems/)** | Optimizes munitions selection for AI-generated targets | Automates weaponeering decisions; further reduces human deliberation | Rapid processing of target queue with minimal review |
+| **[Project Nimbus](/research/algorithmic-kill-chain/support-systems/)** | Cloud infrastructure (Google/Amazon) for Israeli government/military | Provides foundational compute; potentially enables AI capabilities | Corporate complicity in technological infrastructure of violence |
+| **[Pegasus](/research/algorithmic-kill-chain/support-systems/)** | Military-grade spyware for device infiltration | Deployed against Palestinian HRDs; enables deep surveillance | Targeted surveillance of civil society, journalists, activists |
 
 ---
 
@@ -162,6 +125,49 @@ Simultaneously, AI-driven surveillance entrenches segregation and control, autom
 The implications extend beyond Palestine. Failure to hold Israel accountable for AI-enabled crimes constitutes complicity. Failure to regulate these technologies allows the normalization of algorithmic warfare worldwide. Failure to address the root causes—the entrenched regime of settler colonialism and apartheid—condemns Palestinians to continued violence and denies their fundamental right to self-determination.
 
 The struggle against algorithmic occupation is inseparable from the struggle for Palestinian freedom. It demands rejecting the dehumanizing logic of the machine and the colonial violence it serves, and affirming the value of Palestinian life and the universal right to liberation, dignity, and self-determination.
+
+---
+
+## Works Cited
+
+### Primary Investigative Sources
+
+1. [+972 Magazine and Local Call - "Lavender": The AI Machine Directing Israel's Bombing Spree in Gaza](https://www.972mag.com/lavender-ai-israeli-army-gaza/)
+2. [+972 Magazine - A Mass Assassination Factory: Inside Israel's Calculated Bombing of Gaza](https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/)
+3. [The Guardian - "The Machine Did It Coldly": Israel Used AI to Identify 37,000 Hamas Targets](https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-targets)
+4. [+972 Magazine - Israeli Intelligence is Building a ChatGPT-like Surveillance Tool](https://www.972mag.com/israeli-intelligence-chatgpt-8200-surveillance-ai/)
+
+### Human Rights Documentation
+
+5. [Human Rights Watch - Questions and Answers: Israeli Military's Use of Digital Tools in Gaza](https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza)
+6. [Amnesty International - Automated Apartheid: How Facial Recognition Fragments, Segregates and Controls Palestinians](https://www.amnesty.org/en/documents/mde15/6701/2023/en/)
+7. [Human Rights Watch - Among Pegasus Spyware Targets](https://www.hrw.org/news/2022/01/26/human-rights-watch-among-pegasus-spyware-targets)
+8. [Front Line Defenders - Statement on Targeting of Palestinian HRDs with Pegasus](https://www.frontlinedefenders.org/en/statement-report/statement-targeting-palestinian-hrds-pegasus)
+
+### Legal and Academic Analysis
+
+9. [Opinio Juris - Symposium on Military AI and the Law of Armed Conflict](http://opiniojuris.org/2024/04/04/symposium-on-military-ai-and-the-law-of-armed-conflict-the-need-for-speed-the-cost-of-unregulated-ai-decision-support-systems-to-civilians/)
+10. [RUSI - Israel Defense Forces' Use of AI in Gaza: A Case of Misplaced Purpose](https://rusi.org/explore-our-research/publications/commentary/israel-defense-forces-use-ai-gaza-case-misplaced-purpose)
+11. [Lieber Institute - The Legality of AI Targeting in Armed Conflict](https://lieber.westpoint.edu/)
+12. [CCDCOE - The Rights to Privacy and Data Protection in Armed Conflict](https://ccdcoe.org/uploads/2022/06/The-Rights-to-Privacy-and-Data-Protection-in-Armed-Conflict.pdf)
+
+### Corporate Complicity Documentation
+
+13. [Time - Exclusive: No Tech for Apartheid Google Workers Protest Project Nimbus](https://time.com/6964364/exclusive-no-tech-for-apartheid-google-workers-protest-project-nimbus-1-2-billion-contract-with-israel/)
+14. [Al Jazeera - What is Project Nimbus and Why Are Google Workers Protesting?](https://www.aljazeera.com/news/2024/4/23/what-is-project-nimbus-and-why-are-google-workers-protesting-israel-deal)
+15. [Business & Human Rights Resource Centre - USA: Google Fires 28 Employees Who Protested Its Project Nimbus Contract with Israel](https://www.business-humanrights.org/my/news/usa-google-fires-28-employees-who-protested-its-project-nimbus-contract-with-israel-incl-co-comments/)
+
+### News Coverage
+
+16. [Al Jazeera - AI-Assisted Genocide: Israel Reportedly Used Database for Gaza Kill Lists](https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists)
+17. [Middle East Eye - Israel's Use of AI in Gaza: A Terrifying Model Coming to a Country Near You](https://www.middleeasteye.net/opinion/israel-use-ai-gaza-terrifying-model-coming-country-near-you)
+18. [Truthout - Report: Israeli Army Uses AI to Produce Palestinian Targets for Assassination](https://truthout.org/articles/report-israeli-army-uses-ai-to-produce-palestinian-targets-for-assassination/)
+
+### UN and International Bodies
+
+19. [UN OCHA - Gaza Strip: Humanitarian Situation Update](https://www.ochaopt.org/)
+20. [ICJ - Advisory Opinion on the Legal Consequences of Israel's Policies and Practices](https://www.icj-cij.org/)
+21. [Stop Killer Robots Coalition](https://www.stopkillerrobots.org/)
 
 ---
 

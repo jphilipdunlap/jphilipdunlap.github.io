@@ -203,19 +203,34 @@ This is not collateral damage. This is not unfortunate byproduct. This is famili
 
 ---
 
-## Sources and Evidence Assessment
+## Works Cited
 
-This analysis draws on:
+### Primary Investigative Sources
 
-- **+972 Magazine/Local Call investigations** based on interviews with six Israeli intelligence officers with direct involvement in these systems
-- **Human Rights Watch and Amnesty International** documentation of residential attacks and mass civilian casualties
-- **New York Times reporting** on loosened post-October 7 rules of engagement
-- **UN Commission of Inquiry** reports on potential IHL violations
-- **Palestinian human rights organizations** tracking home destruction under bombardment
+1. [+972 Magazine and Local Call - "Lavender": The AI Machine Directing Israel's Bombing Spree in Gaza](https://www.972mag.com/lavender-ai-israeli-army-gaza/)
+2. [+972 Magazine - A Mass Assassination Factory: Inside Israel's Calculated Bombing of Gaza](https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/)
+3. [The Guardian - "The Machine Did It Coldly": Israel Used AI to Identify 37,000 Hamas Targets](https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-targets)
 
-The whistleblower accounts provide operational detail unavailable through official channels. Their consistency across sources, corroboration by observable destruction patterns, and alignment with the scale of documented familicide support their credibility.
+### Human Rights Documentation
 
-Official IDF denials are noted but assessed against the evidence: claims of robust human oversight and IHL compliance are directly contradicted by insider descriptions of 20-second reviews, pre-authorized mass civilian casualties, and the deliberate policy of home targeting as "first option."
+4. [Human Rights Watch - Questions and Answers: Israeli Military's Use of Digital Tools in Gaza](https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza)
+5. [Amnesty International - Israel/OPT: Unprecedented Destruction in Gaza](https://www.amnesty.org/en/latest/news/2024/01/israel-opt-unprecedented-destruction-gaza/)
+6. [B'Tselem - Statistics on Demolished Houses in Gaza Strip](https://www.btselem.org/)
+
+### Legal Analysis
+
+7. [UN Commission of Inquiry - Reports on Potential IHL Violations](https://www.ohchr.org/en/hr-bodies/hrc/co-israel/index)
+8. [Opinio Juris - The Need for Speed: The Cost of Unregulated AI Decision Support Systems to Civilians](http://opiniojuris.org/2024/04/04/symposium-on-military-ai-and-the-law-of-armed-conflict-the-need-for-speed-the-cost-of-unregulated-ai-decision-support-systems-to-civilians/)
+
+### News Coverage
+
+9. [New York Times - Israeli Rules of Engagement Post-October 7](https://www.nytimes.com/)
+10. [Al Jazeera - AI-Assisted Genocide: Israel Reportedly Used Database for Gaza Kill Lists](https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists)
+
+### Palestinian Documentation
+
+11. [Palestinian Centre for Human Rights - Weekly Reports on Israeli Violations](https://www.pchrgaza.org/)
+12. [Al Mezan Center for Human Rights - Gaza Documentation](https://www.mezan.org/)
 
 ---
 

@@ -6,7 +6,6 @@ summary = 'Mapping the supply chain from Arkansas weapons manufacturing to docum
 description = 'A comprehensive investigation into Arkansas defense manufacturing, the political architecture sustaining it, and the documented end-use of Arkansas-made weapons in attacks on civilian populations.'
 toc = true
 hiddenInHomeList = true
-hidden = true
 +++
 
 ## Executive Summary
@@ -165,33 +164,33 @@ This investigation synthesizes publicly available corporate disclosures, federal
 
 ### Government and Corporate Sources
 
-- [Arkansas Economic Development Commission - L3Harris Expansion](https://www.arkansasedc.com/news-events/newsroom/detail/2025/07/17/l3Harris-to-build-more-than-20-new-large-solid-rocket-motor-manufacturing-facilities-in-calhoun-county--arkansas)
-- [Arkansas Economic Development Commission - General Dynamics Facility](https://www.arkansasedc.com/news-events/newsroom/detail/2025/04/23/general-dynamics-u.s.-army-open-new-155mm-artillery-facility-in-calhoun-county-arkansas)
-- [Defense Security Cooperation Agency - Israel Munitions Sale (March 2025)](https://media.defense.gov/2025/Mar/03/2003653983/-1/-1/1/PRESS%20RELEASE%20-%20ISRAEL%2025-34%20CN.PDF)
-- [General Dynamics - Camden Operations](https://www.gd-ots.com/wp-content/uploads/2021/10/Camden-Operations-2021-02.pdf)
-- [Governor's Office - Arkansas-Israel MOU](https://governor.arkansas.gov/news_post/sanders-signs-economic-cooperation-agreement-between-the-state-of-arkansas-and-the-national-technological-innovation-authority-of-the-state-of-israel/)
-- [L3Harris - Solid Rocket Motor Expansion](https://www.l3harris.com/newsroom/press-release/2025/07/l3Harris-expand-solid-rocket-motor-production-arkansas)
-- [Lockheed Martin - Camden Operations](https://www.lockheedmartin.com/en-us/who-we-are/business-areas/missiles-and-fire-control/camden.html)
-- [Lockheed Martin - Political Disclosures](https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/board-of-directors/political-disclosures.html)
-- [RTX - Camden Facility Announcement](https://www.rtx.com/news/news-center/2023/10/26/rtx-rafael-to-build-missile-production-facility-in-camden-arkansas)
+1. [Arkansas Economic Development Commission - L3Harris Expansion](https://www.arkansasedc.com/news-events/newsroom/detail/2025/07/17/l3Harris-to-build-more-than-20-new-large-solid-rocket-motor-manufacturing-facilities-in-calhoun-county--arkansas)
+2. [Arkansas Economic Development Commission - General Dynamics Facility](https://www.arkansasedc.com/news-events/newsroom/detail/2025/04/23/general-dynamics-u.s.-army-open-new-155mm-artillery-facility-in-calhoun-county-arkansas)
+3. [Defense Security Cooperation Agency - Israel Munitions Sale (March 2025)](https://media.defense.gov/2025/Mar/03/2003653983/-1/-1/1/PRESS%20RELEASE%20-%20ISRAEL%2025-34%20CN.PDF)
+4. [General Dynamics - Camden Operations](https://www.gd-ots.com/wp-content/uploads/2021/10/Camden-Operations-2021-02.pdf)
+5. [Governor's Office - Arkansas-Israel MOU](https://governor.arkansas.gov/news_post/sanders-signs-economic-cooperation-agreement-between-the-state-of-arkansas-and-the-national-technological-innovation-authority-of-the-state-of-israel/)
+6. [L3Harris - Solid Rocket Motor Expansion](https://www.l3harris.com/newsroom/press-release/2025/07/l3Harris-expand-solid-rocket-motor-production-arkansas)
+7. [Lockheed Martin - Camden Operations](https://www.lockheedmartin.com/en-us/who-we-are/business-areas/missiles-and-fire-control/camden.html)
+8. [Lockheed Martin - Political Disclosures](https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/board-of-directors/political-disclosures.html)
+9. [RTX - Camden Facility Announcement](https://www.rtx.com/news/news-center/2023/10/26/rtx-rafael-to-build-missile-production-facility-in-camden-arkansas)
 
 ### Legislation
 
-- [Arkansas Act 710 of 2017 (Anti-BDS)](https://www.arkleg.state.ar.us/Acts/Document?type=pdf&act=710&ddBienniumSession=2017/2017R)
-- [Arkansas Act 721 of 2025 (IHRA Definition)](https://www.arkleg.state.ar.us/Bills/Detail?id=SB352&ddBienniumSession=2025%2F2025R)
+10. [Arkansas Act 710 of 2017 (Anti-BDS)](https://www.arkleg.state.ar.us/Acts/Document?type=pdf&act=710&ddBienniumSession=2017/2017R)
+11. [Arkansas Act 721 of 2025 (IHRA Definition)](https://www.arkleg.state.ar.us/Bills/Detail?id=SB352&ddBienniumSession=2025%2F2025R)
 
 ### Human Rights Documentation
 
-- [Amnesty International - Foreign-Supplied Weapons (2009)](https://www.amnesty.org/en/latest/news/2009/02/israel-hamas-usaron-armas-extranjeras-contra-civiles-20090220/)
-- [Amnesty International - Israeli Organizations Genocide Conclusion (2025)](https://www.amnesty.org/en/latest/news/2025/07/israel-opt-israeli-organizations-conclude-israel-committing-genocide-against-palestinians-in-gaza-in-another-milestone-for-accountability-efforts/)
-- [Amnesty USA - U.S.-Made Weapons Violations](https://www.amnestyusa.org/press-releases/u-s-made-weapons-used-by-government-of-israel-in-violation-of-international-law-and-u-s-law/)
-- [Human Rights Watch - Israeli Forces' Conduct in Gaza (2024)](https://www.hrw.org/news/2024/03/19/israeli-forces-conduct-gaza)
+12. [Amnesty International - Foreign-Supplied Weapons (2009)](https://www.amnesty.org/en/latest/news/2009/02/israel-hamas-usaron-armas-extranjeras-contra-civiles-20090220/)
+13. [Amnesty International - Israeli Organizations Genocide Conclusion (2025)](https://www.amnesty.org/en/latest/news/2025/07/israel-opt-israeli-organizations-conclude-israel-committing-genocide-against-palestinians-in-gaza-in-another-milestone-for-accountability-efforts/)
+14. [Amnesty USA - U.S.-Made Weapons Violations](https://www.amnestyusa.org/press-releases/u-s-made-weapons-used-by-government-of-israel-in-violation-of-international-law-and-u-s-law/)
+15. [Human Rights Watch - Israeli Forces' Conduct in Gaza (2024)](https://www.hrw.org/news/2024/03/19/israeli-forces-conduct-gaza)
 
 ### News and Analysis
 
-- [Manufacturing Dive - L3Harris Expansion](https://www.manufacturingdive.com/news/l3harris-aerojet-rocketdyne-expand-rocket-motor-site-arkansas-golden-dome-obbb/754013/)
-- [OpenSecrets - Lockheed Martin PAC](https://www.opensecrets.org/political-action-committees-pacs/lockheed-martin/C00303024/pac-to-pac/2024)
-- [SWARK Today - Westerman Defense Investment](https://swark.today/articles/investing-in-the-future-of-americas-defense)
+16. [Manufacturing Dive - L3Harris Expansion](https://www.manufacturingdive.com/news/l3harris-aerojet-rocketdyne-expand-rocket-motor-site-arkansas-golden-dome-obbb/754013/)
+17. [OpenSecrets - Lockheed Martin PAC](https://www.opensecrets.org/political-action-committees-pacs/lockheed-martin/C00303024/pac-to-pac/2024)
+18. [SWARK Today - Westerman Defense Investment](https://swark.today/articles/investing-in-the-future-of-americas-defense)
 
 ---
 

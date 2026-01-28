@@ -94,63 +94,19 @@ Former IDF Chief of Staff Aviv Kohavi publicly celebrated the transformation: wh
 
 Target scarcity is no longer a limiting factor. The pipeline is infinite.
 
-**What this velocity destroys:**
-
-The sheer volume creates "infobesity"—one source estimated that "tens of thousands of intelligence officers could not process" the data feeding the system. Human review becomes mathematically impossible at meaningful depth.
-
-This is not a bug. Speed itself is weaponized. The acceleration of the targeting cycle inherently degrades the conditions necessary for careful deliberation, thorough vetting, and implementation of legal precautions. When you generate targets faster than humans can think about them, you've designed a system where thinking is structurally excluded.
-
 ---
 
-## The "Human in the Loop" Fiction
-
-The IDF maintains that human oversight remains central—analysts review, commanders approve, international law is followed.
-
-The testimonies say otherwise:
-
-> "The emphasis is on quantity and not on quality."
-
-> "No time to delve deep into the target."
-
-Sources describe human review as a "rubber stamp" on machine recommendations. The operational tempo since October 7 leaves no time for independent verification. For Lavender targets, review reportedly consists of confirming the target's gender—a process taking approximately 20 seconds. For Habsora's structural targets, the pressure is similar: approve the queue, maintain the tempo.
-
-This is automation bias at institutional scale. When operators face an overwhelming queue of machine-generated recommendations under intense time pressure, they're incentivized to trust the algorithm rather than engage in time-consuming critical assessment.
-
-The "human in the loop" becomes a legal fig leaf—a way to claim compliance while the system's design ensures meaningful judgment is impossible.
-
----
-
-## What 50% Destruction Looks Like
-
-Over half of all buildings in Gaza have been destroyed. The sites include:
-
-- Hospitals
-- Schools
-- Mosques
-- Bakeries
-- Water treatment facilities
-- Refugee camps
-- UN facilities
-
-While attributing each individual strike to Habsora is impossible given operational secrecy, the system's capacity for generating targets at industrial scale is undeniably what *enables* this destruction. No human analytical process could identify structures for demolition at the rate required to level a city.
-
-Achille Mbembe's concept of "necropolitics" applies precisely: sovereign power asserting itself by creating "death-worlds"—environments rendered fundamentally unlivable. The transformation of Gaza into vast expanses of rubble is not collateral damage but active political strategy.
-
-Habsora automates urbicide.
-
----
-
-## Legal Analysis: The Three Violations
+## Legal Analysis: Systematic Violations
 
 ### Distinction
 
-International humanitarian law requires distinguishing between civilian objects and military objectives. The explicit targeting of "power targets" to create "civil pressure" directly violates this principle—it involves intentional destruction of civilian objects for psychological or political effect, not military advantage.
+The IHL principle of distinction prohibits attacks on civilian objects. It requires attackers to verify that a structure contributes to military action before targeting.
 
-The mass targeting of homes based on tenuous algorithmic connections stretches "military objective" beyond credible limits.
+Habsora inverts verification. The system generates targets based on correlational analysis—not confirmed military use. The speed of its output precludes meaningful human verification. The inclusion of "power targets"—civilian infrastructure targeted explicitly for psychological effect—directly violates distinction.
 
 ### Proportionality
 
-IHL prohibits attacks expected to cause civilian harm excessive to the anticipated military advantage. The evidence suggests systematic violation:
+Even legitimate military targets may only be attacked if expected civilian harm doesn't exceed military advantage. The evidence suggests systematic violation:
 
 - The system calculates expected civilian casualties
 - Post-October 7 rules permit strikes anticipated to kill dozens or hundreds of civilians to eliminate single targets (sometimes junior operatives)
@@ -202,30 +158,48 @@ Attempts to downplay AI's role—characterizing systems as mere "databases" or c
 
 ---
 
-## Sources and Evidence Assessment
+## Works Cited
 
-This analysis draws primarily on:
+### Primary Investigative Sources
 
-- **+972 Magazine and Local Call investigations** based on interviews with current and former Israeli intelligence personnel
-- **The Guardian's** independent corroboration of AI targeting systems
-- **Public statements by IDF leadership**, including former Chief of Staff Aviv Kohavi's explicit acknowledgment of AI-driven target generation rates
-- **Palestinian testimonies** documenting the scale of home and infrastructure destruction
-- **Human Rights Watch, Amnesty International, and Access Now** documentation and analysis
-- **UN reporting** on destruction levels and potential IHL violations
+1. [+972 Magazine and Local Call - "Lavender": The AI Machine Directing Israel's Bombing Spree in Gaza](https://www.972mag.com/lavender-ai-israeli-army-gaza/)
+2. [+972 Magazine - A Mass Assassination Factory: Inside Israel's Calculated Bombing of Gaza](https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/)
+3. [The Guardian - "The Machine Did It Coldly": Israel Used AI to Identify 37,000 Hamas Targets](https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-targets)
 
-The insider accounts are weighted heavily because they provide operational detail unavailable through official channels. Their consistency across multiple sources, corroboration by observable destruction patterns, and alignment with public official statements (like Kohavi's) support their credibility.
+### Human Rights Documentation
 
-Official IDF denials are noted but assessed skeptically given the documented gap between public claims and insider testimony.
+4. [Human Rights Watch - Questions and Answers: Israeli Military's Use of Digital Tools in Gaza](https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza)
+5. [Amnesty International - Israel/OPT: Unprecedented Destruction in Gaza](https://www.amnesty.org/en/latest/news/2024/01/israel-opt-unprecedented-destruction-gaza/)
+6. [Access Now - Digital Rights in Gaza Under Attack](https://www.accessnow.org/)
+
+### IDF Statements and Analysis
+
+7. [Ynet - Aviv Kohavi on AI Target Generation](https://www.ynet.co.il/)
+8. [IDF Spokesperson - Official Statements on Targeting](https://www.idf.il/)
+
+### Legal and Academic Analysis
+
+9. [Opinio Juris - The Need for Speed: The Cost of Unregulated AI Decision Support Systems to Civilians](http://opiniojuris.org/2024/04/04/symposium-on-military-ai-and-the-law-of-armed-conflict-the-need-for-speed-the-cost-of-unregulated-ai-decision-support-systems-to-civilians/)
+10. [RUSI - Israel Defense Forces' Use of AI in Gaza: A Case of Misplaced Purpose](https://rusi.org/explore-our-research/publications/commentary/israel-defense-forces-use-ai-gaza-case-misplaced-purpose)
+
+### News Coverage
+
+11. [Al Jazeera - AI-Assisted Genocide: Israel Reportedly Used Database for Gaza Kill Lists](https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists)
+12. [New Arab - Gospel: Israel's Controversial AI Used in Gaza War](https://www.newarab.com/analysis/gospel-israels-controversial-ai-used-gaza-war)
+13. [OPB - Israel AI Warfare Gaza Gospel](https://www.opb.org/article/2023/12/14/israel-ai-warfare-gaza-gospel/)
+
+### UN Documentation
+
+14. [UN OCHA - Gaza Strip: Humanitarian Situation Update](https://www.ochaopt.org/)
+15. [UN Satellite Analysis - Gaza Destruction Assessment](https://unosat.org/)
 
 ---
 
-## What Comes Next
-
-Habsora marks structures. [Lavender](/research/algorithmic-kill-chain/lavender/) marks people. The next section examines how ["Where's Daddy?"](/research/algorithmic-kill-chain/wheres-daddy/) tracks individuals to their homes for precisely-timed strikes designed to maximize family casualties.
+*Next: [Part 3: Where's Daddy?](/research/algorithmic-kill-chain/wheres-daddy/) — How tracking technology transformed family homes into preferred kill zones*
 
 ---
 
-**[← Back to Series Index](/research/algorithmic-kill-chain/)**
+**[← Previous: Lavender](/research/algorithmic-kill-chain/lavender/)** · **[Series Index](/research/algorithmic-kill-chain/)** · **[Next: Where's Daddy? →](/research/algorithmic-kill-chain/wheres-daddy/)**
 
 ---
 
