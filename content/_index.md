@@ -1,7 +1,7 @@
 +++
 title = "Joshua Dunlap"
 description = "FOIA researcher and policy analyst investigating institutional accountability, defense industry supply chains, and political capture of Arkansas state institutions."
-images = ["/images/og-image.png"]
+images = ["/images/og-image-v2.png"]
 +++
 
 I'm a FOIA researcher and policy analyst based in Arkansas. My work focuses on institutional accountability—tracing the financial flows, political networks, and policy mechanisms that connect local institutions to broader systems of power.
