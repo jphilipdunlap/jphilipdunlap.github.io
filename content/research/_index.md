@@ -50,13 +50,11 @@ A comprehensive investigation tracing Arkansas defense manufacturing to document
 
 ---
 
-## Methodology
+### Methodology
 
-I conduct FOIA-based investigations that build comprehensive evidentiary records from primary sources: board minutes, financial disclosures, internal correspondence, campaign finance records, and statutory frameworks.
+Primary sources: FOIA requests, board documents, internal correspondence, campaign finance records, government disclosures.
 
-The goal is documentation rigorous enough to hold up to legal scrutiny—the kind of record that transforms advocacy from assertion into evidence.
-
-I've developed training materials on federal and Arkansas FOIA processes for activist organizations seeking to use public records as tools for accountability campaigns.
+If I can't verify it, it doesn't go in.
 
 ---
 
