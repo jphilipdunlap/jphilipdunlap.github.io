@@ -20,6 +20,36 @@
   background-size: cover;
   background-position: center right;
   z-index: 1;
+  /* Subtle blur to smooth out resolution */
+  filter: blur(1px);
+  /* Scale up slightly to compensate for blur edge softening */
+  transform: scale(1.02);
+}
+
+/* Film grain overlay */
+.about-hero-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Vignette overlay */
+.about-hero-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 40%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
 }
 
 .about-hero-gradient {
@@ -47,9 +77,18 @@
   );
 }
 
+[data-theme="light"] .about-hero-container::after {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 40%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
 .about-hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   padding-left: max(2rem, calc((100vw - 720px) / 2));
   padding-right: 2rem;
 }
@@ -85,7 +124,7 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: 5;
 }
 
 .scroll-indicator span {
@@ -212,7 +251,6 @@
   }
 }
 
-/* Smaller mobile */
 @media (max-width: 480px) {
   .about-hero-content h1 {
     font-size: 2rem;
