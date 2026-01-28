@@ -7,6 +7,8 @@ I'm a FOIA researcher and policy analyst based in Arkansas. My work focuses on i
 
 I build evidentiary records from primary sources: board documents, internal correspondence, campaign finance data, government disclosures. The goal is documentation rigorous enough to support legal scrutiny and transform advocacy from assertion into evidence.
 
+I'm looking to do this work professionally—legal research, policy analysis, that direction.
+
 ---
 
 ## Featured Investigations
