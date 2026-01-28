@@ -10,8 +10,6 @@ My research focuses on institutional accountability and the mechanisms by which 
 
 ---
 
-## Featured Investigations
-
 ### [The Cost of the Alliance](/research/cost-of-the-alliance/)
 
 **How U.S.-Israel Policy Shapes American Life**

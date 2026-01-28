@@ -12,7 +12,7 @@ I'm looking to do this work professionally—legal research, policy analysis, th
 
 ---
 
-## Featured Investigations
+## Research
 
 ### [The Cost of the Alliance](/research/cost-of-the-alliance/)
 
