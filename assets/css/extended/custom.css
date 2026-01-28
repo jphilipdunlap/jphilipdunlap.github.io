@@ -2,10 +2,6 @@
    CINEMATIC ABOUT PAGE
    =================================== */
 
-.about-cinematic {
-  /* Override PaperMod's main container */
-}
-
 /* --- Hero Section --- */
 .about-hero-container {
   position: relative;
@@ -30,7 +26,6 @@
   position: absolute;
   inset: 0;
   z-index: 2;
-  /* Dark on left for text, fading to transparent on right to let lamp glow through */
   background: linear-gradient(
     to right,
     rgba(29, 30, 32, 0.95) 0%,
@@ -41,7 +36,6 @@
   );
 }
 
-/* Light mode adjustment */
 [data-theme="light"] .about-hero-gradient {
   background: linear-gradient(
     to right,
@@ -57,7 +51,7 @@
   position: relative;
   z-index: 3;
   padding-left: max(2rem, calc((100vw - 720px) / 2));
-  max-width: 500px;
+  padding-right: 2rem;
 }
 
 .about-hero-content h1 {
@@ -66,6 +60,7 @@
   margin: 0 0 0.5rem 0;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 .about-tagline {
@@ -73,6 +68,7 @@
   color: var(--secondary);
   margin: 0 0 0.25rem 0;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .about-location {
@@ -80,6 +76,7 @@
   color: var(--secondary);
   opacity: 0.7;
   margin: 0;
+  white-space: nowrap;
 }
 
 /* --- Scroll Indicator --- */
@@ -163,46 +160,65 @@
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .about-hero-container {
-    height: 80vh;
+    height: 100vh;
+    align-items: flex-end;
+  }
+  
+  .about-hero-image {
+    background-position: center center;
   }
   
   .about-hero-gradient {
-    /* More coverage on mobile for readability */
     background: linear-gradient(
-      to bottom,
-      rgba(29, 30, 32, 0.7) 0%,
-      rgba(29, 30, 32, 0.85) 50%,
-      rgba(29, 30, 32, 0.95) 100%
+      to top,
+      rgba(29, 30, 32, 0.95) 0%,
+      rgba(29, 30, 32, 0.8) 30%,
+      rgba(29, 30, 32, 0.4) 60%,
+      rgba(29, 30, 32, 0.2) 100%
     );
   }
   
   [data-theme="light"] .about-hero-gradient {
     background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6) 0%,
-      rgba(255, 255, 255, 0.8) 50%,
-      rgba(255, 255, 255, 0.95) 100%
+      to top,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.8) 30%,
+      rgba(255, 255, 255, 0.4) 60%,
+      rgba(255, 255, 255, 0.2) 100%
     );
   }
   
   .about-hero-content {
     padding: 2rem;
-    position: absolute;
-    bottom: 4rem;
-    max-width: none;
+    padding-bottom: 5rem;
   }
   
-  .about-hero-image {
-    background-position: center top;
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+    white-space: normal;
+  }
+  
+  .about-tagline,
+  .about-location {
+    white-space: normal;
   }
   
   .about-body {
     padding-top: 3rem;
   }
+  
+  .scroll-indicator {
+    bottom: 1.5rem;
+  }
 }
 
-/* Hide default page header since we have custom hero */
-.about-cinematic + .post-header,
-.page-header {
-  display: none;
+/* Smaller mobile */
+@media (max-width: 480px) {
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .about-tagline {
+    font-size: 1rem;
+  }
 }
