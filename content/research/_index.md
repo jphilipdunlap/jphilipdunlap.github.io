@@ -64,4 +64,4 @@ If you're working on related investigations—particularly around state pension 
 
 ---
 
-[Home](/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
+[Home](/) · [Research](/research/) · [Writings](/writings/carrying-the-cross/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrying the Cross: A Lamentation for the Erasure of Palestine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-deep: #0a0a0a;
+      --bg-section: #111111;
+      --text-primary: #e8e4df;
+      --text-secondary: #a8a4a0;
+      --text-muted: #6a6662;
+      --accent-gold: #c4a35a;
+      --accent-blood: #8b2635;
+      --accent-olive: #4a5d23;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg-deep);
+      color: var(--text-primary);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      line-height: 1.85;
+      min-height: 100vh;
+    }
+
+    /* Opening visual weight */
+    .opening {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(180deg, #000000 0%, var(--bg-deep) 100%);
+      border-bottom: 1px solid rgba(196, 163, 90, 0.1);
+    }
+
+    .opening h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .opening .subtitle {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-secondary);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+
+    .opening .epigraph {
+      max-width: 600px;
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      font-style: italic;
+      line-height: 1.9;
+    }
+
+    .opening .epigraph .attribution {
+      margin-top: 1.5rem;
+      font-style: normal;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* Main content container */
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Section styling */
+    section {
+      padding: 5rem 0;
+      border-bottom: 1px solid rgba(196, 163, 90, 0.08);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+      padding-bottom: 6rem;
+    }
+
+    .section-marker {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 2.5rem;
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 400;
+      margin-bottom: 2rem;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Special paragraph styles */
+    .weight {
+      font-size: 1.15rem;
+      line-height: 2;
+      color: var(--text-primary);
+    }
+
+    .whisper {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
+    .cry {
+      font-size: 1.3rem;
+      text-align: center;
+      font-style: italic;
+      color: var(--text-primary);
+      padding: 2rem 0;
+      line-height: 1.7;
+    }
+
+    /* Statistics as weight, not data */
+    .statistic {
+      display: block;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin: 2.5rem 0;
+      border-top: 1px solid rgba(139, 38, 53, 0.3);
+      border-bottom: 1px solid rgba(139, 38, 53, 0.3);
+    }
+
+    .statistic .number {
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 500;
+      color: var(--accent-blood);
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .statistic .meaning {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
+    /* Testimony blocks */
+    .testimony {
+      background: rgba(255, 255, 255, 0.02);
+      border-left: 2px solid var(--accent-gold);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      font-style: italic;
+    }
+
+    .testimony .speaker {
+      display: block;
+      margin-top: 1rem;
+      font-style: normal;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .testimony .speaker .age {
+      color: var(--accent-blood);
+    }
+
+    /* Scripture blocks */
+    .scripture {
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--text-secondary);
+      border-top: 1px solid rgba(196, 163, 90, 0.15);
+      border-bottom: 1px solid rgba(196, 163, 90, 0.15);
+    }
+
+    .scripture .reference {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      font-style: normal;
+      color: var(--text-muted);
+    }
+
+    /* The poem */
+    .poem {
+      background: var(--bg-section);
+      padding: 3rem 2rem;
+      margin: 3rem 0;
+      text-align: center;
+      border: 1px solid rgba(196, 163, 90, 0.1);
+    }
+
+    .poem h3 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 2rem;
+    }
+
+    .poem .lines {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: var(--text-primary);
+    }
+
+    .poem .attribution {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .poem .attribution .death {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--accent-blood);
+      font-style: italic;
+    }
+
+    /* Lists as prose, not bullets */
+    .progression {
+      margin: 2rem 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .progression li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-secondary);
+    }
+
+    .progression li:last-child {
+      border-bottom: none;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .progression .date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Emphasis */
+    em {
+      font-style: italic;
+      color: var(--text-primary);
+    }
+
+    strong {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* Links */
+    a {
+      color: var(--accent-gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--accent-gold);
+    }
+
+    /* Horizontal rules as breathing space */
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(196, 163, 90, 0.3), transparent);
+      margin: 3rem 0;
+    }
+
+    /* Final section - the weight */
+    .closing {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(180deg, var(--bg-deep) 0%, #000000 100%);
+    }
+
+    .closing .question {
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
+      font-style: italic;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      line-height: 1.8;
+    }
+
+    .closing .final {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-top: 4rem;
+    }
+
+    /* Author section */
+    .author {
+      text-align: center;
+      padding: 4rem 2rem;
+      border-top: 1px solid rgba(196, 163, 90, 0.1);
+      background: #000000;
+    }
+
+    .author p {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .author .name {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .author .location {
+      font-style: italic;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      html {
+        font-size: 16px;
+      }
+      
+      .content {
+        padding: 0 1.5rem;
+      }
+      
+      section {
+        padding: 3.5rem 0;
+      }
+      
+      .testimony {
+        padding: 1rem 1.25rem;
+      }
+      
+      .poem {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+      
+      .statistic .number {
+        color: black;
+      }
+      
+      .testimony {
+        border-left-color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="opening">
+    <h1>Carrying the Cross</h1>
+    <p class="subtitle">A Lamentation for the Erasure of Palestine</p>
+    <div class="epigraph">
+      <p>"My father left us. Then my mother and brothers left me. What did I stay alive for?"</p>
+      <p class="attribution">— Mu'in, age 10, Gaza</p>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- I. THE WEIGHT OF A NAME -->
+    <section>
+      <div class="section-marker">I.</div>
+      <h2>The Weight of a Name</h2>
+      
+      <p class="weight">There is a boy named Mu'in. He is ten years old. He lives in Gaza, or what remains of it. His father is dead. His mother is dead. His brothers are dead. He is the last.</p>
+      
+      <p>He does not know why he survived. He was not meant to be the keeper of his family's memory. He was meant to be a child—to run through streets that no longer exist, to grow into a man surrounded by people who are now ash and rubble. Instead, he carries a weight that would crush grown men: the entire history of everyone who made him, ended in him.</p>
+
+      <div class="testimony">
+        "Today, I am the only one left... We left the house nine people—and I will return alone."
+        <span class="speaker">— Nour Al-Jammal, sole survivor<br>Lost father Ayman (51), mother Hanan (43), sister Shahd (22), brothers Ahmad (20), Mohammad (18), Abdul Rahman (16), Yousef (14), and Ayham (<span class="age">6</span>)</span>
+      </div>
+      
+      <p>Six thousand. That is the number of people who now carry this weight. Six thousand sole survivors—the last of their bloodlines. People who went to sleep as siblings, as children, as parents, and woke up as archives. The only living record of families that stretched back centuries, sometimes millennia.</p>
+      
+      <p>And two thousand seven hundred. That is the number of families with no survivors at all. Zero. Complete elimination. Surnames erased from the civil registry as if they had never been written. Lineages that survived the Crusades, the Ottomans, the British, the Nakba—ended in the span of months, by American bombs dropped from American-made planes, funded by American tax dollars.</p>
+      
+      <p class="whisper">I need you to understand what that means. I am not sure I understand it myself. I have been trying to understand it for months, and the weight keeps shifting, keeps revealing new dimensions of grief. But I need you to try.</p>
+    </section>
+
+    <!-- II. THE CONFESSION -->
+    <section>
+      <div class="section-marker">II.</div>
+      <h2>The Confession</h2>
+      
+      <p>I did not know Palestine existed until October 7, 2023.</p>
+      
+      <p>I am ashamed to write that sentence. I am more ashamed that it is true.</p>
+      
+      <p>I was raised Southern Baptist in Arkansas. My grandmother—Nanny, Sandra Merkel—is conservative. She watches Fox News. She voted for Trump. She runs a dog grooming business in Plainview and loves her family fiercely and does not know that the people being killed on her television screen are people. The information ecosystem she inhabits was designed to make them invisible, or worse—to make them enemies of God.</p>
+      
+      <p>My grandfather—Poppa, James Dunlap—is different, but not as different as he thinks. He's a Democrat, which in Arkansas means he watches less Fox and more CBS. He goes to church. He loves Jesus. He has never heard the term "Christian Zionism" and would not recognize it as the theology that shaped him. He does not know that he harbors Islamophobia, because no one in his world has ever named it. He is a good man. He is a southern Arkansas redneck who loves his grandson and his God and has never been given a reason to question the story he was told about the Holy Land.</p>
+      
+      <p>Neither of them went to college. I do not say this with condescension. I say it because information ecosystems matter. They were raised in a world where Palestine was invisible. They raised me in that world. I did not escape it through superior intelligence or moral clarity. I escaped it through accident—through October 7th, through the horror that followed, through being unable to look away.</p>
+      
+      <p>I asked too many questions in church as a kid. I poked holes in the theology. Eventually I drifted away from organized religion toward something I hesitate to call atheism, though I do not know what else to call it. I do not know if God exists. I do not know what happens after death. I am not writing from a position of faith.</p>
+      
+      <p>But I know this: I have respect for Christ. For the figure, the teachings. A Palestinian Jewish man. A carpenter from Nazareth. A prophet who sided with the poor and the oppressed, who overturned the tables of the money-changers, who was executed by empire for being inconvenient to power. A man who said <em>blessed are the peacemakers</em> and <em>love your enemies</em> and <em>whatever you do to the least of these, you do to me</em>.</p>
+      
+      <p>I have respect for the Prophet Muhammad, too, though I know less about him. I know he granted protection to Christians. I know the Abrahamic faiths are siblings, born from the same land, claiming the same ancestors, reading the same stories in different translations.</p>
+      
+      <p>And I know that land is being destroyed. The people who have lived there for four thousand years—longer than any of these faiths have existed—are being erased. Deliberately. Systematically. Bloodline by bloodline.</p>
+      
+      <p>I have spent the last two years learning what I was never taught. I built a website called fromtheriver.org to document what I found. Then I deleted it. I am a perfectionist. I have destroyed finished projects before. I almost let the fear of imperfection silence me again.</p>
+      
+      <p>I am not doing that anymore.</p>
+      
+      <p>I have traced the money. Arkansas has $157 million invested in Israel Bonds—the state treasury, the teacher retirement system, the public employees' pension fund. I documented this in an investigation called "The Pension Pipeline." I have tracked $16.3 billion in U.S. military aid since October 2023 in "The Cost of the Alliance." I have examined the defense contractors in Camden, Arkansas, in "The Arkansas Arsenal." I have researched the artificial intelligence systems used to select bombing targets in "The Algorithmic Kill Chain."</p>
+      
+      <p>I am not an academic. I am not a journalist. I am a FOIA researcher and policy analyst, transitioning from customer care work, trying to build a career in legal research while figuring out how to be a person who knows what I now know. I work with Little Rock Peace for Palestine. I am making this up as I go.</p>
+      
+      <p>But I know enough to know this: what is happening in Gaza is not a war. It is not a conflict. It is not collateral damage. It is the deliberate erasure of a people. And I was raised to not see it.</p>
+      
+      <p class="whisper">This piece is my attempt to see it. To help others see it. To sit in the weight of what it means.</p>
+    </section>
+
+    <!-- III. THE LAND -->
+    <section>
+      <div class="section-marker">III.</div>
+      <h2>The Land: Four Thousand Years</h2>
+      
+      <p>In 2017, a team of geneticists published a study in the American Journal of Human Genetics. They had extracted DNA from the petrous bones of Bronze Age individuals buried in Sidon, Lebanon—people who died nearly four thousand years ago, in the land the Bible calls Canaan. They compared these ancient genomes to the DNA of people living in the region today.</p>
+      
+      <p>The finding: present-day Lebanese and Palestinians derive approximately ninety-three percent of their ancestry from those Bronze Age Canaanites.</p>
+      
+      <p>Ninety-three percent. Across four millennia of conquests, empires, migrations, and intermarriages—the people remained. The Canaanites became the Israelites became the Judeans became the Palestinians. They changed religions. They changed languages. They changed rulers. But they did not leave. They stayed on the land that their ancestors had cultivated since before the pyramids were built, and they are still there, and they are being killed.</p>
+      
+      <p>Let me say that differently.</p>
+      
+      <p class="weight">The people being erased in Gaza are the indigenous inhabitants of the Holy Land. They are the genetic descendants of everyone who has ever lived there—Canaanites, Israelites, Philistines, Judeans, Samaritans, Byzantines, Arabs. They carry four thousand years of continuous presence in their blood. And that blood is being spilled.</p>
+      
+      <hr>
+      
+      <p>In the village of Al-Walaja, near Bethlehem, there is an olive tree called Al-Badawi. It is between four thousand and five thousand years old. Its mother trunk is nine meters in diameter. It has sprouted twenty-two subsidiary trunks over the centuries, spreading outward until the whole organism spans twenty-five meters. It still produces olives. Up to half a ton of olive oil every year, from a tree that was ancient when Abraham walked these hills.</p>
+      
+      <p>A man named Salah Abu Ali tends this tree. His father tended it before him, and his father's father before that. Three generations of guardians for a tree that has seen more generations than any human family can count.</p>
+      
+      <p>There are ten million olive trees in Palestine. Eighty thousand families depend on their cultivation. Many of these trees are seven hundred, a thousand, twelve hundred years old—and still bearing fruit. When Israeli settlers uproot them, when bulldozers clear them for settlements, when they are burned in the night, what is being destroyed is not timber. It is memory. It is continuity. It is the physical proof that these people belong to this land and this land to them.</p>
+      
+      <div class="scripture">
+        "If the olive trees knew the hands that planted them, their oil would become tears."
+        <span class="reference">— Mahmoud Darwish</span>
+      </div>
+      
+      <p>Jericho is one of the oldest continuously inhabited cities on Earth. Archaeological excavations have revealed twenty successive settlement layers, each built on the ruins of the last. The earliest fortification wall, constructed around 8000 BCE, represents the first city wall ever discovered—built six thousand years before the Great Pyramid of Giza. Eleven thousand years of people living, dying, building, rebuilding, on the same ground.</p>
+      
+      <p>This is not history in the sense that Americans understand history—a few centuries, a revolution, a civil war. This is depth beyond comprehension. This is layer upon layer of human presence, each one fertilizing the next, until the soil itself is ancestor.</p>
+      
+      <p class="whisper">And someone is ending it.</p>
+    </section>
+
+    <!-- IV. THE PROPHET -->
+    <section>
+      <div class="section-marker">IV.</div>
+      <h2>The Prophet</h2>
+      
+      <p>Jesus was born in Bethlehem. He was raised in Nazareth. He ministered in Galilee. He was executed in Jerusalem. He was a Jewish man, a carpenter, a teacher who sided with the poor and the sick and the outcast. He challenged the religious authorities. He threatened the order of empire. He was killed for it.</p>
+      
+      <p>The scholarly consensus on the historical Jesus is clear: he existed. He was baptized by John the Baptist. He was crucified under Pontius Pilate, sometime between 26 and 36 CE. He was a Galilean Jew living under Roman occupation, in a region the Greeks had called Palaistinē since at least the fifth century BCE—Herodotus used that name, writing four hundred and fifty years before Jesus was born.</p>
+      
+      <p>Jesus walked on land that Palestinians walk today. He drew water from wells that still exist. He taught in synagogues whose ruins lie beneath churches whose ruins lie beneath mosques whose ruins lie beneath rubble. His neighbors, his community, his people—their descendants still live there. Still lived there. Are being killed there.</p>
+      
+      <div class="scripture">
+        "Blessed are the poor in spirit, for theirs is the kingdom of heaven.<br>
+        Blessed are those who mourn, for they shall be comforted.<br>
+        Blessed are the meek, for they shall inherit the earth.<br>
+        Blessed are those who hunger and thirst for righteousness, for they shall be filled.<br>
+        Blessed are the merciful, for they shall obtain mercy.<br>
+        Blessed are the peacemakers, for they shall be called the children of God.<br>
+        Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven."
+        <span class="reference">— Matthew 5:3-10</span>
+      </div>
+      
+      <p>The first Christian communities in the Holy Land were formed by people who knew Jesus personally—who had eaten with him, argued with him, watched him die. In 66 CE, as Jerusalem prepared for war against Rome, the Christian community fled to Pella under Bishop Simeon. In 325 CE, when the Council of Nicaea convened to establish orthodox doctrine, Gaza sent its own bishop—a man named Asclepas. In the fourth century, Saint Hilarion founded Palestinian monasticism, establishing the traditions that would shape Eastern Christianity for a millennium.</p>
+      
+      <p>These communities never left. They have been in the Holy Land for two thousand years, praying in churches built over the sites where Jesus walked. Before October 2023, approximately one thousand Christians lived in Gaza. Many traced their family's faith back to the earliest church. Now there are perhaps six hundred.</p>
+      
+      <hr>
+      
+      <p>The Church of Saint Porphyrius in Gaza City was founded in the fifth century. It is one of the oldest churches in the world. It houses the tomb of Saint Porphyrius himself, the bishop who converted Gaza to Christianity sixteen hundred years ago.</p>
+      
+      <p>On October 19, 2023, an Israeli airstrike struck the church compound. Eighteen people were killed, including ten members of one family. Four hundred and fifty Palestinians had been sheltering there, believing—hoping—that even in genocide, a church might be sanctuary.</p>
+      
+      <p>The Greek Orthodox Patriarchate called it a war crime. Pope Francis condemned the strike. The bombs kept falling.</p>
+      
+      <p>On December 16, 2023, at Holy Family Church—the only Roman Catholic parish in Gaza—an Israeli sniper shot and killed Nahida Khalil Anton, seventy years old, and her daughter Samar Kamal Anton, fifty. One was killed trying to carry the other to safety. The Latin Patriarchate released a statement: "No warning was given. They were shot in cold blood inside the church compound."</p>
+      
+      <p>Six hundred and forty-eight people were sheltering there. Pope Francis said: "There are no terrorists at Holy Family, but rather children, sick and disabled people, and nuns."</p>
+      
+      <p>The Gaza Baptist Church, the only evangelical Protestant church in the strip, was heavily damaged by tank shells on December 26, 2023. Seventy people from fifteen families had been sheltering inside. The building is perhaps beyond repair.</p>
+      
+      <p class="whisper">Two thousand years of continuous Christian presence. Churches that survived the Crusades, the Mamluks, the Ottomans, two World Wars. Bombed. Shelled. Desecrated. By people who claim to worship the man who walked that land.</p>
+    </section>
+
+    <!-- V. THE CROSS -->
+    <section>
+      <div class="section-marker">V.</div>
+      <h2>The Cross</h2>
+      
+      <div class="scripture">
+        "If anyone would come after me, let him deny himself and take up his cross and follow me."
+        <span class="reference">— Matthew 16:24</span>
+      </div>
+      
+      <p>The cross was an instrument of torture. Before it was a symbol of faith, it was a symbol of state violence—the Roman method for executing those who threatened imperial order. Jesus was not crucified because he preached love. He was crucified because his love was dangerous to power. He told the poor they were blessed. He told the rich they were doomed. He flipped the tables of the money-changers in the temple. He embodied a vision of the world that empire could not tolerate.</p>
+      
+      <p>So they killed him. Publicly, brutally, as a warning to anyone else who might dream of another way.</p>
+      
+      <p>The question the cross asks is: who carries it now?</p>
+      
+      <hr>
+      
+      <p>On Christmas Eve 2023, a Palestinian pastor named Munther Isaac delivered a sermon at the Evangelical Lutheran Christmas Church in Bethlehem. The church had placed its nativity scene in rubble rather than straw—a pile of broken concrete surrounding the Christ child.</p>
+      
+      <p>Isaac said: "In our pain, anguish, and lament, we have searched for God, and found him under the rubble in Gaza."</p>
+      
+      <p>He said: "Jesus became the victim of the very same violence of the Empire. He was tortured. Crucified. He bled out as others watched."</p>
+      
+      <p>He said: "If Jesus were to be born today, he would be born under the rubble in Gaza."</p>
+      
+      <p>He said: "If we, as Christians, are not outraged by the genocide, by the weaponization of the Bible to justify it, there is something wrong with our Christian witness."</p>
+      
+      <p>The sermon went viral. Millions watched. The bombs kept falling.</p>
+      
+      <hr>
+      
+      <p>The Via Dolorosa—the Way of Sorrow—is the path Jesus walked through Jerusalem on the way to his crucifixion. Christian pilgrims have traced this route for centuries, stopping at fourteen stations to pray and remember.</p>
+      
+      <p>For Palestinian Christians, the Via Dolorosa runs through checkpoints.</p>
+      
+      <p>Rifat Odeh Kassis, coordinator of Kairos Palestine, wrote: "Many Palestinians refer to our experience of living under Israeli occupation and the suffering we endure as 'walking the Via Dolorosa' or the Way of the Cross. The stations of suffering include: checkpoints, permits, refugee camps, blockade, home demolitions, detention without trial, and bombing."</p>
+      
+      <p>At Easter 2024, only two hundred clergy received permits to access Jerusalem. Most Palestinian Christians from the West Bank were denied access to the Church of the Holy Sepulchre—the site where tradition holds that Jesus was buried and resurrected.</p>
+      
+      <p class="weight">Let me say this plainly. American Christians worship a Palestinian Jewish man. They claim to follow his teachings. They sing about the Holy Land, pray toward Jerusalem, dream of pilgrimage.</p>
+      
+      <p class="weight">And they fund the crucifixion of his people.</p>
+      
+      <hr>
+      
+      <div class="poem">
+        <h3>If I Must Die</h3>
+        <div class="lines">
+          If I must die,<br>
+          you must live<br>
+          to tell my story<br>
+          to sell my things<br>
+          to buy a piece of cloth<br>
+          and some strings,<br>
+          (make it white with a long tail)<br>
+          so that a child, somewhere in Gaza<br>
+          while looking heaven in the eye<br>
+          awaiting his dad who left in a blaze—<br>
+          and bid no one farewell<br>
+          not even to his flesh<br>
+          not even to himself—<br>
+          sees the kite, my kite you made,<br>
+          flying up above<br>
+          and thinks for a moment an angel is there<br>
+          bringing back love<br>
+          If I must die<br>
+          let it bring hope<br>
+          let it be a tale.
+        </div>
+        <div class="attribution">
+          — Refaat Alareer
+          <span class="death">Assassinated by Israeli airstrike, December 6, 2023<br>
+          Along with his brother, his sister, and four of her children</span>
+        </div>
+      </div>
+      
+      <p>Refaat Alareer was a poet, a professor, a father. He taught English literature at the Islamic University of Gaza. He founded "We Are Not Numbers," a program that paired young Palestinian writers with international mentors. He believed that if the world could hear Palestinian stories—really hear them—something might change.</p>
+      
+      <p>He wrote "If I Must Die" in 2011, during an earlier assault on Gaza. He pinned it to his Twitter profile on November 1, 2023. Five weeks later, an Israeli airstrike surgically targeted the apartment where he was staying—his sister's home, on the second floor of a three-story building. The strike did not hit the rest of the building. Only the apartment. Only the family inside.</p>
+      
+      <p>Euro-Mediterranean Human Rights Monitor concluded: the strike "surgically targeted the apartment... indicating the apartment was the target and not possible collateral damage."</p>
+      
+      <p>Alareer had received a phone call from someone claiming to be an Israeli officer, warning that they knew precisely where he was.</p>
+      
+      <p>His final post, two days before his death: "We could die this dawn."</p>
+      
+      <p class="whisper">Five months later, his eldest daughter Shaimaa was killed in another airstrike—along with her husband and their newborn son, Alareer's first grandchild. The baby's name was Abd al-Rahman.</p>
+    </section>
+
+    <!-- VI. THE BLOODLINES -->
+    <section>
+      <div class="section-marker">VI.</div>
+      <h2>The Bloodlines</h2>
+      
+      <div class="statistic">
+        <span class="number">2,700+</span>
+        <span class="meaning">families entirely eliminated — zero survivors</span>
+      </div>
+      
+      <div class="statistic">
+        <span class="number">6,000+</span>
+        <span class="meaning">individuals who are now the last of their bloodlines</span>
+      </div>
+      
+      <p>I want to tell you about the Abu Naser family.</p>
+      
+      <p>On October 29, 2024, in Beit Lahia, an Israeli strike killed one hundred and thirty-two members of the Abu Naser family. One hundred and thirty-two. Ten complete nuclear families—parents and all their children—ended in a single night. Over forty percent of the dead were children. The youngest victim was a six-week-old baby named Sham.</p>
+      
+      <p>The Al-Mughrabi family lost seventy members in December 2023. The Saqallah family lost forty-two on October 19, 2023. The Al-Astal family lost thirty-eight on October 26, 2023. The Al-Farra family lost thirty-eight across October and November 2024—fourteen of them children.</p>
+      
+      <p>These are not statistics. These are surnames that have existed for centuries, documented in Ottoman tax registries, traceable through generations of birth and marriage records—erased.</p>
+      
+      <ul class="progression">
+        <li><span class="date">October 13, 2023:</span> 20 surnames erased from civil registry (Palestinian Ministry of Health)</li>
+        <li><span class="date">October 28, 2023:</span> 825 families eliminated</li>
+        <li><span class="date">November 2024:</span> 1,410 families eliminated</li>
+        <li><span class="date">March 2025:</span> 1,238 families confirmed zero survivors (Reuters)</li>
+        <li><span class="date">January 2026:</span> 2,700+ families eliminated</li>
+      </ul>
+      
+      <p>This is not collateral damage. There is no such thing as collateral damage here.</p>
+      
+      <p>The Nakba was intentional—ethnic cleansing by design, admitted by its architects. The occupation is intentional—colonization by design, expanding settlement by settlement. The siege of Gaza was intentional—collective punishment by design, creating what Israeli officials called "a diet" for the population. And this genocide is intentional—elimination by design, targeting multi-generational homes precisely because they contain multi-generational families.</p>
+      
+      <p>The pattern reveals intent. The erasure of bloodlines is the point.</p>
+      
+      <hr>
+      
+      <div class="testimony">
+        "My family was bombed while I was outside the house... I ended up living alone in a tent in Al Mawasi—those were the hardest moments of my life."
+        <span class="speaker">— Mahmoud Sukkar, <span class="age">age 17</span><br>Lost 17 family members, October 2024</span>
+      </div>
+      
+      <p>Mahmoud is seventeen. He should be thinking about school, about friends, about the future. Instead he is alone in a tent in what Israel calls a "safe zone"—a designation that has meant nothing, as strike after strike has hit these supposed refuges. He carries seventeen people inside him now. Their jokes, their habits, the sound of their voices. All of it, archived in a teenager.</p>
+      
+      <div class="testimony">
+        "Today, I am the only one left... We left the house nine people—and I will return alone."
+        <span class="speaker">— Nour Al-Jammal</span>
+      </div>
+      
+      <p>Nine people. Father Ayman, fifty-one. Mother Hanan, forty-three. Sister Shahd, twenty-two. Brothers Ahmad, twenty; Mohammad, eighteen; Abdul Rahman, sixteen; Yousef, fourteen; Ayham, six.</p>
+      
+      <p class="whisper">Ayham was six.</p>
+      
+      <div class="testimony">
+        "My father left us. Then my mother and brothers left me. What did I stay alive for?"
+        <span class="speaker">— Mu'in, <span class="age">age 10</span>, Gaza</span>
+      </div>
+      
+      <p>He is ten years old. He is asking a question that should never be asked by a child. He is asking a question that has no answer, because the answer would require the world to make sense, and the world does not make sense, not anymore, not here.</p>
+      
+      <p class="weight">What do you say to a ten-year-old who wants to know why he survived? What comfort exists? What theology? What philosophy?</p>
+    </section>
+
+    <!-- VII. THE RUPTURE -->
+    <section>
+      <div class="section-marker">VII.</div>
+      <h2>The Rupture</h2>
+      
+      <p><strong>What does this do to Christianity?</strong></p>
+      
+      <p>In 1909, a man named Cyrus Scofield published a Bible. It was the first edition since the Geneva Bible of 1560 to include commentary alongside scripture—notes explaining what each passage "really meant." The Scofield Reference Bible sold two million copies by the end of World War II. It shaped the theology of a generation of American evangelicals, and then another, and another.</p>
+      
+      <p>Scofield taught dispensationalism—a framework that divides history into distinct ages, with Israel and the Church as separate peoples destined for separate futures. It taught that the modern return of Jews to Palestine was the fulfillment of biblical prophecy, a necessary precursor to the end times. It taught that blessing Israel was a divine command, and cursing Israel invited God's wrath.</p>
+      
+      <p>Scofield did not invent these ideas. A British preacher named John Nelson Darby developed them in the nineteenth century. But Scofield packaged them. He embedded them into the margins of the Bible itself, so that they seemed not like interpretation but like scripture.</p>
+      
+      <p>In 2006, Pastor John Hagee founded Christians United for Israel. Today it claims over ten million members—significantly larger than AIPAC. It lobbied for moving the U.S. Embassy to Jerusalem. It lobbied for cutting funding to UNRWA, the agency that feeds Palestinian refugees. It lobbies for unconditional support of Israel, no matter what Israel does.</p>
+      
+      <p>Hagee preaches that supporting Israel is a biblical mandate. That opposing Israel is opposing God. That the Palestinian people have no legitimate claim to the land where they have lived for four thousand years.</p>
+      
+      <p class="weight">This is not theological confusion. This is the weaponization of scripture in service of empire. It teaches that the expulsion and elimination of Palestinians is God's will. It makes genocide into divine mandate.</p>
+      
+      <hr>
+      
+      <p><strong>What does this do to Judaism?</strong></p>
+      
+      <p>"Never again" was a vow. It has been broken—not by Palestinians, but by the state that claims to speak for Jewish people.</p>
+      
+      <p>In October 2024, the Rabbinical Council of Jewish Voice for Peace released a statement: "The photos and videos coming out of North Gaza are a terrifying echo of all-too-familiar images of European ghettos and Nazi concentration camps... We must ask ourselves who we are: will we be like the courageous 'righteous gentiles' who risked their personal safety to protect and save Jewish lives during the Nazi holocaust?"</p>
+      
+      <p>In July 2025, B'Tselem—the Israeli Information Center for Human Rights in the Occupied Territories—published a report titled "Our Genocide." It was the first major Israeli human rights organization to use that word. Executive Director Yuli Novak wrote: "Nothing prepares you for the realization that you are part of a society committing genocide. This is a deeply painful moment for us."</p>
+      
+      <p>One hundred thousand Israeli reservists have stopped reporting for duty. Eighteen-year-old conscientious objectors—Tal Mitnick, Sofia Orr—have chosen prison over participation. "I believe that slaughter cannot solve slaughter," Mitnick said. "Violence only leads to more violence," Orr said.</p>
+      
+      <p>In 2014, three hundred and twenty-seven Holocaust survivors and descendants signed an open letter in the New York Times: "As Jewish survivors and descendants of survivors of the Nazi genocide we unequivocally condemn the massacre of Palestinians in Gaza... Genocide begins with the silence of the world... 'Never again' must mean NEVER AGAIN FOR ANYONE."</p>
+      
+      <p class="whisper">Zionism has hijacked Jewish identity. It uses Jewish trauma—the very real, very historical trauma of antisemitism, of pogroms, of the Holocaust—as a human shield for genocide. It conflates Judaism with a political project. It makes every Jew on earth complicit by association unless they explicitly dissent.</p>
+      
+      <p class="whisper">This is not Judaism. This is the desecration of Judaism. And Jewish people are among those saying so most clearly.</p>
+      
+      <hr>
+      
+      <p><strong>What does this do to faith itself?</strong></p>
+      
+      <p>Where is God in Gaza?</p>
+      
+      <p>This is the oldest theological question. Theodicy. Why does the innocent suffer? Why do empires triumph? Why does evil flourish while the righteous are crushed?</p>
+      
+      <p>But maybe the question is wrong.</p>
+      
+      <p>Maybe God is not absent from Gaza. Maybe God is present—in the people being killed. In the children pulled from rubble. In the paramedics targeted while trying to save lives. In the journalists assassinated for documenting. In the poets who write "If I must die, let it bring hope."</p>
+      
+      <div class="scripture">
+        "Whatever you did for the least of these brothers and sisters of mine, you did for me."
+        <span class="reference">— Matthew 25:40</span>
+      </div>
+      
+      <p class="cry">If Christ is in the suffering, then Christ is in Gaza.<br>And the bombs are falling on Christ.</p>
+    </section>
+
+    <!-- VIII. THE HANDS -->
+    <section>
+      <div class="section-marker">VIII.</div>
+      <h2>The Hands</h2>
+      
+      <p>In October 2025, Francesca Albanese—the United Nations Special Rapporteur on the Occupied Palestinian Territories—submitted a report titled "Gaza Genocide: A Collective Crime." The United States responded by sanctioning her personally, preventing her from presenting the report in New York.</p>
+      
+      <p>The report documented that the United States and Germany have provided over ninety percent of Israel's arms imports. It documented the Security Council vetoes that shielded Israel from accountability—resolutions supported by thirteen or fourteen of the fifteen council members, blocked by a single American vote. It documented U.S. sanctions designed to, in Albanese's words, "paralyze" the International Criminal Court.</p>
+      
+      <p>Its core conclusion: "The ongoing genocide in Gaza is a collective crime, sustained by the complicity of influential Third States that have enabled longstanding systemic violations of international law by Israel."</p>
+      
+      <p>We are not bystanders. We are participants.</p>
+      
+      <hr>
+      
+      <div class="statistic">
+        <span class="number">$16.3 billion</span>
+        <span class="meaning">U.S. military aid since October 2023</span>
+      </div>
+      
+      <p>The Israeli Defense Ministry reported that since October 2023, the United States has delivered ninety thousand tons of arms and equipment—eight hundred transport planes, one hundred and forty ships. This includes over five thousand MK-84 two-thousand-pound bombs, nearly nine thousand MK-82 five-hundred-pound bombs, fifty-seven thousand artillery shells, nearly fourteen thousand anti-tank missiles.</p>
+      
+      <p>The MK-84 is an unguided gravity bomb weighing two thousand pounds. Its lethal radius is three hundred and sixty meters—anyone within that range will die. Its damage and injury range extends to eight hundred meters. It creates a crater fifteen meters wide and eleven meters deep.</p>
+      
+      <p>A Harvard study published in PLOS Global Public Health identified five hundred and ninety-two MK-84 bomb craters in Gaza in just the first six weeks of the assault. Eighty-three percent of Gaza's hospitals—thirty of thirty-six—had at least one crater within eight hundred meters. Twenty-five percent had craters within the lethal three-hundred-sixty-meter range.</p>
+      
+      <p>At Jabalya refugee camp on October 31, 2023, these bombs left craters twenty-four meters wide. Over one hundred people were killed.</p>
+      
+      <p>In the Al-Mawasi "safe zone" on September 10, 2024, three MK-84s struck a tent camp for displaced persons. Between nineteen and forty people were killed, depending on which bodies could be found.</p>
+      
+      <p class="weight">These are American bombs. Made in America. Shipped from America. Paid for by American taxes. Dropped on children who had already been displaced five, six, seven times, following orders to move to "safe zones" that were never safe.</p>
+      
+      <hr>
+      
+      <p>I live in Arkansas. Arkansas has $157 million invested in Israel Bonds.</p>
+      
+      <p>$88 million from the state treasury. $35 million from the Arkansas Teacher Retirement System—the pensions of people who taught me, who taught my friends, who teach children today. $34 million from the Arkansas Public Employees' Retirement System—the pensions of state workers, county workers, ordinary people trying to retire with dignity.</p>
+      
+      <p>When those bonds mature, when those investments pay returns, the returns come from a state that is committing genocide. Arkansas teachers' retirements are financially entangled with the murder of Palestinian teachers. Arkansas public employees' futures are invested in the elimination of Palestinian public employees.</p>
+      
+      <p>This is what complicity looks like. Not dramatic. Not obvious. Mundane. Bureaucratic. Written into the ordinary machinery of everyday life, connecting ordinary people to extraordinary horror without their knowledge or consent.</p>
+      
+      <p class="whisper">I did not know this until I looked. Most people do not know it because they have not looked. But now you know. And knowledge creates responsibility.</p>
+    </section>
+
+    <!-- IX. THE QUESTION -->
+    <section>
+      <div class="section-marker">IX.</div>
+      <h2>The Question</h2>
+      
+      <p>I do not have an answer. I am not sure there is an answer. I am not sure this piece should end with anything other than the weight itself.</p>
+      
+      <p>But let me return to Mu'in.</p>
+      
+      <p>He is ten years old. He lives in Gaza, in whatever remains of it, in whatever shelter has not yet been destroyed. His father is dead. His mother is dead. His brothers are dead. He is the last.</p>
+      
+      <p>He carries a lineage that stretches back four thousand years. His DNA connects him to the Bronze Age Canaanites, to the people who built Jericho's walls eight thousand years before Christ, to everyone who has ever lived and died on that land. All of that history, that accumulation, that depth—it lives in him now. He is the archive. He is the testimony. He is the only proof that his family ever existed.</p>
+      
+      <p>He did not ask for this. He does not understand why it happened. He asked the only question a ten-year-old can ask: "What did I stay alive for?"</p>
+      
+      <p>I do not know, Mu'in. I do not know.</p>
+      
+      <p>I know that you exist. I know that you carry everyone who made you, and everyone who made them, and everyone who made them. I know that your survival is not meaningless, even if it feels that way, even if the world has given you no reason to believe otherwise.</p>
+      
+      <p>I know that I am writing this from Arkansas, from the other side of the world, from a place where most people do not know your name and will never learn it. I know that my knowing does not save you. I know that my witness does not bring anyone back.</p>
+      
+      <p>But I know this, too: silence is complicity. Forgetting is erasure. And if I cannot stop what is being done to you, I can at least refuse to pretend it is not happening. I can at least say your name. I can at least sit in the weight of what it means that you are alive and alone and ten years old and asking questions that have no answers.</p>
+      
+      <p class="whisper">This is not enough. It will never be enough. But it is what I have.</p>
+    </section>
+
+  </main>
+
+  <footer class="closing">
+    <p class="question">What does it mean—for our faiths, for our histories, for our humanity—that the people who have lived in the Holy Land for four thousand years, who are the descendants of Christ's neighbors, who carry bloodlines older than any nation, are being deliberately erased while we fund it, arm it, and watch?</p>
+    
+    <p class="question">What have we become?</p>
+    
+    <p class="question">What will we do now?</p>
+    
+    <p class="final">This piece is complete when a reader finishes it and cannot go back to who they were before.<br><br>Not because they've been argued into a position.<br>Because they've been made to witness what they were trained to unsee.<br>Because the weight is finally, unavoidably, weight.</p>
+  </footer>
+
+  <div class="author">
+    <p class="name">Joshua Dunlap</p>
+    <p class="location">North Little Rock, Arkansas</p>
+    <p>January 2026</p>
+  </div>
+
+</body>
+</html>

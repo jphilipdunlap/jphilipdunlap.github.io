@@ -185,4 +185,4 @@ This series synthesizes reporting from +972 Magazine, investigative journalism, 
 
 For questions, corrections, or to request additional documentation: joshuaphilipdunlap@gmail.com
 
-*This research was conducted as part of my work with Little Rock Peace for Palestine.*
+*This investigation is part of [The Algorithmic Kill Chain](/research/algorithmic-kill-chain/) series documenting AI-enabled targeting systems. For questions or additional documentation, contact joshuaphilipdunlap@gmail.com.*

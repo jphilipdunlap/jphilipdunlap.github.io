@@ -120,4 +120,4 @@ Where official Israeli sources have acknowledged or disputed specific claims, th
 
 ---
 
-[Home](/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
+[Home](/) · [Research](/research/) · [Writings](/writings/carrying-the-cross/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)

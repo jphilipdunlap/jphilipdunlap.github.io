@@ -237,4 +237,4 @@ Where official sources have disputed specific claims, those positions are noted.
 
 ---
 
-[Home](/) · [Research](/research/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
+[Home](/) · [Research](/research/) · [Writings](/writings/carrying-the-cross/) · [Email](mailto:joshuaphilipdunlap@gmail.com) · [GitHub](https://github.com/jphilipdunlap)
